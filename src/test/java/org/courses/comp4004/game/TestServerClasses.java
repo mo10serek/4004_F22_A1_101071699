@@ -90,4 +90,16 @@ public class TestServerClasses {
         Assertions.assertEquals(diceSet.countDiceFaces("monkey"),3);
     }
 
+    @Test
+    @DisplayName("testGetDiceFaceCounts")
+    void testGetDiceFaceCounts() {
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("coin, coin, diamond, monkey, diamond, monkey, skull, coin");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("coin"), "3 coin");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("diamond"), "2 diamond");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("monkey"), "2 monkey");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("skull"), "1 skull");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts(), "1 skull, 0 parrot, 0 sword, 2 diamond, 3 coin, 2 monkey");
+    }
+
 }
