@@ -65,4 +65,22 @@ public class DiceSet {
             }
         }
     }
+
+    public int countDiceFaces(String diceFigure) {
+        if (USE_STREAMS) {
+
+            long count = diceSet.stream()
+                    .filter(s -> s.getFigure().compareTo(diceFigure) == 0)
+                    .count();
+
+            return Long.valueOf(count).intValue();
+        } else {
+            int count = 0;
+
+            for (int i = 0; i < diceSet.size(); i++) {
+                count = count + (diceSet.get(i).getFigure().compareTo(diceFigure) == 0 ? 1 : 0);
+            }
+            return count;
+        }
+    }
 }

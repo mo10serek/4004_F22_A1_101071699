@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testSetRollOutcome">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testCountDiceFaces">
     <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -70,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRollNotFigure (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testCountDiceFaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -80,7 +80,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRollNotFigure" />
+      <option name="METHOD_NAME" value="testCountDiceFaces" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testCountDiceFaces" />
         <item itemvalue="JUnit.TestServerClasses.testSetRollOutcome" />
         <item itemvalue="JUnit.TestServerClasses.testSetDiceSet" />
         <item itemvalue="JUnit.TestServerClasses.setupSetOfDice" />
         <item itemvalue="JUnit.TestServerClasses" />
-        <item itemvalue="JUnit.TestServerClasses.testRollNotFigure (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +179,42 @@
       <option name="project" value="LOCAL" />
       <updated>1665347772536</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="U-TEST see if setDiceSet function is working to set the dice as a list">
+      <created>1665348204241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348204241</updated>
+    </task>
+    <task id="LOCAL-00008" summary="CODE implement setDiceSet">
+      <created>1665348252802</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348252802</updated>
+    </task>
+    <task id="LOCAL-00009" summary="U-TEST test to see if the roll and setRollOutCome functions work">
+      <created>1665348345733</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348345733</updated>
+    </task>
+    <task id="LOCAL-00010" summary="CODE - implement the roll and set roll outcome functions">
+      <created>1665348415395</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348415395</updated>
+    </task>
+    <task id="LOCAL-00011" summary="U-TEST test to see if countDiceFaces work">
+      <created>1665348481642</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348481642</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,6 +224,11 @@
     <MESSAGE value="CODE add a new function rollNotFigure" />
     <MESSAGE value="U-TEST test a new class and see if it has a set of dice of the same size as the max" />
     <MESSAGE value="CODE make a new class called diceSet" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new class called diceSet" />
+    <MESSAGE value="U-TEST see if setDiceSet function is working to set the dice as a list" />
+    <MESSAGE value="CODE implement setDiceSet" />
+    <MESSAGE value="U-TEST test to see if the roll and setRollOutCome functions work" />
+    <MESSAGE value="CODE - implement the roll and set roll outcome functions" />
+    <MESSAGE value="U-TEST test to see if countDiceFaces work" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test to see if countDiceFaces work" />
   </component>
 </project>
