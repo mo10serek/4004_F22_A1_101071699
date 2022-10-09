@@ -54,4 +54,15 @@ public class Dice {
             canRoll = true;
         }
     }
+
+    /**
+     * Roll randomly dice until a figure is any other than that specified in parameter
+     *
+     * @param face
+     */
+    public void rollNotFigure(String face) {
+        while (figure.equals(face)) {
+            roll();
+        }
+    }
 }
