@@ -36,23 +36,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testGetDiceFaceCounts">
-    <configuration name="TestServerClasses.setupSetOfDice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="setupSetOfDice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestServerClasses.testSetValuesInFCard">
     <configuration name="TestServerClasses.testCountDiceFaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -117,13 +101,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testSetValuesInFCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testSetValuesInFCard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testSetValuesInFCard" />
         <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCounts" />
         <item itemvalue="JUnit.TestServerClasses.testCountDiceFaces" />
         <item itemvalue="JUnit.TestServerClasses.testSetRollOutcome" />
         <item itemvalue="JUnit.TestServerClasses.testSetDiceSet" />
-        <item itemvalue="JUnit.TestServerClasses.setupSetOfDice" />
       </list>
     </recent_temporary>
   </component>
