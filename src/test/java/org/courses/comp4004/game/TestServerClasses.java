@@ -17,4 +17,16 @@ public class TestServerClasses {
         dice.setFigure("diamond");
         Assertions.assertEquals(dice.getFigure(), "diamond");
     }
+
+    //SetDice enable and disable a dice
+    @Test
+    @DisplayName("DisableAndEnableDice")
+    void disableAndEnableDice() {
+        Dice dice = new Dice("parrot");
+        Assertions.assertTrue(dice.getCanRoll());
+        dice.disableRollIfFigure("parrot");
+        Assertions.assertFalse(dice.getCanRoll());
+        dice.setCanRoll(true);
+        Assertions.assertTrue(dice.getCanRoll());
+    }
 }
