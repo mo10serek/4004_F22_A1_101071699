@@ -29,4 +29,8 @@ public class DiceSet {
     public List<Dice> getDiceSet() {
         return diceSet;
     }
+
+    public void setDiceSet(List<Dice> diceSet) {
+        this.diceSet = diceSet;
+    }
 }
