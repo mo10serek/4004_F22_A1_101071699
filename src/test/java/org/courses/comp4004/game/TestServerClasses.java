@@ -102,4 +102,17 @@ public class TestServerClasses {
         Assertions.assertEquals(diceSet.getDiceFacesCounts(), "1 skull, 0 parrot, 0 sword, 2 diamond, 3 coin, 2 monkey");
     }
 
+    //fCard class
+    @Test
+    @DisplayName("testSetValuesInFCard")
+    void testSetValuesInFCard() {
+        FCard fCard = new FCard("Coin", 8);
+        Assertions.assertEquals(fCard.getFigure(), "Coin");
+        Assertions.assertEquals(fCard.getValue(), 8);
+        fCard.setFigure("Diamond");
+        fCard.setValue(3);
+        Assertions.assertEquals(fCard.getFigure(), "Diamond");
+        Assertions.assertEquals(fCard.getValue(), 3);
+    }
+
 }

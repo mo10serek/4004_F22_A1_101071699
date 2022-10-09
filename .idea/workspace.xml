@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="CODE implement both functions, one for counting a spesific">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
-    </list>
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665348849011</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice">
+      <created>1665349384821</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665349384821</updated>
+    </task>
+    <task id="LOCAL-00015" summary="CODE implement both functions, one for counting a specific faces and another for counting all faces">
+      <created>1665349441572</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665349441572</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -248,6 +258,8 @@
     <MESSAGE value="U-TEST test to see if countDiceFaces work" />
     <MESSAGE value="CODE implement the countDiceFaces function to count the faces of the dices" />
     <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
+    <MESSAGE value="CODE implement both functions, one for counting a spesific" />
+    <MESSAGE value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
   </component>
 </project>
