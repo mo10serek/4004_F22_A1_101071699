@@ -38,4 +38,12 @@ public class TestServerClasses {
         dice.rollNotFigure("coin");
         Assertions.assertFalse(dice.getFigure().contains("coin"));
     }
+
+    //DiceSet Class
+    @Test
+    @DisplayName("setupSetOfDice")
+    void setupSetOfDice() {
+        DiceSet diceSet = new DiceSet();
+        Assertions.assertEquals(diceSet.getDiceSet().size(), diceSet.getMAX_SIZE());
+    }
 }
