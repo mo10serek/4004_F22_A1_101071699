@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestServerClasses {
 
     //Dice class
@@ -46,4 +49,19 @@ public class TestServerClasses {
         DiceSet diceSet = new DiceSet();
         Assertions.assertEquals(diceSet.getDiceSet().size(), diceSet.getMAX_SIZE());
     }
+
+    @Test
+    @DisplayName("testSetDiceSet")
+    void testSetDiceSet() {
+        DiceSet diceSet = new DiceSet();
+        List<Dice> dices = new ArrayList<Dice>();
+        dices.add(new Dice("coin"));
+        dices.add(new Dice("diamond"));
+        dices.add(new Dice("sword"));
+        diceSet.setDiceSet(dices);
+        Assertions.assertEquals(diceSet.getDiceSet().get(0).getFigure(), "coin");
+        Assertions.assertEquals(diceSet.getDiceSet().get(1).getFigure(), "diamond");
+        Assertions.assertEquals(diceSet.getDiceSet().get(2).getFigure(), "sword");
+    }
+
 }
