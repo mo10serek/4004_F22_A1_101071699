@@ -64,4 +64,20 @@ public class TestServerClasses {
         Assertions.assertEquals(diceSet.getDiceSet().get(2).getFigure(), "sword");
     }
 
+    @Test
+    @DisplayName("testSetRollOutcome")
+    void testSetRollOutcome() {
+        DiceSet diceSet = new DiceSet();
+        diceSet.roll();
+        diceSet.setRollOutcome("skull, parrot, sword, diamond, coin, monkey, parrot, skull");
+        Assertions.assertEquals(diceSet.getDiceSet().get(0).getFigure(), "skull");
+        Assertions.assertEquals(diceSet.getDiceSet().get(1).getFigure(), "parrot");
+        Assertions.assertEquals(diceSet.getDiceSet().get(2).getFigure(), "sword");
+        Assertions.assertEquals(diceSet.getDiceSet().get(3).getFigure(), "diamond");
+        Assertions.assertEquals(diceSet.getDiceSet().get(4).getFigure(), "coin");
+        Assertions.assertEquals(diceSet.getDiceSet().get(5).getFigure(), "monkey");
+        Assertions.assertEquals(diceSet.getDiceSet().get(6).getFigure(), "parrot");
+        Assertions.assertEquals(diceSet.getDiceSet().get(7).getFigure(), "skull");
+    }
+
 }
