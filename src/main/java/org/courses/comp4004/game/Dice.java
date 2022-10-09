@@ -43,4 +43,15 @@ public class Dice {
         figure = figures[(a == 6 ? 5 : a)];
 
     }
+
+    public void disableRollIfFigure(String figure){
+        if(this.figure.compareTo(figure) == 0){
+            canRoll = false;
+        }
+    }
+    public void enableRollIfFigure(String figure){
+        if(this.figure.compareTo(figure) == 0){
+            canRoll = true;
+        }
+    }
 }
