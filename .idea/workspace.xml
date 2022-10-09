@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="CODE implement both functions, one for counting a spesific">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testCountDiceFaces">
-    <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestServerClasses.testGetDiceFaceCounts">
     <configuration name="TestServerClasses.setupSetOfDice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -81,6 +68,22 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="METHOD_NAME" value="testCountDiceFaces" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServerClasses.testGetDiceFaceCounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testGetDiceFaceCounts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCounts" />
         <item itemvalue="JUnit.TestServerClasses.testCountDiceFaces" />
         <item itemvalue="JUnit.TestServerClasses.testSetRollOutcome" />
         <item itemvalue="JUnit.TestServerClasses.testSetDiceSet" />
         <item itemvalue="JUnit.TestServerClasses.setupSetOfDice" />
-        <item itemvalue="JUnit.TestServerClasses" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665348481642</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="CODE implement the countDiceFaces function to count the faces of the dices">
+      <created>1665348719068</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348719068</updated>
+    </task>
+    <task id="LOCAL-00013" summary="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice">
+      <created>1665348849011</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665348849011</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +246,8 @@
     <MESSAGE value="U-TEST test to see if the roll and setRollOutCome functions work" />
     <MESSAGE value="CODE - implement the roll and set roll outcome functions" />
     <MESSAGE value="U-TEST test to see if countDiceFaces work" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test to see if countDiceFaces work" />
+    <MESSAGE value="CODE implement the countDiceFaces function to count the faces of the dices" />
+    <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
   </component>
 </project>

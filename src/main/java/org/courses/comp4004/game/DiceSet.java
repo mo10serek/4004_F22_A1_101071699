@@ -83,4 +83,21 @@ public class DiceSet {
             return count;
         }
     }
+
+    public String getDiceFacesCounts(String diceFace) {
+        return countDiceFaces(diceFace) + " " + diceFace;
+    }
+
+    public String getDiceFacesCounts() {
+        String buffer;
+
+        buffer = countDiceFaces("skull") + " skull, "
+                + countDiceFaces("parrot") + " parrot, "
+                + countDiceFaces("sword") + " sword, "
+                + countDiceFaces("diamond") + " diamond, "
+                + countDiceFaces("coin") + " coin, "
+                + countDiceFaces("monkey") + " monkey";
+
+        return buffer;
+    }
 }
