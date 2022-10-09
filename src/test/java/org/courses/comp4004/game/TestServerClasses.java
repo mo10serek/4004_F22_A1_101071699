@@ -29,4 +29,13 @@ public class TestServerClasses {
         dice.setCanRoll(true);
         Assertions.assertTrue(dice.getCanRoll());
     }
+
+    //Roll randomly dice until a figure is any other than that specified in parameter
+    @Test
+    @DisplayName("testRollNotFigure")
+    public void testRollNotFigure() {
+        Dice dice = new Dice("parrot");
+        dice.rollNotFigure("coin");
+        Assertions.assertFalse(dice.getFigure().contains("coin"));
+    }
 }
