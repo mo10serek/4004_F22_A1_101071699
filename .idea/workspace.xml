@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testSetValuesInFCard">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testGetDeck">
     <configuration name="TestServerClasses.testCountDiceFaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -53,6 +56,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testGetDeck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testGetDeck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses.testGetDiceFaceCounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -64,22 +83,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="METHOD_NAME" value="testGetDiceFaceCounts" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServerClasses.testSetDiceSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testSetDiceSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testGetDeck" />
         <item itemvalue="JUnit.TestServerClasses.testSetValuesInFCard" />
         <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCounts" />
         <item itemvalue="JUnit.TestServerClasses.testCountDiceFaces" />
         <item itemvalue="JUnit.TestServerClasses.testSetRollOutcome" />
-        <item itemvalue="JUnit.TestServerClasses.testSetDiceSet" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665406147887</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="CODE create the new class FCardDeck that initialize the whole deck of current cards">
+      <created>1665407470789</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665407470789</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -293,6 +303,8 @@
     <MESSAGE value="U-TEST make a new class containing the deck of cards where each player can draw a card" />
     <MESSAGE value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
     <MESSAGE value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
+    <MESSAGE value="CODE create the new class FCardDeck that initialize the whole deck of current cards" />
+    <MESSAGE value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
   </component>
 </project>

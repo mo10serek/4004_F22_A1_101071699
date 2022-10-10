@@ -133,4 +133,16 @@ public class TestServerClasses {
         Assertions.assertEquals(fCardDeck.getDeck().get(34).getFigure(), "4swords");
     }
 
+    @Test
+    @DisplayName("testDraw")
+    void testDraw() {
+        FCardDeck fCardDeck = new FCardDeck();
+        FCard fCard = fCardDeck.draw();
+        Assertions.assertEquals(fCard.getFigure(), "Chest");
+        Assertions.assertEquals(fCard.getValue(), 0);
+        fCardDeck.shuffle();
+        fCard = fCardDeck.draw("Chest");
+        Assertions.assertEquals(fCard.getFigure(), "Chest");
+    }
+
 }
