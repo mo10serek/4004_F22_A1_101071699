@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/RuleResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/RuleResult.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +38,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testDraw">
-    <configuration name="TestServerClasses.testCountDiceFaces" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestServerClasses.SetRuleResult">
+    <configuration name="TestServerClasses.SetRuleResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -50,7 +49,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testCountDiceFaces" />
+      <option name="METHOD_NAME" value="SetRuleResult" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
         <item itemvalue="JUnit.TestServerClasses.testDraw" />
         <item itemvalue="JUnit.TestServerClasses.testGetDeck" />
         <item itemvalue="JUnit.TestServerClasses.testSetValuesInFCard" />
         <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCounts" />
-        <item itemvalue="JUnit.TestServerClasses.testCountDiceFaces" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +278,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665407470789</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled">
+      <created>1665407843036</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665407843036</updated>
+    </task>
+    <task id="LOCAL-00022" summary="CODE implement the two draw function, one for drawing from the top and a certain card and the shuffle">
+      <created>1665407958356</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665407958356</updated>
+    </task>
+    <task id="LOCAL-00023" summary="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters">
+      <created>1665408281952</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665408281952</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -305,6 +325,8 @@
     <MESSAGE value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
     <MESSAGE value="CODE create the new class FCardDeck that initialize the whole deck of current cards" />
     <MESSAGE value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
+    <MESSAGE value="CODE implement the two draw function, one for drawing from the top and a certain card and the shuffle" />
+    <MESSAGE value="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters" />
   </component>
 </project>
