@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScorePad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScorePad.java" afterDir="false" />
-    </list>
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -313,13 +311,31 @@
       <option name="project" value="LOCAL" />
       <updated>1665408656589</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="CODE add a new class that can save or add a score during a certain procedure">
+      <created>1665408748623</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665408748623</updated>
+    </task>
+    <task id="LOCAL-00027" summary="U-TEST test the rule that you cannot role less than 2 dice in the new class ScoreEvaluator">
+      <created>1665408925764</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665408925764</updated>
+    </task>
+    <task id="LOCAL-00028" summary="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise.">
+      <created>1665409300344</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665409300344</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE implement the disable and enable functions if it is in a certain face" />
-    <MESSAGE value="U-TEST test a new function: rollNotFigure for rolling to a specific face" />
-    <MESSAGE value="CODE add a new function rollNotFigure" />
     <MESSAGE value="U-TEST test a new class and see if it has a set of dice of the same size as the max" />
     <MESSAGE value="CODE make a new class called diceSet" />
     <MESSAGE value="U-TEST see if setDiceSet function is working to set the dice as a list" />
@@ -342,6 +358,9 @@
     <MESSAGE value="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters" />
     <MESSAGE value="CODE make a new class called RuleResult that store the boolean statement for true and false and the current score. This class is used to store the score and boolean expression of a certain rule ex # of a kind rule." />
     <MESSAGE value="U-TEST test the new class ScorePad that can save or add a current score" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new class ScorePad that can save or add a current score" />
+    <MESSAGE value="CODE add a new class that can save or add a score during a certain procedure" />
+    <MESSAGE value="U-TEST test the rule that you cannot role less than 2 dice in the new class ScoreEvaluator" />
+    <MESSAGE value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
   </component>
 </project>

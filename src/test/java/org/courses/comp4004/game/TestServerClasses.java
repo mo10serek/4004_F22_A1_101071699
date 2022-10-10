@@ -181,4 +181,18 @@ public class TestServerClasses {
         Assertions.assertEquals(ruleResult.toString(), "false  0");
     }
 
+    @Test
+    @DisplayName("testRulePlayerDieIf3Skulls")
+    void testRulePlayerDieIf3Skulls() {
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("none", 0);
+        diceSet.setRollOutcome("sword, skull, parrot");
+        RuleResult ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.toString(), "false  0");
+        diceSet.setRollOutcome("skull, skull, skull, sword");
+        ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.toString(), "true  0");
+    }
+
 }
