@@ -115,4 +115,22 @@ public class TestServerClasses {
         Assertions.assertEquals(fCard.getValue(), 3);
     }
 
+    //fCardDeck class
+    @Test
+    @DisplayName("testGetDeck")
+    void testGetDeck() {
+        FCardDeck fCardDeck = new FCardDeck();
+        Assertions.assertEquals(fCardDeck.getDeck().get(0).getFigure(), "Chest");
+        Assertions.assertEquals(fCardDeck.getDeck().get(5).getFigure(), "Sorceress");
+        Assertions.assertEquals(fCardDeck.getDeck().get(9).getFigure(), "Captain");
+        Assertions.assertEquals(fCardDeck.getDeck().get(13).getFigure(), "Monkey&Parrot");
+        Assertions.assertEquals(fCardDeck.getDeck().get(17).getFigure(), "Diamond");
+        Assertions.assertEquals(fCardDeck.getDeck().get(21).getFigure(), "Coin");
+        Assertions.assertEquals(fCardDeck.getDeck().get(24).getFigure(), "2skulls");
+        Assertions.assertEquals(fCardDeck.getDeck().get(27).getFigure(), "1skull");
+        Assertions.assertEquals(fCardDeck.getDeck().get(30).getFigure(), "2swords");
+        Assertions.assertEquals(fCardDeck.getDeck().get(32).getFigure(), "3swords");
+        Assertions.assertEquals(fCardDeck.getDeck().get(34).getFigure(), "4swords");
+    }
+
 }

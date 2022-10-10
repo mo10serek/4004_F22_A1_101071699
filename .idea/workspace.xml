@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +244,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665349441572</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="U-TEST test the entire class of FCard">
+      <created>1665349639639</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665349639639</updated>
+    </task>
+    <task id="LOCAL-00017" summary="CODE make the entire fCard class">
+      <created>1665349695554</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665349695554</updated>
+    </task>
+    <task id="LOCAL-00018" summary="U-TEST make a test case that test a class that is able to draw a card from a deck">
+      <created>1665362247073</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665362247073</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,6 +284,10 @@
     <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
     <MESSAGE value="CODE implement both functions, one for counting a spesific" />
     <MESSAGE value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
+    <MESSAGE value="U-TEST test the entire class of FCard" />
+    <MESSAGE value="CODE make the entire fCard class" />
+    <MESSAGE value="U-TEST make a new class containing the deck of cards where each player can draw a card" />
+    <MESSAGE value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
   </component>
 </project>
