@@ -1,6 +1,8 @@
 package org.courses.comp4004.game;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class FCardDeck {
@@ -33,5 +35,31 @@ public class FCardDeck {
         }
 
         return sameFCards;
+    }
+
+    public void shuffle(){
+        Collections.shuffle(deck);
+    }
+
+    FCard draw(){
+        return deck.size() > 0 ? deck.remove(0) : null;
+    }
+
+    FCard draw(String figure){
+        // Find the card and move it to the top (index 0)
+        FCard fCard = null;
+        int index = -1;
+
+        Iterator<FCard> iterator = deck.iterator();
+        while (iterator.hasNext()) {
+            fCard = iterator.next();
+            if (fCard.getFigure().compareTo(figure) == 0) {
+                index = deck.indexOf(fCard);
+                deck.remove(index);
+                break;
+            }
+        }
+
+        return fCard;
     }
 }
