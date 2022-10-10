@@ -81,4 +81,22 @@ public class Part1Test {
         Assertions.assertEquals(ruleResult.getScore(), 0);
         Assertions.assertTrue(ruleResult.isPass());
     }
+
+    // Row50Test	roll 1 skull, 2 parrots, 3 swords, 2 coins, reroll parrots get 2 coins
+    @Test
+    @DisplayName("Row50Test")
+    void row50Test() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, parrot, parrot, sword, sword, sword, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 500);
+
+        diceSet.setRollOutcome("skull, coin, coin, sword, sword, sword, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 1100);
+
+        diceSet.setRollOutcome("skull, coin, coin, coin, coin, coin, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 4800);
+    }
 }
