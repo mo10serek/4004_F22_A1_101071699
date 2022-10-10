@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +38,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRulePlayerCannotReRollLessThan2dice">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls">
     <configuration name="TestServerClasses.SetRuleResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -69,22 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testGetDeck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testGetDeck" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestServerClasses.testRulePlayerCannotReRollLessThan2dice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -96,6 +82,22 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="METHOD_NAME" value="testRulePlayerCannotReRollLessThan2dice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServerClasses.testRulePlayerDieIf3Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRulePlayerDieIf3Skulls" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerCannotReRollLessThan2dice" />
         <item itemvalue="JUnit.TestServerClasses.testScorePad" />
         <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
         <item itemvalue="JUnit.TestServerClasses.testDraw" />
-        <item itemvalue="JUnit.TestServerClasses.testGetDeck" />
       </list>
     </recent_temporary>
   </component>
@@ -332,11 +334,17 @@
       <option name="project" value="LOCAL" />
       <updated>1665409300344</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices">
+      <created>1665409760551</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665409760551</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test a new class and see if it has a set of dice of the same size as the max" />
     <MESSAGE value="CODE make a new class called diceSet" />
     <MESSAGE value="U-TEST see if setDiceSet function is working to set the dice as a list" />
     <MESSAGE value="CODE implement setDiceSet" />
@@ -361,6 +369,7 @@
     <MESSAGE value="CODE add a new class that can save or add a score during a certain procedure" />
     <MESSAGE value="U-TEST test the rule that you cannot role less than 2 dice in the new class ScoreEvaluator" />
     <MESSAGE value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
+    <MESSAGE value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
   </component>
 </project>
