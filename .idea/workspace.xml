@@ -38,7 +38,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.SetRuleResult">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testScorePad">
     <configuration name="TestServerClasses.SetRuleResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -87,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testGetDiceFaceCounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testScorePad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +97,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testGetDiceFaceCounts" />
+      <option name="METHOD_NAME" value="testScorePad" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testScorePad" />
         <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
         <item itemvalue="JUnit.TestServerClasses.testDraw" />
         <item itemvalue="JUnit.TestServerClasses.testGetDeck" />
         <item itemvalue="JUnit.TestServerClasses.testSetValuesInFCard" />
-        <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCounts" />
       </list>
     </recent_temporary>
   </component>

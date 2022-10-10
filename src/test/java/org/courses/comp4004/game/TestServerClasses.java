@@ -170,4 +170,15 @@ public class TestServerClasses {
         Assertions.assertEquals(scorePad.getTotalScore(), 75);
     }
 
+    //ScoreEvaluator class
+    @Test
+    @DisplayName("testRulePlayerCannotReRollLessThan2dice")
+    void testRulePlayerCannotReRollLessThan2dice() {
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice("sword");
+        Assertions.assertEquals(ruleResult.toString(), "true  0");
+        ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice("monkey, sword");
+        Assertions.assertEquals(ruleResult.toString(), "false  0");
+    }
+
 }
