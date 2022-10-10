@@ -145,4 +145,18 @@ public class TestServerClasses {
         Assertions.assertEquals(fCard.getFigure(), "Chest");
     }
 
+    //RuleResult class
+    @Test
+    @DisplayName("SetRuleResult")
+    void SetRuleResult() {
+        RuleResult ruleResult = new RuleResult(false, 0);
+        Assertions.assertFalse(ruleResult.isPass());
+        Assertions.assertEquals(ruleResult.getScore(), 0);
+        ruleResult.setPass(true);
+        ruleResult.setScore(50);
+        Assertions.assertTrue(ruleResult.isPass());
+        Assertions.assertEquals(ruleResult.getScore(), 50);
+        Assertions.assertEquals(ruleResult.toString(), "true  50");
+    }
+
 }
