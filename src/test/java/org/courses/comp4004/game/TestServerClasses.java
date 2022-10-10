@@ -159,4 +159,15 @@ public class TestServerClasses {
         Assertions.assertEquals(ruleResult.toString(), "true  50");
     }
 
+    //ScorePad class
+    @Test
+    @DisplayName("testScorePad")
+    void testScorePad() {
+        ScorePad scorePad = new ScorePad();
+        scorePad.setTotalScore(50);
+        Assertions.assertEquals(scorePad.getTotalScore(), 50);
+        scorePad.addScore(25);
+        Assertions.assertEquals(scorePad.getTotalScore(), 75);
+    }
+
 }
