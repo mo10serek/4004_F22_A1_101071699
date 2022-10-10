@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleSetOfIdenticalObjects">
+  <component name="RunManager" selected="JUnit.TestServerClasses">
     <configuration name="Part1Test.row45Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRuleSetOfIdenticalObjects" />
         <item itemvalue="JUnit.Part1Test.row46Test" />
         <item itemvalue="JUnit.Part1Test.row45Test" />
-        <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
       </list>
     </recent_temporary>
@@ -369,12 +369,17 @@
       <option name="project" value="LOCAL" />
       <updated>1665415165422</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="U-TEST test a new rule that calculate the score based on the set of identical faces">
+      <created>1665415603550</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415603550</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test to see if the roll and setRollOutCome functions work" />
-    <MESSAGE value="CODE - implement the roll and set roll outcome functions" />
     <MESSAGE value="U-TEST test to see if countDiceFaces work" />
     <MESSAGE value="CODE implement the countDiceFaces function to count the faces of the dices" />
     <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
@@ -398,7 +403,9 @@
     <MESSAGE value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
     <MESSAGE value="A-TEST check Row45 test to see if the program is correct checking the number of skulls" />
     <MESSAGE value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
+    <MESSAGE value="U-TEST test a new rule that it calculate the score based on the set of identical objects" />
+    <MESSAGE value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

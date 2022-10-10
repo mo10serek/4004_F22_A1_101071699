@@ -100,4 +100,17 @@ public class DiceSet {
 
         return buffer;
     }
+
+    public ArrayList<Integer> getDiceFacesCountsArray() {
+        ArrayList<Integer> buffer = new ArrayList<Integer>();
+
+        buffer.add(countDiceFaces("skull"));
+        buffer.add(countDiceFaces("parrot"));
+        buffer.add(countDiceFaces("sword"));
+        buffer.add(countDiceFaces("diamond"));
+        buffer.add(countDiceFaces("coin"));
+        buffer.add(countDiceFaces("monkey"));
+
+        return buffer;
+    }
 }

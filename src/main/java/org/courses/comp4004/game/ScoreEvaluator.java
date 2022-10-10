@@ -1,5 +1,7 @@
 package org.courses.comp4004.game;
 
+import java.util.ArrayList;
+
 public class ScoreEvaluator {
 
     /**
@@ -25,5 +27,29 @@ public class ScoreEvaluator {
         numberOfSkulls += diceSet.countDiceFaces("skull");
 
         return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
+    }
+
+    public RuleResult ruleSetOfIdenticalObjects(DiceSet diceSet, FCard fCard) {
+        ScorePad scorePad = new ScorePad();
+
+        ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArray();
+
+        for (int value : buffer) {
+            if (value == 3) {
+                scorePad.addScore(100);
+            } else if (value == 4) {
+                scorePad.addScore(200);
+            } else if (value == 5) {
+                scorePad.addScore(500);
+            } else if (value == 6) {
+                scorePad.addScore(1000);
+            } else if (value == 7) {
+                scorePad.addScore(2000);
+            } else if (value >= 8) {
+                scorePad.addScore(4000);
+            }
+        }
+
+        return new RuleResult(true, scorePad.getTotalScore());
     }
 }
