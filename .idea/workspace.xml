@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
-    </list>
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -265,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665362247073</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized.">
+      <created>1665406147887</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665406147887</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,6 +292,7 @@
     <MESSAGE value="CODE make the entire fCard class" />
     <MESSAGE value="U-TEST make a new class containing the deck of cards where each player can draw a card" />
     <MESSAGE value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
+    <MESSAGE value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
   </component>
 </project>
