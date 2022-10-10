@@ -101,6 +101,27 @@ public class DiceSet {
         return buffer;
     }
 
+    public ArrayList<Integer> getDiceFacesCountsArrayCard(FCard fCard) {
+        ArrayList<Integer> buffer = new ArrayList<Integer>();
+
+        buffer.add(countDiceFaces("skull"));
+        buffer.add(countDiceFaces("sword"));
+        buffer.add(countDiceFaces("monkey"));
+        buffer.add(countDiceFaces("parrot"));
+        if (fCard.getFigure().equals("Diamond")) {
+            buffer.add(countDiceFaces("diamond") + 1);
+        } else {
+            buffer.add(countDiceFaces("diamond"));
+        }
+        if (fCard.getFigure().equals("Coin")) {
+            buffer.add(countDiceFaces("coin") + 1);
+        } else {
+            buffer.add(countDiceFaces("coin"));
+        }
+
+        return buffer;
+    }
+
     public ArrayList<Integer> getDiceFacesCountsArray() {
         ArrayList<Integer> buffer = new ArrayList<Integer>();
 

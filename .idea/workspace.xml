@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="CODE adds a new rule that calculates the score based on the number of diamonds and gold faces it has and add a new function in DiceSet that includes the card of a coin or diamond in the calculations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -390,14 +391,38 @@
       <option name="project" value="LOCAL" />
       <updated>1665416038959</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="CODE make a function that calculates the player's score based on the number of faces on dices and the rules">
+      <created>1665416204445</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1665416204445</updated>
+    </task>
+    <task id="LOCAL-00038" summary="A-TEST check row 47 test to see if it's giving the correct score">
+      <created>1665416285984</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1665416285984</updated>
+    </task>
+    <task id="LOCAL-00039" summary="A-TEST check row 48 test to see if it's giving the correct score">
+      <created>1665416322252</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1665416322252</updated>
+    </task>
+    <task id="LOCAL-00040" summary="A-TEST check row 50 test to see if it's giving the correct score">
+      <created>1665416368042</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1665416368042</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
-    <MESSAGE value="CODE implement both functions, one for counting a spesific" />
-    <MESSAGE value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
-    <MESSAGE value="U-TEST test the entire class of FCard" />
     <MESSAGE value="CODE make the entire fCard class" />
     <MESSAGE value="U-TEST make a new class containing the deck of cards where each player can draw a card" />
     <MESSAGE value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
@@ -419,7 +444,11 @@
     <MESSAGE value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
     <MESSAGE value="CODE add a new rule that calculate the score based on the set of the same faces" />
     <MESSAGE value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
+    <MESSAGE value="CODE make a function that calculates the player's score based on the number of faces on dices and the rules" />
+    <MESSAGE value="A-TEST check row 47 test to see if it's giving the correct score" />
+    <MESSAGE value="A-TEST check row 48 test to see if it's giving the correct score" />
+    <MESSAGE value="A-TEST check row 50 test to see if it's giving the correct score" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST check row 50 test to see if it's giving the correct score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -433,6 +462,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
           <line>194</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

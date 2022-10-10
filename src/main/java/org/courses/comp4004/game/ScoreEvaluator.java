@@ -15,6 +15,9 @@ public class ScoreEvaluator {
         RuleResult ruleResultSetsOfIdenticalObjects  = ruleSetOfIdenticalObjects(diceSet, fCard);
         scorePad.addScore(ruleResultSetsOfIdenticalObjects.getScore());
 
+        RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSet, fCard);
+        scorePad.addScore(ruleDiamondsAndGold.getScore());
+
         score = scorePad.getTotalScore();
         return score;
     }
@@ -47,7 +50,7 @@ public class ScoreEvaluator {
     public RuleResult ruleSetOfIdenticalObjects(DiceSet diceSet, FCard fCard) {
         ScorePad scorePad = new ScorePad();
 
-        ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArray();
+        ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArrayCard(fCard);
 
         for (int value : buffer) {
             if (value == 3) {
@@ -64,6 +67,20 @@ public class ScoreEvaluator {
                 scorePad.addScore(4000);
             }
         }
+
+        return new RuleResult(true, scorePad.getTotalScore());
+    }
+
+    public RuleResult ruleDiamondsAndGold(DiceSet diceSet, FCard fCard) {
+        ScorePad scorePad = new ScorePad();
+
+        if (fCard.getFigure().contains("Coin")) {
+            scorePad.addScore(100);
+        } else if (fCard.getFigure().contains("Diamond")) {
+            scorePad.addScore(100);
+        }
+        scorePad.addScore(diceSet.countDiceFaces("coin") * 100);
+        scorePad.addScore(diceSet.countDiceFaces("diamond") * 100);
 
         return new RuleResult(true, scorePad.getTotalScore());
     }
