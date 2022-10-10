@@ -26,5 +26,22 @@ public class Part1Test {
         Assertions.assertEquals(ruleResult.getScore(), 0);
     }
 
+    // Row46Test	roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll 3 swords, get 2 skulls 1 sword  die
+    @Test
+    @DisplayName("Row46Test")
+    void row46Test() {
+        FCard fCard = new FCard("none", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, parrot, parrot, parrot, parrot, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 300);
+
+        diceSet.setRollOutcome("skull, parrot, parrot, parrot, parrot, skull, skull, sword");
+        RuleResult ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), 0);
+        Assertions.assertTrue(ruleResult.isPass());
+    }
+
 
 }
