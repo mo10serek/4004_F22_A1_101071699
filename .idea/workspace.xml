@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Part1Test.row45Test">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleSetOfIdenticalObjects">
     <configuration name="Part1Test.row45Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -51,6 +51,22 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
       <option name="METHOD_NAME" value="row45Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part1Test.row46Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
+      <option name="METHOD_NAME" value="row46Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,22 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRulePlayerCannotReRollLessThan2dice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRulePlayerCannotReRollLessThan2dice" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestServerClasses.testRulePlayerDieIf3Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -103,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testScorePad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testRuleSetOfIdenticalObjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -113,7 +113,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testScorePad" />
+      <option name="METHOD_NAME" value="testRuleSetOfIdenticalObjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRuleSetOfIdenticalObjects" />
+        <item itemvalue="JUnit.Part1Test.row46Test" />
         <item itemvalue="JUnit.Part1Test.row45Test" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
-        <item itemvalue="JUnit.TestServerClasses.testRulePlayerCannotReRollLessThan2dice" />
-        <item itemvalue="JUnit.TestServerClasses.testScorePad" />
       </list>
     </recent_temporary>
   </component>
@@ -355,12 +355,24 @@
       <option name="project" value="LOCAL" />
       <updated>1665410113513</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="A-TEST check Row45 test to see if the program is correct checking the number of skulls">
+      <created>1665410955813</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1665410955813</updated>
+    </task>
+    <task id="LOCAL-00033" summary="A-TEST test Row46 by checking what scores it is based on a certain number of dices">
+      <created>1665415165422</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415165422</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST see if setDiceSet function is working to set the dice as a list" />
-    <MESSAGE value="CODE implement setDiceSet" />
     <MESSAGE value="U-TEST test to see if the roll and setRollOutCome functions work" />
     <MESSAGE value="CODE - implement the roll and set roll outcome functions" />
     <MESSAGE value="U-TEST test to see if countDiceFaces work" />
@@ -384,6 +396,19 @@
     <MESSAGE value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
     <MESSAGE value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
     <MESSAGE value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
+    <MESSAGE value="A-TEST check Row45 test to see if the program is correct checking the number of skulls" />
+    <MESSAGE value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

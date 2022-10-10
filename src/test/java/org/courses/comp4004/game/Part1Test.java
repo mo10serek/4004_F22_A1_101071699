@@ -25,4 +25,6 @@ public class Part1Test {
         Assertions.assertTrue(ruleResult.isPass());
         Assertions.assertEquals(ruleResult.getScore(), 0);
     }
+
+
 }

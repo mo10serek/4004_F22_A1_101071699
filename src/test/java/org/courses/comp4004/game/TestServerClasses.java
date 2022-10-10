@@ -195,4 +195,15 @@ public class TestServerClasses {
         Assertions.assertEquals(ruleResult.toString(), "true  0");
     }
 
+    @Test
+    @DisplayName("ruleSetOfIdenticalObjects")
+    void testRuleSetOfIdenticalObjects() {
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("none", 0);
+        diceSet.setRollOutcome("sword, sword, sword, skull, parrot, parrot, parrot, parrot");
+        RuleResult ruleResult = scoreEvaluator.ruleSetOfIdenticalObjects(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), 300);
+    }
+
 }
