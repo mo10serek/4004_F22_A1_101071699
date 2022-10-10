@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Part1Test.row45Test">
+  <component name="RunManager" selected="JUnit.Part1Test.row46Test">
     <configuration name="Part1Test.row45Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part1Test.row46Test" />
         <item itemvalue="JUnit.Part1Test.row45Test" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRuleSetOfIdenticalObjects" />
-        <item itemvalue="JUnit.Part1Test.row46Test" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
       </list>
     </recent_temporary>
@@ -376,12 +376,24 @@
       <option name="project" value="LOCAL" />
       <updated>1665415603550</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="CODE add a new rule that calculate the score based on the set of the same faces">
+      <created>1665415917774</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1665415917774</updated>
+    </task>
+    <task id="LOCAL-00036" summary="A-TEST check if row 46 that check a certain number of faces gives a certain score">
+      <created>1665416038959</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1665416038959</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test to see if countDiceFaces work" />
-    <MESSAGE value="CODE implement the countDiceFaces function to count the faces of the dices" />
     <MESSAGE value="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice" />
     <MESSAGE value="CODE implement both functions, one for counting a spesific" />
     <MESSAGE value="CODE implement both functions, one for counting a specific faces and another for counting all faces" />
@@ -405,7 +417,9 @@
     <MESSAGE value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
     <MESSAGE value="U-TEST test a new rule that it calculate the score based on the set of identical objects" />
     <MESSAGE value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
+    <MESSAGE value="CODE add a new rule that calculate the score based on the set of the same faces" />
+    <MESSAGE value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -414,6 +428,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
           <line>22</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
+          <line>194</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

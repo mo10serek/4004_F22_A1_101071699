@@ -4,6 +4,21 @@ import java.util.ArrayList;
 
 public class ScoreEvaluator {
 
+    int getScore(FCard fCard, DiceSet diceSet) {
+        int score = 0;
+        ScorePad scorePad = new ScorePad();
+
+        if (rulePlayerDieIf3Skulls(diceSet, fCard).isPass()) {
+            return 0;
+        }
+
+        RuleResult ruleResultSetsOfIdenticalObjects  = ruleSetOfIdenticalObjects(diceSet, fCard);
+        scorePad.addScore(ruleResultSetsOfIdenticalObjects.getScore());
+
+        score = scorePad.getTotalScore();
+        return score;
+    }
+
     /**
      * Rule checks if player selected less than 2 dice to roll
      * @param diceFigures
