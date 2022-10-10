@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +39,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls">
-    <configuration name="TestServerClasses.SetRuleResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Part1Test.row45Test">
+    <configuration name="Part1Test.row45Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -48,14 +49,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="SetRuleResult" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
+      <option name="METHOD_NAME" value="row45Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testDraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +66,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testDraw" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part1Test.row45Test" />
+        <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerCannotReRollLessThan2dice" />
         <item itemvalue="JUnit.TestServerClasses.testScorePad" />
-        <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
-        <item itemvalue="JUnit.TestServerClasses.testDraw" />
       </list>
     </recent_temporary>
   </component>
@@ -341,11 +341,24 @@
       <option name="project" value="LOCAL" />
       <updated>1665409760551</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected">
+      <created>1665409959997</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1665409959997</updated>
+    </task>
+    <task id="LOCAL-00031" summary="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected">
+      <created>1665410113513</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1665410113513</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE make a new class called diceSet" />
     <MESSAGE value="U-TEST see if setDiceSet function is working to set the dice as a list" />
     <MESSAGE value="CODE implement setDiceSet" />
     <MESSAGE value="U-TEST test to see if the roll and setRollOutCome functions work" />
@@ -370,6 +383,7 @@
     <MESSAGE value="U-TEST test the rule that you cannot role less than 2 dice in the new class ScoreEvaluator" />
     <MESSAGE value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
     <MESSAGE value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
+    <MESSAGE value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
   </component>
 </project>
