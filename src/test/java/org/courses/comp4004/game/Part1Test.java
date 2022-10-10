@@ -59,4 +59,26 @@ public class Part1Test {
         Assertions.assertEquals(ruleResult.getScore(), 0);
         Assertions.assertTrue(ruleResult.isPass());
     }
+
+    // Row48Test	roll 1 skull, 4 parrots, 3 swords, hold parrots, reroll swords, get 1 skull 2 monkeys
+    @Test
+    @DisplayName("Row48Test")
+    void row48Test() {
+        FCard fCard = new FCard("none", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, parrot, parrot, parrot, parrot, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 300);
+
+        diceSet.setRollOutcome("skull, parrot, parrot, parrot, parrot, skull, monkey, monkey");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 200);
+
+        diceSet.setRollOutcome("skull, parrot, parrot, parrot, parrot, skull, skull, monkey");
+        System.out.println(scoreEvaluator.getScore(fCard, diceSet));
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 0);
+        RuleResult ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), 0);
+        Assertions.assertTrue(ruleResult.isPass());
+    }
 }
