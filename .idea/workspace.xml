@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,27 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00054" summary="CODE - create the init function">
-      <created>1666891782225</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1666891782225</updated>
-    </task>
-    <task id="LOCAL-00055" summary="U-TEST make a new class that process the commands of the player and give the status of the game">
-      <created>1666892069756</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1666892069756</updated>
-    </task>
-    <task id="LOCAL-00056" summary="U-TEST test the new class &quot;PlayerStreams&quot; to for the players input and output">
-      <created>1666895176471</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1666895176471</updated>
     </task>
     <task id="LOCAL-00057" summary="CODE implement the PlayerStreams class and have the output and input stream">
       <created>1666895295612</created>
@@ -481,7 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666908749277</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="U-TEST implement a function roll in the dice set to roll the certain faces">
+      <created>1666909368660</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1666909368660</updated>
+    </task>
+    <task id="LOCAL-00104" summary="CODE implement a roll function to select the faces you want to roll">
+      <created>1666909505784</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1666909505784</updated>
+    </task>
+    <task id="LOCAL-00105" summary="U-TEST implement a function reroll in the dice set to reroll certain faces">
+      <created>1666909621274</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1666909621274</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 63." />
-    <MESSAGE value="A-TEST implement the test case from row 64." />
-    <MESSAGE value="CODE Implement a rule function that add 500 point to your score if all the dice give you points." />
     <MESSAGE value="A-TEST implement the test case from row 65." />
     <MESSAGE value="A-TEST implement the test case from row 66." />
     <MESSAGE value="A-TEST implement the test case from row 67." />
@@ -521,7 +518,10 @@
     <MESSAGE value="CODE - implement the can hold boolean varible" />
     <MESSAGE value="U-TEST implement the test case to enable and disable all dices" />
     <MESSAGE value="CODE implement function in the dice set class to enable and disable all dices" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement function in the dice set class to enable and disable all dices" />
+    <MESSAGE value="U-TEST implement a function roll in the dice set to roll the certain faces" />
+    <MESSAGE value="CODE implement a roll function to select the faces you want to roll" />
+    <MESSAGE value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

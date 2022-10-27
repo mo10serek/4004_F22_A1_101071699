@@ -215,4 +215,58 @@ public class DiceSet {
         }
         return status[0].length() != 0 ? status[0] = "Error: " + status[0] : "";
     }
+
+    /**
+     * It is used for subsequent rerolls;
+     * 1. No skull face from the roll can be used in subsequent rolls; player has to put them aside
+     * 2. No less than 2 dice must be used in the subsequent rerolls
+     * @param diceFigures
+     */
+    public String reroll(String diceFigures){
+        final boolean TRACEON    = true;
+        final String[] status = {"" };
+        String[] figureToRoll = {""};
+        String[] figureArray = diceFigures.trim().split("\\s*,\\s*");
+        List<String> figureList = new ArrayList<String>();
+        Collections.addAll(figureList, figureArray);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult;
+
+        Map<String, Long> figureCount = figureList.stream().collect(Collectors.groupingBy(figure -> figure, Collectors.counting()));
+        Map<String, Long> figureDiceSetCount = diceSet.stream().collect(Collectors.groupingBy(dice -> dice.getFigure(), Collectors.counting()));
+
+        // Check the preconditions for re-roll
+        // 1. check number of parameters for the rules
+        // 2. it is not allowable to re-roll skulls (skulls cannot be re-rolled)
+        ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice(diceFigures);
+        status[0] = status[0] + ruleResult.getMessage();
+        if(status[0].length() != 0){
+            return status[0];
+        }
+
+
+        if (status[0].length() == 0) {  //no errors
+            //Enable roll of all dies that could be skull from the previous player
+            //disableAllDiceRoll();
+
+            diceSet.stream().
+                    forEach(dice -> {
+                        //Returns: This method returns new remapped value associated with the specified key, or null if mapping returns null.
+                        figureToRoll[0] = dice.getFigure();
+                        if ( !isNull(figureCount.get(dice.getFigure())) && figureCount.get(dice.getFigure()).intValue() != 0) {
+                            // A die with a figure matching figure specified in the re-roll selection has been found in the diceSet;
+                            //
+                            if (!isNull(figureCount.computeIfPresent(dice.getFigure(), (key, oldValue) -> oldValue - 1))) {
+                                if(dice.getCanRoll() && !dice.getCanHold()) {
+                                    dice.roll();
+                                    dice.disableRollIfFigure("skull");
+                                }
+                            }
+                        }else{
+                            dice.setCanRoll(false);
+                        }
+                    });
+        }
+        return status[0];
+    }
 }
