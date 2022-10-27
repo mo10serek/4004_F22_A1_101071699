@@ -196,4 +196,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row55Test	score 2 sets of 3 (monkey, parrots) in RTS using 2 rolls   (SC 300)
+    @Test
+    @DisplayName("row55")
+    void row55() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("diamond, diamond, diamond, skull, skull, monkey, sword, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 500);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
