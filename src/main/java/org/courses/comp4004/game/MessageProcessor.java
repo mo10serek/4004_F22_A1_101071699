@@ -8,6 +8,7 @@ public class MessageProcessor {
     private FCardDeck fCardDeck = null;
     private DiceSet diceSet = null;
     private ScoreEvaluator scoreEvaluator = null;
+    private PlayerDescriptor interactingPlayerDescriptor = null;
     private LineParser lineParser = null;
     private List<PlayerDescriptor> playerDescriptorList  = null;
     private boolean RIGID = false;
@@ -18,6 +19,14 @@ public class MessageProcessor {
     }
 
     public boolean getRIGID() { return RIGID; }
+
+    public PlayerDescriptor getInteractingPlayerDescriptor() {
+        return interactingPlayerDescriptor;
+    }
+
+    public void setInteractingPlayerDescriptor(PlayerDescriptor interactingPlayerDescriptor) {
+        this.interactingPlayerDescriptor = interactingPlayerDescriptor;
+    }
 
     public MessageProcessor(FCardDeck fCardDeck, DiceSet diceSet, ScoreEvaluator scoreEvaluator, LineParser lineParser, List<PlayerDescriptor> playerDescriptorList) {
         this.fCardDeck = fCardDeck;
