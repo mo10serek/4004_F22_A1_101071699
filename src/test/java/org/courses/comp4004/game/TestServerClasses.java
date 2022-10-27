@@ -276,14 +276,6 @@ public class TestServerClasses {
     @Test
     @DisplayName("testPlayerStream")
     void testPlayerStream() throws IOException {
-        Path p = Paths.get(FileSystems.getDefault().getPath("").toAbsolutePath().toString() + File.separator + "test");
-        String path = "";
-        if(!Files.exists(p)){
-            path =  Files.createDirectory(p).toString();
-        }else{
-            path = p.toString();
-        }
-
         PrintWriter out = new PrintWriter("text.txt");
         FileReader fr =new FileReader("text.txt");
         BufferedReader in = new BufferedReader(fr);
@@ -292,7 +284,26 @@ public class TestServerClasses {
 
         Assertions.assertEquals(playerStreams.getIn(), in);
         Assertions.assertEquals(playerStreams.getOut(), out);
+    }
 
+    @Test
+    @DisplayName("test Player Destriptor")
+    void testPlayerDescriptor() throws FileNotFoundException {
+        PrintWriter out = new PrintWriter("text.txt");
+        FileReader fr =new FileReader("text.txt");
+        BufferedReader in = new BufferedReader(fr);
+
+        PlayerStreams playerStreams = new PlayerStreams(out, in);
+        ScorePad scorePad = new ScorePad();
+        DiceSet diceSet = new DiceSet();
+        FCard drawnFCard = new FCard("Coin", 0);
+        PlayerDescriptor playerDescriptor = new PlayerDescriptor(playerStreams, scorePad);
+        Assertions.assertEquals(playerDescriptor.toString(), "PlayerDescriptor{playerStreams=" + playerStreams +
+                ", scorePad=" + scorePad + '}');
+        playerDescriptor.setDiceSet(diceSet);
+        playerDescriptor.setDrawnFCard(drawnFCard);
+        Assertions.assertEquals(playerDescriptor.getDrawnFCard(), drawnFCard);
+        Assertions.assertEquals(playerDescriptor.getDiceSet(), diceSet);
     }
 
 

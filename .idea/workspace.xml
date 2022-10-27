@@ -137,20 +137,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00007" summary="U-TEST see if setDiceSet function is working to set the dice as a list">
-      <created>1665348204241</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348204241</updated>
-    </task>
-    <task id="LOCAL-00008" summary="CODE implement setDiceSet">
-      <created>1665348252802</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348252802</updated>
-    </task>
     <task id="LOCAL-00009" summary="U-TEST test to see if the roll and setRollOutCome functions work">
       <created>1665348345733</created>
       <option name="number" value="00009" />
@@ -480,13 +466,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666892069756</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="U-TEST test the new class &quot;PlayerStreams&quot; to for the players input and output">
+      <created>1666895176471</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1666895176471</updated>
+    </task>
+    <task id="LOCAL-00057" summary="CODE implement the PlayerStreams class and have the output and input stream">
+      <created>1666895295612</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1666895295612</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST check Row45 test to see if the program is correct checking the number of skulls" />
-    <MESSAGE value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
-    <MESSAGE value="U-TEST test a new rule that it calculate the score based on the set of identical objects" />
     <MESSAGE value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
     <MESSAGE value="CODE add a new rule that calculate the score based on the set of the same faces" />
     <MESSAGE value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
@@ -509,7 +517,10 @@
     <MESSAGE value="U-TEST test the init function, so it converts a string into an array of faces" />
     <MESSAGE value="CODE - create the init function" />
     <MESSAGE value="U-TEST make a new class that process the commands of the player and give the status of the game" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST make a new class that process the commands of the player and give the status of the game" />
+    <MESSAGE value="U-TEST test the new class &quot;PlayerStreams&quot; to for the players input and output" />
+    <MESSAGE value="U-TEST implement the PlayerStreams class and have the output and input stream" />
+    <MESSAGE value="CODE implement the PlayerStreams class and have the output and input stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the PlayerStreams class and have the output and input stream" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
