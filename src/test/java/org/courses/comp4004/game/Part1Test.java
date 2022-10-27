@@ -396,4 +396,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row69Test	score a set of 3 diamonds over 2 rolls (SC 500)
+    @Test
+    @DisplayName("row69")
+    void row69() {
+        FCard fCard = new FCard("Coin",0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, skull, skull, sword, sword, diamond, parrot");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("diamond, diamond, skull, skull, sword, sword, diamond, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 500);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
