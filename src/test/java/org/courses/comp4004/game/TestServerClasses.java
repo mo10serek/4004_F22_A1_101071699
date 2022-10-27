@@ -155,6 +155,15 @@ public class TestServerClasses {
         Assertions.assertEquals(fCard.getFigure(), "Chest");
     }
 
+    //PostStatus class
+    @Test
+    @DisplayName("testPostStatus")
+    void testPostStatus() {
+        PostStatus postStatus = new PostStatus("this is a test", true);
+        Assertions.assertEquals(postStatus.outMsg, "this is a test");
+        Assertions.assertTrue(postStatus.success);
+    }
+
     //RuleResult class
     @Test
     @DisplayName("SetRuleResult")

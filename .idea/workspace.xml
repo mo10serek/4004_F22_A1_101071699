@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -452,12 +451,24 @@
       <option name="project" value="LOCAL" />
       <updated>1666888522042</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="REFACTOR - fix the test cases">
+      <created>1666890188830</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1666890188830</updated>
+    </task>
+    <task id="LOCAL-00047" summary="U-TEST test the GetDiceFaceCount function to see if it works">
+      <created>1666890331488</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1666890331488</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
-    <MESSAGE value="CODE implement the two draw function, one for drawing from the top and a certain card and the shuffle" />
     <MESSAGE value="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters" />
     <MESSAGE value="CODE make a new class called RuleResult that store the boolean statement for true and false and the current score. This class is used to store the score and boolean expression of a certain rule ex # of a kind rule." />
     <MESSAGE value="U-TEST test the new class ScorePad that can save or add a current score" />
@@ -481,7 +492,9 @@
     <MESSAGE value="U-TEST - test the new parameter called message in the rule result class" />
     <MESSAGE value="CODE - implement the parameter message and put setters and getters" />
     <MESSAGE value="REFACTOR - put a logs system in the test case part one" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - put a logs system in the test case part one" />
+    <MESSAGE value="REFACTOR - fix the test cases" />
+    <MESSAGE value="U-TEST test the GetDiceFaceCount function to see if it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the GetDiceFaceCount function to see if it works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -492,19 +505,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
-          <line>194</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
           <line>136</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
-          <line>193</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
