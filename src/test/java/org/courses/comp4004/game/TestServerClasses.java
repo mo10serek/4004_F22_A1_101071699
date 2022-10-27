@@ -373,5 +373,24 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, Commands.inform);
     }
 
+    @Test
+    @DisplayName("testRIGID")
+    void testRIGID() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+
+        Assertions.assertFalse(messageProcessor.getRIGID());
+        messageProcessor.turnOnRIGID();
+        Assertions.assertTrue(messageProcessor.getRIGID());
+
+
+    }
+
 
 }

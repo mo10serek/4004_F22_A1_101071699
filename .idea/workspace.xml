@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="U-TEST test a new command which is message Inform">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testModeServerBroadcasting">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testMessageInform">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -50,22 +51,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part1Test.row70" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row70" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,6 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testMessageInform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testMessageInform" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses.testModeServerBroadcasting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -120,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testMessageInform" />
         <item itemvalue="JUnit.TestServerClasses.testModeServerBroadcasting" />
         <item itemvalue="JUnit.Part1Test" />
         <item itemvalue="JUnit.Part1Test.row72" />
         <item itemvalue="JUnit.Part1Test.row71" />
-        <item itemvalue="JUnit.Part1Test.row70" />
       </list>
     </recent_temporary>
   </component>
@@ -136,27 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00040" summary="A-TEST check row 50 test to see if it's giving the correct score">
-      <created>1665416368042</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1665416368042</updated>
-    </task>
-    <task id="LOCAL-00041" summary="REFACTOR - add a logs' system, so I can save the print-out messages">
-      <created>1666887772708</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1666887772708</updated>
-    </task>
-    <task id="LOCAL-00042" summary="REFACTOR - rename the functions of the test cases">
-      <created>1666888260234</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1666888260234</updated>
     </task>
     <task id="LOCAL-00043" summary="U-TEST - test the new parameter called message in the rule result class">
       <created>1666888327032</created>
@@ -480,7 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666905746650</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="CODE implement the new command which is Broadcasting">
+      <created>1666906020989</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1666906020989</updated>
+    </task>
+    <task id="LOCAL-00090" summary="U-TEST test a new command which is message Inform">
+      <created>1666906169824</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1666906169824</updated>
+    </task>
+    <task id="LOCAL-00091" summary="CODE implement the new command which is inform">
+      <created>1666906252764</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1666906252765</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST make a test case base in row 52" />
-    <MESSAGE value="CODE double the score when you have the captain card" />
-    <MESSAGE value="A-TEST implement the test case from row 53" />
     <MESSAGE value="A-TEST implement the test case from row 53." />
     <MESSAGE value="A-TEST implement the test case from row 54." />
     <MESSAGE value="A-TEST implement the test case from row 55." />
@@ -520,7 +518,10 @@
     <MESSAGE value="A-TEST implement the test case from row 71." />
     <MESSAGE value="A-TEST implement the test case from row 72." />
     <MESSAGE value="U-TEST test a new command which is mode Broadcasting" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test a new command which is mode Broadcasting" />
+    <MESSAGE value="CODE implement the new command which is Broadcasting" />
+    <MESSAGE value="U-TEST test a new command which is message Inform" />
+    <MESSAGE value="CODE implement the new command which is inform" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the new command which is inform" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
