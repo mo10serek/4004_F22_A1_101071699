@@ -53,5 +53,26 @@ public class Part2Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row83Test         over several rolls: 2 monkeys, 1 parrot, 2 coins, 1 diamond, 2 swords         SC 400
+    @Test
+    @DisplayName("row83")
+    void row83() {
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("Monkey&Parrot", 0);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, sword, sword, coin, diamond, parrot, diamond, coin");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, parrot, coin, coin, sword, diamond, diamond");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, parrot, coin, coin, sword, sword, diamond");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
+    
+
 
 }
