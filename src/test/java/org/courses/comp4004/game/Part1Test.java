@@ -320,4 +320,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row64Test	score set of 8 coins on first roll (SC 5400)  seq of 8 + 9 coins(FC is coin) +  full chest
+    @Test
+    @DisplayName("row64")
+    void row64() {
+        FCard fCard = new FCard("Coin", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("coin, coin, coin, coin, coin, coin, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 5400);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
