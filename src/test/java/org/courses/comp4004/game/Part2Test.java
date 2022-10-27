@@ -25,6 +25,13 @@ public class Part2Test {
             path = p.toString();
         }
     }
+    @BeforeEach
+    void createLogFile(TestInfo testInfo) throws FileNotFoundException {
+        String line;
+        PostStatus postStatus;
+
+        log = new PrintStream(new FileOutputStream(path + "\\" + testInfo.getDisplayName()));
+    }
 
     @AfterEach
     void closeLogFile() throws IOException {

@@ -53,10 +53,36 @@ public class ScoreEvaluator {
         return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
     }
 
+    public ArrayList<Integer> getDiceFacesCountsArrayCard(DiceSet diceSet, FCard fCard) {
+        ArrayList<Integer> buffer = new ArrayList<Integer>();
+
+        buffer.add(diceSet.countDiceFaces("skull"));
+        buffer.add(diceSet.countDiceFaces("sword"));
+        if (fCard.getFigure().equals("Monkey&Parrot")) {
+            buffer.add(diceSet.countDiceFaces("monkey") +
+                    diceSet.countDiceFaces("parrot"));
+        } else {
+            buffer.add(diceSet.countDiceFaces("monkey"));
+            buffer.add(diceSet.countDiceFaces("parrot"));
+        }
+        if (fCard.getFigure().equals("Diamond")) {
+            buffer.add(diceSet.countDiceFaces("diamond") + 1);
+        } else {
+            buffer.add(diceSet.countDiceFaces("diamond"));
+        }
+        if (fCard.getFigure().equals("Coin")) {
+            buffer.add(diceSet.countDiceFaces("coin") + 1);
+        } else {
+            buffer.add(diceSet.countDiceFaces("coin"));
+        }
+
+        return buffer;
+    }
+
     public RuleResult ruleSetOfIdenticalObjects(DiceSet diceSet, FCard fCard) {
         ScorePad scorePad = new ScorePad();
 
-        ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArrayCard(fCard);
+        ArrayList<Integer> buffer = getDiceFacesCountsArrayCard(diceSet, fCard);
 
         for (int value : buffer) {
             if (value == 3) {
