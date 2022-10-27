@@ -348,4 +348,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row66Test	score set of 8 swords on first roll and FC is captain (SC 4500x2 = 9000) since full chest
+    @Test
+    @DisplayName("row66")
+    void row66() {
+        FCard fCard = new FCard("Captain", 00);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("sword, sword, sword, sword, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 9000);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }

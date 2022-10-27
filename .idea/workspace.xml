@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part1Test.row65">
+  <component name="RunManager" selected="JUnit.Part1Test.row66">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -65,22 +66,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
       <option name="METHOD_NAME" value="row62" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part1Test.row63" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row63" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,13 +103,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part1Test.row66" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
+      <option name="METHOD_NAME" value="row66" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part1Test.row66" />
         <item itemvalue="JUnit.Part1Test.row65" />
         <item itemvalue="JUnit.Part1Test" />
         <item itemvalue="JUnit.Part1Test.row64" />
         <item itemvalue="JUnit.Part1Test.row62" />
-        <item itemvalue="JUnit.Part1Test.row63" />
       </list>
     </recent_temporary>
   </component>
@@ -136,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00030" summary="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected">
-      <created>1665409959997</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1665409959997</updated>
-    </task>
-    <task id="LOCAL-00031" summary="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected">
-      <created>1665410113513</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1665410113513</updated>
     </task>
     <task id="LOCAL-00032" summary="A-TEST check Row45 test to see if the program is correct checking the number of skulls">
       <created>1665410955813</created>
@@ -480,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666903633230</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="CODE Implement a rule function that add 500 point to your score if all the dice give you points.">
+      <created>1666903931087</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1666903931087</updated>
+    </task>
+    <task id="LOCAL-00080" summary="A-TEST implement the test case from row 65.">
+      <created>1666904002461</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904002461</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST implement the PlayerStreams class and have the output and input stream" />
-    <MESSAGE value="CODE implement the PlayerStreams class and have the output and input stream" />
     <MESSAGE value="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card." />
     <MESSAGE value="CODE - make the player Descriptor class" />
     <MESSAGE value="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game" />
@@ -520,7 +519,9 @@
     <MESSAGE value="A-TEST implement the test case from row 62." />
     <MESSAGE value="A-TEST implement the test case from row 63." />
     <MESSAGE value="A-TEST implement the test case from row 64." />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 64." />
+    <MESSAGE value="CODE Implement a rule function that add 500 point to your score if all the dice give you points." />
+    <MESSAGE value="A-TEST implement the test case from row 65." />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 65." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
