@@ -55,6 +55,12 @@ public class MessageProcessor {
 
                 toReturn = new PostStatus(Commands.inform + "", true);
 
+            }else if(cmd.equalsIgnoreCase(Commands.draw)) {//"draw"; //  <null> (player requests drawing the card form Fortune Card deck)
+
+                FCard fCard = fCardDeck.draw(); //fCardDeck.draw();
+                interactingPlayerDescriptor.setDrawnFCard(fCard);
+                String fCardFigure = fCard.getFigure();
+                toReturn = new PostStatus(Commands.outcome + " " + fCardFigure, true);
             }
         } else {
             msg = "unknown command";
