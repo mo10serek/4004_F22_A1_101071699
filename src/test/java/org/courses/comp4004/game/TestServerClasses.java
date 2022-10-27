@@ -436,4 +436,17 @@ public class TestServerClasses {
             Assertions.assertTrue(diceSet.getDiceSet().get(i).getCanRoll());
     }
 
+    @Test
+    @DisplayName("testRollsInSet")
+    void testRollsInSet() {
+        DiceSet diceSet = new DiceSet();
+
+        diceSet.setRollOutcome("skull, monkey, parrot, monkey, sword, sword, skull, coin");
+
+        String message = diceSet.roll("parrot, monkey");
+        System.out.println(message);
+        Assertions.assertEquals(message, "");
+
+    }
+
 }
