@@ -88,4 +88,25 @@ public class MessageProcessor {
         }
         return toReturn;
     }
+
+    public PostStatus scoreNormal() {
+        if (interactingPlayerDescriptor.getDrawnFCard() == null) {
+            msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
+            return new PostStatus(Commands.roll
+                    + msg, true);
+        }
+        int score = scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
+
+        msg = "the player got a score of " + score + " points from this dice set";
+        boolean success = true;
+
+        PostStatus toReturn = new PostStatus(Commands.outcome
+                + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                + ", " + diceSet.toString()
+                + ", " + score
+                + ", " + msg,
+                success);
+        return toReturn;
+    }
+
 }
