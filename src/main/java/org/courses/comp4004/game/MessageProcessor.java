@@ -29,6 +29,11 @@ public class MessageProcessor {
 
                 toReturn = new PostStatus(Commands.modeInteracting + "", true);
 
+            } else if(cmd.equalsIgnoreCase(Commands.modeServerBroadcasting)) {//"mode.broadcasting"; //  <null>
+
+                // only for server but not used
+                toReturn = new PostStatus(Commands.modeServerBroadcasting + "", true);
+
             }
         } else {
             msg = "unknown command";

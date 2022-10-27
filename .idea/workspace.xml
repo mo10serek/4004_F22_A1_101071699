@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part1Test">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testModeServerBroadcasting">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -51,22 +50,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part1Test.row69" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row69" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,13 +102,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testModeServerBroadcasting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testModeServerBroadcasting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testModeServerBroadcasting" />
         <item itemvalue="JUnit.Part1Test" />
         <item itemvalue="JUnit.Part1Test.row72" />
         <item itemvalue="JUnit.Part1Test.row71" />
         <item itemvalue="JUnit.Part1Test.row70" />
-        <item itemvalue="JUnit.Part1Test.row69" />
       </list>
     </recent_temporary>
   </component>
@@ -137,20 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00038" summary="A-TEST check row 47 test to see if it's giving the correct score">
-      <created>1665416285984</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1665416285984</updated>
-    </task>
-    <task id="LOCAL-00039" summary="A-TEST check row 48 test to see if it's giving the correct score">
-      <created>1665416322252</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1665416322252</updated>
     </task>
     <task id="LOCAL-00040" summary="A-TEST check row 50 test to see if it's giving the correct score">
       <created>1665416368042</created>
@@ -481,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666904184223</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="A-TEST implement the test case from row 72.">
+      <created>1666905517355</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1666905517355</updated>
+    </task>
+    <task id="LOCAL-00088" summary="U-TEST test a new command which is mode Broadcasting">
+      <created>1666905746650</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1666905746650</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE make a new command called Interacting" />
-    <MESSAGE value="A-TEST test the test case in row 52" />
     <MESSAGE value="A-TEST make a test case base in row 52" />
     <MESSAGE value="CODE double the score when you have the captain card" />
     <MESSAGE value="A-TEST implement the test case from row 53" />
@@ -521,7 +518,9 @@
     <MESSAGE value="A-TEST implement the test case from row 69." />
     <MESSAGE value="A-TEST implement the test case from row 70." />
     <MESSAGE value="A-TEST implement the test case from row 71." />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 71." />
+    <MESSAGE value="A-TEST implement the test case from row 72." />
+    <MESSAGE value="U-TEST test a new command which is mode Broadcasting" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test a new command which is mode Broadcasting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
