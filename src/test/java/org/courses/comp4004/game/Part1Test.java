@@ -306,4 +306,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row63Test	score set of 7 parrots on first roll (SC 2100)
+    @Test
+    @DisplayName("row63")
+    void row63() {
+        FCard fCard = new FCard("Diamond", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("parrot, parrot, parrot, parrot, parrot, parrot, parrot, skull");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 2100);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
