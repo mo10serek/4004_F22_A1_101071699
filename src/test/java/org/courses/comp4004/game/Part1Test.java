@@ -224,4 +224,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row57Test	score a set of 4 coins correctly (i.e., 200 + 400 points) with FC is a diamond (SC 700)
+    @Test
+    @DisplayName("row57")
+    void row57() {
+        FCard fCard = new FCard("Diamond", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("sword, sword, sword, parrot, parrot, parrot, parrot, skull");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 400);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
