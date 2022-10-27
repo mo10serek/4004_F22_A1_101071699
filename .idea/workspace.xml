@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00047" summary="U-TEST test the GetDiceFaceCount function to see if it works">
-      <created>1666890331488</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1666890331488</updated>
     </task>
     <task id="LOCAL-00048" summary="U-TEST test the new class PostStatus to have the status of the game, players' score, dice rolls, card, and status">
       <created>1666890434989</created>
@@ -482,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666907260086</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="U-TEST making a test case to see if the command roll is able to roll the dice set.">
+      <created>1666907688459</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1666907688459</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 5." />
-    <MESSAGE value="A-TEST implement the test case from row 57." />
     <MESSAGE value="A-TEST implement the test case from row 58." />
     <MESSAGE value="A-TEST implement the test case from row 59." />
     <MESSAGE value="A-TEST implement the test case from row 60." />
@@ -522,7 +519,9 @@
     <MESSAGE value="CODE implemented the RIGID boolean variable." />
     <MESSAGE value="U-TEST implement the test case that check if it stores the current player descriptor." />
     <MESSAGE value="CODE implement the interactingPlayerDescriptor varible" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the interactingPlayerDescriptor varible" />
+    <MESSAGE value="U-TEST making a test case to roll the dice" />
+    <MESSAGE value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

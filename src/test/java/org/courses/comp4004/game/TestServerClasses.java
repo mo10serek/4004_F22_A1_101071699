@@ -410,22 +410,16 @@ public class TestServerClasses {
     }
 
     @Test
-    @DisplayName("testRoll")
-    void testRoll() {
-        FCardDeck fCardDeck = new FCardDeck();
-        DiceSet diceSet = new DiceSet();
-        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
-        LineParser lineParser = new LineParser();
-        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+    @DisplayName("testDiceCanHoldOrNot")
+    void testDiceCanHoldOrNot() {
+        Dice dice = new Dice();
 
-        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
-                playerDescriptorList);
-
-        PostStatus toReturn = messageProcessor.ProcessMessage("roll");
-        Assertions.assertTrue(toReturn.success);
-        toReturn = messageProcessor.ProcessMessage("roll diamond, monkey");
-        Assertions.assertTrue(toReturn.success);
-
-
+        Assertions.assertFalse(dice.getCanHold());
+        dice.holddice();
+        Assertions.assertTrue(dice.getCanHold());
+        dice.setCanHold(false);
+        Assertions.assertFalse(dice.getCanHold());
     }
+
+
 }
