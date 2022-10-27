@@ -250,6 +250,16 @@ public class TestServerClasses {
     }
 
     @Test
+    @DisplayName("testInit function")
+    void testInt() {
+        LineParser lineParser = new LineParser();
+        lineParser.init("roll monkey, parrot, skull");
+        Assertions.assertEquals(lineParser.getParmsList().get(0),"monkey");
+        Assertions.assertEquals(lineParser.getParmsList().get(1),"parrot");
+        Assertions.assertEquals(lineParser.getParmsList().get(2),"skull");
+    }
+
+    @Test
     @DisplayName("messageParameter")
     void testMessageParameter(){
         RuleResult ruleResult = new RuleResult(true, 0, "first Message");
