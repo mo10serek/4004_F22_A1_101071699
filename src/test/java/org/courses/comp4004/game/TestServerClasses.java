@@ -120,17 +120,17 @@ public class TestServerClasses {
     @DisplayName("testGetDeck")
     void testGetDeck() {
         FCardDeck fCardDeck = new FCardDeck();
-        Assertions.assertEquals(fCardDeck.getDeck().get(0).getFigure(), "Chest");
-        Assertions.assertEquals(fCardDeck.getDeck().get(5).getFigure(), "Sorceress");
-        Assertions.assertEquals(fCardDeck.getDeck().get(9).getFigure(), "Captain");
-        Assertions.assertEquals(fCardDeck.getDeck().get(13).getFigure(), "Monkey&Parrot");
-        Assertions.assertEquals(fCardDeck.getDeck().get(17).getFigure(), "Diamond");
-        Assertions.assertEquals(fCardDeck.getDeck().get(21).getFigure(), "Coin");
-        Assertions.assertEquals(fCardDeck.getDeck().get(24).getFigure(), "2skulls");
-        Assertions.assertEquals(fCardDeck.getDeck().get(27).getFigure(), "1skull");
-        Assertions.assertEquals(fCardDeck.getDeck().get(30).getFigure(), "2swords");
-        Assertions.assertEquals(fCardDeck.getDeck().get(32).getFigure(), "3swords");
-        Assertions.assertEquals(fCardDeck.getDeck().get(34).getFigure(), "4swords");
+        Assertions.assertEquals(fCardDeck.draw("Chest").getFigure(), "Chest");
+        Assertions.assertEquals(fCardDeck.draw("Sorceress").getFigure(), "Sorceress");
+        Assertions.assertEquals(fCardDeck.draw("Captain").getFigure(), "Captain");
+        Assertions.assertEquals(fCardDeck.draw("Monkey&Parrot").getFigure(), "Monkey&Parrot");
+        Assertions.assertEquals(fCardDeck.draw("Diamond").getFigure(), "Diamond");
+        Assertions.assertEquals(fCardDeck.draw("Coin").getFigure(), "Coin");
+        Assertions.assertEquals(fCardDeck.draw("2skulls").getFigure(), "2skulls");
+        Assertions.assertEquals(fCardDeck.draw("1skull").getFigure(), "1skull");
+        Assertions.assertEquals(fCardDeck.draw("2swords").getFigure(), "2swords");
+        Assertions.assertEquals(fCardDeck.draw("3swords").getFigure(), "3swords");
+        Assertions.assertEquals(fCardDeck.draw("4swords").getFigure(), "4swords");
     }
 
     @Test
@@ -156,7 +156,7 @@ public class TestServerClasses {
         ruleResult.setScore(50);
         Assertions.assertTrue(ruleResult.isPass());
         Assertions.assertEquals(ruleResult.getScore(), 50);
-        Assertions.assertEquals(ruleResult.toString(), "true  50");
+        Assertions.assertEquals(ruleResult.toString(), "true, =50, ");
     }
 
     //ScorePad class
@@ -176,9 +176,9 @@ public class TestServerClasses {
     void testRulePlayerCannotReRollLessThan2dice() {
         ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
         RuleResult ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice("sword");
-        Assertions.assertEquals(ruleResult.toString(), "true  0");
+        Assertions.assertEquals(ruleResult.toString(), "true, =0, ");
         ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice("monkey, sword");
-        Assertions.assertEquals(ruleResult.toString(), "false  0");
+        Assertions.assertEquals(ruleResult.toString(), "false, =0, ");
     }
 
     @Test
@@ -187,12 +187,12 @@ public class TestServerClasses {
         ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
         DiceSet diceSet = new DiceSet();
         FCard fCard = new FCard("none", 0);
-        diceSet.setRollOutcome("sword, skull, parrot");
+        diceSet.setRollOutcome("sword, skull, parrot, sword, skull, parrot, sword, monkey");
         RuleResult ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
-        Assertions.assertEquals(ruleResult.toString(), "false  0");
-        diceSet.setRollOutcome("skull, skull, skull, sword");
+        Assertions.assertEquals(ruleResult.toString(), "false, =0, ");
+        diceSet.setRollOutcome("skull, skull, skull, sword, sword, sword, coin, coin");
         ruleResult = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, fCard);
-        Assertions.assertEquals(ruleResult.toString(), "true  0");
+        Assertions.assertEquals(ruleResult.toString(), "true, =0, ");
     }
 
     @Test
