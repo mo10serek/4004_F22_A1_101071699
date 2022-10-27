@@ -501,4 +501,28 @@ public class TestServerClasses {
 
     }
 
+    @Test
+    @DisplayName("messageHelp")
+    void testMessageHelp() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.help);
+        Assertions.assertEquals(toReturn.outMsg, Commands.outcome + " list of command to use " +
+                " , outcome: notify the player of what is the current card, dice set and all of the players scores" +
+                " , draw: allow the player to pick the card from the pile" +
+                " , roll: allow the player to roll a set of dice or pick which dice to roll from" +
+                " , <Dice1>,<Dice2>,...,<DiceN>   (player request rolling SELECTED SUBSET OF DICE)" +
+                " , done: the player end their turn" +
+                " , use.sorceress: to allow the player have the sorceress card");
+        Assertions.assertTrue(toReturn.success);
+    }
+
+
 }

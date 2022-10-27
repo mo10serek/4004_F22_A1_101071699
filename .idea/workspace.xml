@@ -138,20 +138,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00060" summary="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game">
-      <created>1666896329167</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1666896329167</updated>
-    </task>
-    <task id="LOCAL-00061" summary="CODE - finally implemented the main class that is the core of the game.">
-      <created>1666896486591</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1666896486591</updated>
-    </task>
     <task id="LOCAL-00062" summary="U-CODE make a new command called mode interacting">
       <created>1666896572403</created>
       <option name="number" value="00062" />
@@ -481,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666910458727</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="U-TEST test the roll command in the message processor">
+      <created>1666910613330</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1666910613330</updated>
+    </task>
+    <task id="LOCAL-00110" summary="CODE implement the roll command">
+      <created>1666910889723</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1666910889723</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 68." />
-    <MESSAGE value="A-TEST implement the test case from row 69." />
-    <MESSAGE value="A-TEST implement the test case from row 70." />
     <MESSAGE value="A-TEST implement the test case from row 71." />
     <MESSAGE value="A-TEST implement the test case from row 72." />
     <MESSAGE value="U-TEST test a new command which is mode Broadcasting" />
@@ -521,7 +518,10 @@
     <MESSAGE value="CODE implement a reroll function to select the faces you want to reroll" />
     <MESSAGE value="U-TEST test the draw command in the message processor" />
     <MESSAGE value="CODE implement the draw command" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the draw command" />
+    <MESSAGE value="U-TEST test the roll command in the message processor" />
+    <MESSAGE value="CODE" />
+    <MESSAGE value="CODE implement the roll command" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the roll command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
