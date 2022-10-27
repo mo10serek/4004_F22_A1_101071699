@@ -2,6 +2,8 @@ package org.courses.comp4004.game;
 
 import java.util.List;
 
+import static java.util.Objects.isNull;
+
 public class MessageProcessor {
     private FCardDeck fCardDeck = null;
     private DiceSet diceSet = null;
@@ -20,9 +22,18 @@ public class MessageProcessor {
     public PostStatus ProcessMessage(String line) {
         PostStatus toReturn = null;
         boolean success = true;
+        if(!isNull(line)) {
+            lineParser.init(line);
+            String cmd = lineParser.getCmd();
+            if (cmd.equalsIgnoreCase(Commands.modeInteracting)) {//"mode.interacting"; //  <null>
 
-        msg = "unknown command";
-        toReturn = new PostStatus(msg, true);
+                toReturn = new PostStatus(Commands.modeInteracting + "", true);
+
+            }
+        } else {
+            msg = "unknown command";
+            toReturn = new PostStatus(msg, true);
+        }
         return toReturn;
     }
 }

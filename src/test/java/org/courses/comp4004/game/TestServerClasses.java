@@ -337,6 +337,7 @@ public class TestServerClasses {
         PostStatus toReturn = messageProcessor.ProcessMessage(Commands.modeInteracting);
         Assertions.assertTrue(toReturn.success);
         Assertions.assertEquals(toReturn.outMsg, Commands.modeInteracting);
+    }
 
 
 }
