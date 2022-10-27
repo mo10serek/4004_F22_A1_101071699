@@ -421,5 +421,19 @@ public class TestServerClasses {
         Assertions.assertFalse(dice.getCanHold());
     }
 
+    @Test
+    @DisplayName("testEnableAndDisableAllDiceRolls")
+    void testEnableAndDisableAllDiceRolls() {
+        DiceSet diceSet = new DiceSet();
+
+        for (int i = 0; i < diceSet.getMAX_SIZE(); i++)
+            Assertions.assertTrue(diceSet.getDiceSet().get(i).getCanRoll());
+        diceSet.disableAllDiceRoll();
+        for (int i = 0; i < diceSet.getMAX_SIZE(); i++)
+            Assertions.assertFalse(diceSet.getDiceSet().get(i).getCanRoll());
+        diceSet.enableAllDiceRoll();
+        for (int i = 0; i < diceSet.getMAX_SIZE(); i++)
+            Assertions.assertTrue(diceSet.getDiceSet().get(i).getCanRoll());
+    }
 
 }

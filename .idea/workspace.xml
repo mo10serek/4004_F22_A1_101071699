@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testDiceCanHoldOrNot">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls">
     <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -71,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testMessageInform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testEnableAndDisableAllDiceRolls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testMessageInform" />
+      <option name="METHOD_NAME" value="testEnableAndDisableAllDiceRolls" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls" />
         <item itemvalue="JUnit.TestServerClasses.testDiceCanHoldOrNot" />
         <item itemvalue="JUnit.TestServerClasses.testRoll" />
         <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testRIGID" />
-        <item itemvalue="JUnit.TestServerClasses.testMessageInform" />
       </list>
     </recent_temporary>
   </component>
@@ -137,27 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00048" summary="U-TEST test the new class PostStatus to have the status of the game, players' score, dice rolls, card, and status">
-      <created>1666890434989</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1666890434989</updated>
-    </task>
-    <task id="LOCAL-00049" summary="CODE - implement the poststatus class">
-      <created>1666890505634</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1666890505634</updated>
-    </task>
-    <task id="LOCAL-00050" summary="U-TEST test the new object of LineParser and it prameters">
-      <created>1666891364403</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1666891364404</updated>
     </task>
     <task id="LOCAL-00051" summary="CODE - make the lineParser class">
       <created>1666891455068</created>
@@ -481,7 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666907688459</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice.">
+      <created>1666908109311</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1666908109311</updated>
+    </task>
+    <task id="LOCAL-00098" summary="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice.">
+      <created>1666908208560</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1666908208560</updated>
+    </task>
+    <task id="LOCAL-00099" summary="CODE - implement the can hold boolean varible">
+      <created>1666908367971</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1666908367971</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 58." />
-    <MESSAGE value="A-TEST implement the test case from row 59." />
     <MESSAGE value="A-TEST implement the test case from row 60." />
     <MESSAGE value="A-TEST implement the test case from row 62." />
     <MESSAGE value="A-TEST implement the test case from row 63." />
@@ -521,7 +519,9 @@
     <MESSAGE value="CODE implement the interactingPlayerDescriptor varible" />
     <MESSAGE value="U-TEST making a test case to roll the dice" />
     <MESSAGE value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
+    <MESSAGE value="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice." />
+    <MESSAGE value="CODE - implement the can hold boolean varible" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the can hold boolean varible" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
