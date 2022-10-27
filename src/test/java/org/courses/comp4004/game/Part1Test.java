@@ -255,4 +255,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row59Test	score set of 3 coins+ FC and set of 4 swords correctly over several rolls (SC = 200+400+200 = 800)
+    @Test
+    @DisplayName("row59")
+    void row59() {
+        FCard fCard = new FCard("Captain", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, coin, coin, parrot, parrot, sword, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("skull, coin, coin, coin, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 1200);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
