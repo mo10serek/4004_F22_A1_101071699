@@ -272,4 +272,24 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row60Test	same as previous row but with captain fortune card  (SC = (100 + + 300 + 200)*2 = 1200)
+    @Test
+    @DisplayName("row60")
+    void row60() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, monkey, monkey, parrot, parrot, sword, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("skull, skull, sword, parrot, parrot, sword, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("skull, skull, sword, sword, monkey, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 600);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
