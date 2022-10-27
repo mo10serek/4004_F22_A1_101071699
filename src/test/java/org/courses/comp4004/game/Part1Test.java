@@ -379,4 +379,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row68Test	score a set of 2 diamonds over 2 rolls with FC is diamond (SC 400)
+    @Test
+    @DisplayName("row68")
+    void row68() {
+        FCard fCard = new FCard("Diamond",0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, skull, skull, sword, sword, parrot, parrot");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, skull, skull, sword, sword, diamond, diamond");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 400);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
