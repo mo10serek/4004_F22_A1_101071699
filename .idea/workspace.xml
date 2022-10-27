@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRollsInSet">
     <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -87,22 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRIGID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRIGID" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestServerClasses.testRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -119,13 +103,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRollsInSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRollsInSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRollsInSet" />
         <item itemvalue="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls" />
         <item itemvalue="JUnit.TestServerClasses.testDiceCanHoldOrNot" />
         <item itemvalue="JUnit.TestServerClasses.testRoll" />
         <item itemvalue="JUnit.Part2Test.row77" />
-        <item itemvalue="JUnit.TestServerClasses.testRIGID" />
       </list>
     </recent_temporary>
   </component>
