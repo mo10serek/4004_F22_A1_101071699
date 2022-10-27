@@ -356,5 +356,22 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, Commands.modeServerBroadcasting);
     }
 
+    @Test
+    @DisplayName("MessageInform")
+    void testMessageInform() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.inform);
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, Commands.inform);
+    }
+
 
 }
