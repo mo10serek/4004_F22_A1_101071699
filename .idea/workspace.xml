@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,20 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00062" summary="U-CODE make a new command called mode interacting">
-      <created>1666896572403</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1666896572404</updated>
-    </task>
-    <task id="LOCAL-00063" summary="CODE make a new command called interact">
-      <created>1666896887783</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1666896887783</updated>
     </task>
     <task id="LOCAL-00064" summary="U-CODE make a new command called mode interacting">
       <created>1666896921156</created>
@@ -481,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666910889723</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="U-TEST implement the help command">
+      <created>1666911921400</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1666911921400</updated>
+    </task>
+    <task id="LOCAL-00112" summary="CODE implment the help command">
+      <created>1666912059533</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1666912059533</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 71." />
-    <MESSAGE value="A-TEST implement the test case from row 72." />
     <MESSAGE value="U-TEST test a new command which is mode Broadcasting" />
     <MESSAGE value="CODE implement the new command which is Broadcasting" />
     <MESSAGE value="U-TEST test a new command which is message Inform" />
@@ -521,7 +520,9 @@
     <MESSAGE value="U-TEST test the roll command in the message processor" />
     <MESSAGE value="CODE" />
     <MESSAGE value="CODE implement the roll command" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the roll command" />
+    <MESSAGE value="U-TEST implement the help command" />
+    <MESSAGE value="CODE implment the help command" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implment the help command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
