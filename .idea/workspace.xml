@@ -39,8 +39,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testScoreNormal">
-    <configuration name="TestServerClasses.testEnableAndDisableAllDiceRolls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Part2Test.row82">
+    <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -49,8 +49,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testEnableAndDisableAllDiceRolls" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row77" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part2Test.row82" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row82" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,22 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRollsInSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRollsInSet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestServerClasses.testScoreNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -122,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row82" />
+        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testScoreNormal" />
         <item itemvalue="JUnit.TestServerClasses.testMessageRoll" />
         <item itemvalue="JUnit.TestServerClasses.testMessageDraw" />
-        <item itemvalue="JUnit.TestServerClasses.testRollsInSet" />
-        <item itemvalue="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls" />
       </list>
     </recent_temporary>
   </component>
@@ -138,20 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00064" summary="U-CODE make a new command called mode interacting">
-      <created>1666896921156</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1666896921156</updated>
-    </task>
-    <task id="LOCAL-00065" summary="A-TEST make a test case base in row 52">
-      <created>1666902807411</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1666902807411</updated>
     </task>
     <task id="LOCAL-00066" summary="CODE double the score when you have the captain card">
       <created>1666902987648</created>
@@ -482,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666912059533</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="U-TEST test the score function that will calculate the score based on the dice set and card">
+      <created>1666913601729</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1666913601730</updated>
+    </task>
+    <task id="LOCAL-00114" summary="CODE implement the score function that will calculate the score based on the dice set and card">
+      <created>1666913739073</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1666913739073</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,8 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test a new command which is mode Broadcasting" />
-    <MESSAGE value="CODE implement the new command which is Broadcasting" />
     <MESSAGE value="U-TEST test a new command which is message Inform" />
     <MESSAGE value="CODE implement the new command which is inform" />
     <MESSAGE value="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game" />
@@ -522,7 +520,9 @@
     <MESSAGE value="CODE implement the roll command" />
     <MESSAGE value="U-TEST implement the help command" />
     <MESSAGE value="CODE implment the help command" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implment the help command" />
+    <MESSAGE value="U-TEST test the score function that will calculate the score based on the dice set and card" />
+    <MESSAGE value="CODE implement the score function that will calculate the score based on the dice set and card" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the score function that will calculate the score based on the dice set and card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
