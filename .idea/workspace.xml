@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,22 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testGetDiceFaceCountsParameter">
-    <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestServerClasses.testPostStatus">
     <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -101,6 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testPostStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testPostStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses.testRulePlayerDieIf3Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -119,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testPostStatus" />
         <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCountsParameter" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
         <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
-        <item itemvalue="JUnit.Part1Test" />
       </list>
     </recent_temporary>
   </component>
@@ -465,12 +467,24 @@
       <option name="project" value="LOCAL" />
       <updated>1666890331488</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="U-TEST test the new class PostStatus to have the status of the game, players' score, dice rolls, card, and status">
+      <created>1666890434989</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1666890434989</updated>
+    </task>
+    <task id="LOCAL-00049" summary="CODE - implement the poststatus class">
+      <created>1666890505634</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1666890505634</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test the new class if it has the right parameters when initialized and check if you can set the parameters" />
-    <MESSAGE value="CODE make a new class called RuleResult that store the boolean statement for true and false and the current score. This class is used to store the score and boolean expression of a certain rule ex # of a kind rule." />
     <MESSAGE value="U-TEST test the new class ScorePad that can save or add a current score" />
     <MESSAGE value="CODE add a new class that can save or add a score during a certain procedure" />
     <MESSAGE value="U-TEST test the rule that you cannot role less than 2 dice in the new class ScoreEvaluator" />
@@ -494,7 +508,9 @@
     <MESSAGE value="REFACTOR - put a logs system in the test case part one" />
     <MESSAGE value="REFACTOR - fix the test cases" />
     <MESSAGE value="U-TEST test the GetDiceFaceCount function to see if it works" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the GetDiceFaceCount function to see if it works" />
+    <MESSAGE value="U-TEST test the new class PostStatus to have the status of the game, players' score, dice rolls, card, and status" />
+    <MESSAGE value="CODE - implement the poststatus class" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the poststatus class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

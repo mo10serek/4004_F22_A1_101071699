@@ -225,6 +225,30 @@ public class TestServerClasses {
         Assertions.assertEquals(ruleResult.getScore(), 300);
     }
 
+    //LineParser class
+    @Test
+    @DisplayName("testLineParser")
+    void testLineParserClass() {
+        LineParser lineParser = new LineParser();
+        lineParser.setLine("parameter");
+        Assertions.assertEquals(lineParser.getLine(), "parameter");
+        lineParser.setCmd("command");
+        Assertions.assertEquals(lineParser.getCmd(), "command");
+        lineParser.setParmsLine("parameter line");
+        Assertions.assertEquals(lineParser.getParmsLine(), "parameter line");
+        List<String> list = new ArrayList<>();
+        list.add("one");
+        list.add("two");
+        list.add("three");
+        lineParser.setParmsList(list);
+        Assertions.assertEquals(lineParser.getParmsList().get(1),"two");
+        Assertions.assertEquals(lineParser.toString(), "LineParser{" +
+                "line='parameter', " +
+                "cmd='command', " +
+                "parmsLine='parameter line', " +
+                "parmsList=[one, two, three]}");
+    }
+
     @Test
     @DisplayName("messageParameter")
     void testMessageParameter(){
