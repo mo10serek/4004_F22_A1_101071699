@@ -238,4 +238,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row58Test	score set of 3 swords and set of 4 parrots correctly on first roll (SC 400 because of FC)
+    @Test
+    @DisplayName("row58")
+    void row58() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, coin, coin, parrot, parrot, sword, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("skull, coin, coin, coin, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 800);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
