@@ -18,6 +18,9 @@ public class ScoreEvaluator {
         RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSet, fCard);
         scorePad.addScore(ruleDiamondsAndGold.getScore());
 
+        RuleResult ruleFullChest = ruleFullChest(diceSet);
+        scorePad.addScore(ruleFullChest.getScore());
+
         score = scorePad.getTotalScore();
         if (fCard.getFigure().contains("Captain")) {
             score = score * 2;
@@ -86,5 +89,21 @@ public class ScoreEvaluator {
         scorePad.addScore(diceSet.countDiceFaces("diamond") * 100);
 
         return new RuleResult(true, scorePad.getTotalScore());
+    }
+
+    public RuleResult ruleFullChest(DiceSet diceSet) {
+        ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArray();
+        int totalOfScoredDice = 0;
+
+        for (int value: buffer) {
+            if (2 < value) {
+                totalOfScoredDice += value;
+            }
+        }
+
+        if (totalOfScoredDice >= 8){
+            return new RuleResult(true, 500);
+        }
+        return new RuleResult(true, 0);
     }
 }
