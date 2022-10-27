@@ -413,4 +413,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row70Test	score a set of 3 coins over 2 rolls  (SC 600)
+    @Test
+    @DisplayName("row70")
+    void row70() {
+        FCard fCard = new FCard("Coin",0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("skull, coin, coin, monkey, parrot, sword, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("skull, coin, coin, monkey, parrot, coin, monkey, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 600);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
