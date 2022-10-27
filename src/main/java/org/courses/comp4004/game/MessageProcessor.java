@@ -34,6 +34,10 @@ public class MessageProcessor {
                 // only for server but not used
                 toReturn = new PostStatus(Commands.modeServerBroadcasting + "", true);
 
+            }else if(cmd.equalsIgnoreCase(Commands.inform)) {//"inform"; //  <msg> (Information send to player)
+
+                toReturn = new PostStatus(Commands.inform + "", true);
+
             }
         } else {
             msg = "unknown command";
