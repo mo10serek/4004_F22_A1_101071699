@@ -334,4 +334,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row65Test	score set of 8 coins on first roll and FC is diamond (SC 5400)
+    @Test
+    @DisplayName("row65")
+    void row65() {
+        FCard fCard = new FCard("Diamond", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("coin, coin, coin, coin, coin, coin, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 5400);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
