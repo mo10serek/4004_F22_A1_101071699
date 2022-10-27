@@ -449,4 +449,17 @@ public class TestServerClasses {
 
     }
 
+    @Test
+    @DisplayName("testRerollsInSet")
+    void testRerollsInSet() {
+        DiceSet diceSet = new DiceSet();
+
+        diceSet.setRollOutcome("skull, monkey, parrot, monkey, sword, sword, skull, coin");
+
+        String message = diceSet.reroll("parrot, monkey");
+        System.out.println(message);
+        Assertions.assertEquals(message, "");
+
+    }
+
 }
