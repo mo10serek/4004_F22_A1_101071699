@@ -5,6 +5,8 @@ public class Dice {
     private String[] figures = {"skull", "parrot", "sword", "monkey", "coin", "diamond"};
     private boolean canRoll = true;
 
+    private boolean canHold = false;
+
     public Dice() {
         roll();
 
@@ -35,6 +37,10 @@ public class Dice {
         this.canRoll = canRoll;
     }
 
+    public boolean getCanHold() { return canHold; }
+
+    public void setCanHold(boolean canHold) { this.canHold = canHold; }
+
     /**
      * Random dice roll
      */
@@ -53,6 +59,10 @@ public class Dice {
         if(this.figure.compareTo(figure) == 0){
             canRoll = true;
         }
+    }
+
+    public void holddice(){
+        canHold = true;
     }
 
     /**
