@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00057" summary="CODE implement the PlayerStreams class and have the output and input stream">
-      <created>1666895295612</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1666895295612</updated>
     </task>
     <task id="LOCAL-00058" summary="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card.">
       <created>1666895951636</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666909621274</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="CODE implement a reroll function to select the faces you want to reroll">
+      <created>1666909699526</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1666909699526</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 65." />
     <MESSAGE value="A-TEST implement the test case from row 66." />
     <MESSAGE value="A-TEST implement the test case from row 67." />
     <MESSAGE value="A-TEST implement the test case from row 68." />
@@ -521,7 +520,8 @@
     <MESSAGE value="U-TEST implement a function roll in the dice set to roll the certain faces" />
     <MESSAGE value="CODE implement a roll function to select the faces you want to roll" />
     <MESSAGE value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
+    <MESSAGE value="CODE implement a reroll function to select the faces you want to reroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement a reroll function to select the faces you want to reroll" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
