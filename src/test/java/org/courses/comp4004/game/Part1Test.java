@@ -210,4 +210,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row56Test	score a set of 3 diamonds correctly (i.e., 400 points)   (SC 500)
+    @Test
+    @DisplayName("row56")
+    void row56() {
+        FCard fCard = new FCard("Diamond", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("coin, coin, coin, coin, skull, skull, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 700);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
