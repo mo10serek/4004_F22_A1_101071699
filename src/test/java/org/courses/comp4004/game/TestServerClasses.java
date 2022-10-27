@@ -4,6 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -267,5 +272,28 @@ public class TestServerClasses {
         ruleResult.setMessage("second Message");
         Assertions.assertEquals(ruleResult.getMessage(), "second Message");
     }
+
+    @Test
+    @DisplayName("testPlayerStream")
+    void testPlayerStream() throws IOException {
+        Path p = Paths.get(FileSystems.getDefault().getPath("").toAbsolutePath().toString() + File.separator + "test");
+        String path = "";
+        if(!Files.exists(p)){
+            path =  Files.createDirectory(p).toString();
+        }else{
+            path = p.toString();
+        }
+
+        PrintWriter out = new PrintWriter("text.txt");
+        FileReader fr =new FileReader("text.txt");
+        BufferedReader in = new BufferedReader(fr);
+
+        PlayerStreams playerStreams = new PlayerStreams(out, in);
+
+        Assertions.assertEquals(playerStreams.getIn(), in);
+        Assertions.assertEquals(playerStreams.getOut(), out);
+
+    }
+
 
 }

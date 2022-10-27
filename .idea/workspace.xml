@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testLineParserClass">
+  <component name="RunManager" selected="JUnit.TestServerClasses">
     <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -65,6 +65,22 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="METHOD_NAME" value="testGetDiceFaceCountsParameter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServerClasses.testInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testInt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,29 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRulePlayerDieIf3Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRulePlayerDieIf3Skulls" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses" />
+        <item itemvalue="JUnit.TestServerClasses.testInt" />
         <item itemvalue="JUnit.TestServerClasses.testLineParserClass" />
         <item itemvalue="JUnit.TestServerClasses.testPostStatus" />
         <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCountsParameter" />
-        <item itemvalue="JUnit.TestServerClasses" />
-        <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
       </list>
     </recent_temporary>
   </component>
@@ -136,27 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00004" summary="CODE add a new function rollNotFigure">
-      <created>1665347593830</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1665347593830</updated>
-    </task>
-    <task id="LOCAL-00005" summary="U-TEST test a new class and see if it has a set of dice of the same size as the max">
-      <created>1665347677372</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1665347677372</updated>
-    </task>
-    <task id="LOCAL-00006" summary="CODE make a new class called diceSet">
-      <created>1665347772536</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1665347772536</updated>
     </task>
     <task id="LOCAL-00007" summary="U-TEST see if setDiceSet function is working to set the dice as a list">
       <created>1665348204241</created>
@@ -480,13 +459,31 @@
       <option name="project" value="LOCAL" />
       <updated>1666891480767</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="U-TEST test the init function, so it converts a string into an array of faces">
+      <created>1666891730186</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1666891730186</updated>
+    </task>
+    <task id="LOCAL-00054" summary="CODE - create the init function">
+      <created>1666891782225</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1666891782225</updated>
+    </task>
+    <task id="LOCAL-00055" summary="U-TEST make a new class that process the commands of the player and give the status of the game">
+      <created>1666892069756</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1666892069756</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE make a new rule function in the score evaluator class that can check if the dices you picked are less than two. If is then it returns a RuleResult object having a true value that it is less than two. If not then returns false otherwise." />
-    <MESSAGE value="U-TEST test the new rule that it will detect if you have 3 skulls in the set of rolled dices" />
-    <MESSAGE value="CODE make a new rule that can check if you rolled 3 skulls, return true if 3 skulls is detected" />
     <MESSAGE value="A-TEST check Row45 test to see if the program is correct checking the number of skulls" />
     <MESSAGE value="A-TEST test Row46 by checking what scores it is based on a certain number of dices" />
     <MESSAGE value="U-TEST test a new rule that it calculate the score based on the set of identical objects" />
@@ -509,7 +506,10 @@
     <MESSAGE value="U-TEST test the new object of LineParser and it prameters" />
     <MESSAGE value="CODE - make the lineParser class" />
     <MESSAGE value="CODE - make the lineParser class and its parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - make the lineParser class and its parameters" />
+    <MESSAGE value="U-TEST test the init function, so it converts a string into an array of faces" />
+    <MESSAGE value="CODE - create the init function" />
+    <MESSAGE value="U-TEST make a new class that process the commands of the player and give the status of the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST make a new class that process the commands of the player and give the status of the game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
