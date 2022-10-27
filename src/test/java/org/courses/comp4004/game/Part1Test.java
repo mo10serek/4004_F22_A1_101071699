@@ -182,4 +182,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row54Test	score 2 sets of 3 (monkey, swords) in RTS on first roll   (SC 300)
+    @Test
+    @DisplayName("row54")
+    void row54() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, monkey, sword, sword, sword, skull, skull");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 300);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }

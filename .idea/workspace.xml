@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="A-TEST test the test case in row 52">
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part1Test.row53">
+  <component name="RunManager" selected="JUnit.Part1Test.row54">
     <configuration name="Part1Test.row52" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -66,6 +66,22 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
       <option name="METHOD_NAME" value="row53" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Part1Test.row54" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
+      <option name="METHOD_NAME" value="row54" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,29 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testPlayerDescriptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testPlayerDescriptor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part1Test.row54" />
         <item itemvalue="JUnit.Part1Test.row53" />
         <item itemvalue="JUnit.Part1Test.row52" />
         <item itemvalue="JUnit.TestServerClasses.testModeInteractingCommand" />
         <item itemvalue="JUnit.TestServerClasses.testMessageProcessor" />
-        <item itemvalue="JUnit.TestServerClasses.testPlayerDescriptor" />
       </list>
     </recent_temporary>
   </component>
@@ -137,27 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00016" summary="U-TEST test the entire class of FCard">
-      <created>1665349639639</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1665349639639</updated>
-    </task>
-    <task id="LOCAL-00017" summary="CODE make the entire fCard class">
-      <created>1665349695554</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1665349695554</updated>
-    </task>
-    <task id="LOCAL-00018" summary="U-TEST make a test case that test a class that is able to draw a card from a deck">
-      <created>1665362247073</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1665362247073</updated>
     </task>
     <task id="LOCAL-00019" summary="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized.">
       <created>1665406147887</created>
@@ -481,7 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666896921156</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="A-TEST make a test case base in row 52">
+      <created>1666902807411</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1666902807411</updated>
+    </task>
+    <task id="LOCAL-00066" summary="CODE double the score when you have the captain card">
+      <created>1666902987648</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1666902987648</updated>
+    </task>
+    <task id="LOCAL-00067" summary="A-TEST implement the test case from row 53.">
+      <created>1666903054615</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1666903054615</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,11 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR - add a logs' system, so I can save the print-out messages" />
-    <MESSAGE value="REFACTOR - rename the functions of the test cases" />
-    <MESSAGE value="U-TEST - test the new parameter called message in the rule result class" />
-    <MESSAGE value="CODE - implement the parameter message and put setters and getters" />
-    <MESSAGE value="REFACTOR - put a logs system in the test case part one" />
     <MESSAGE value="REFACTOR - fix the test cases" />
     <MESSAGE value="U-TEST test the GetDiceFaceCount function to see if it works" />
     <MESSAGE value="U-TEST test the new class PostStatus to have the status of the game, players' score, dice rolls, card, and status" />
@@ -521,7 +516,12 @@
     <MESSAGE value="CODE make a new command called interact" />
     <MESSAGE value="U-CODE make a new command called mode interacting" />
     <MESSAGE value="CODE make a new command called Interacting" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new command called Interacting" />
+    <MESSAGE value="A-TEST test the test case in row 52" />
+    <MESSAGE value="A-TEST make a test case base in row 52" />
+    <MESSAGE value="CODE double the score when you have the captain card" />
+    <MESSAGE value="A-TEST implement the test case from row 53" />
+    <MESSAGE value="A-TEST implement the test case from row 53." />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 53." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
