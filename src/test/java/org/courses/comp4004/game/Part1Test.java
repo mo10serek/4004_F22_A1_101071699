@@ -292,4 +292,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row62Test	score set of 6 monkeys on first roll (SC 1100)
+    @Test
+    @DisplayName("row62")
+    void row62() {
+        FCard fCard = new FCard("Diamond", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, monkey, monkey, monkey, monkey, parrot, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 1100);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
