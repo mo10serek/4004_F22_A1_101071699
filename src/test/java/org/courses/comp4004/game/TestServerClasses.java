@@ -206,4 +206,13 @@ public class TestServerClasses {
         Assertions.assertEquals(ruleResult.getScore(), 300);
     }
 
+    @Test
+    @DisplayName("messageParameter")
+    void testMessageParameter(){
+        RuleResult ruleResult = new RuleResult(true, 0, "first Message");
+        Assertions.assertEquals(ruleResult.getMessage(), "first Message");
+        ruleResult.setMessage("second Message");
+        Assertions.assertEquals(ruleResult.getMessage(), "second Message");
+    }
+
 }
