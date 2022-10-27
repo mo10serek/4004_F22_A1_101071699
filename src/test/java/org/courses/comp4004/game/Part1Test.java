@@ -162,5 +162,5 @@ public class Part1Test {
         log.println(diceSet);
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
-    
+
 }

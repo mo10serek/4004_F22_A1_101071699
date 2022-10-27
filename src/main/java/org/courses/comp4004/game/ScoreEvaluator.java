@@ -19,6 +19,9 @@ public class ScoreEvaluator {
         scorePad.addScore(ruleDiamondsAndGold.getScore());
 
         score = scorePad.getTotalScore();
+        if (fCard.getFigure().contains("Captain")) {
+            score = score * 2;
+        }
         return score;
     }
 
