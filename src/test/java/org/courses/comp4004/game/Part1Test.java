@@ -163,4 +163,23 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row53Test	get set of 2 monkeys on first roll, get 3rd monkey on 2nd roll (SC 200 since FC is coin)
+    @Test
+    @DisplayName("row53")
+    void row53() {
+        FCard fCard = new FCard("Coin", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, skull, skull, sword, sword, parrot, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 100);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+
+        diceSet.setRollOutcome("monkey, monkey, skull, skull, sword, sword, sword, monkey");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 300);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
