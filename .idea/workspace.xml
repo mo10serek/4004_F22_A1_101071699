@@ -39,8 +39,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part1Test.row71">
-    <configuration name="Part1Test.row67" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Part1Test">
+    <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -50,24 +50,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row67" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part1Test.row68" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row68" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,13 +103,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part1Test.row72" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
+      <option name="METHOD_NAME" value="row72" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part1Test" />
+        <item itemvalue="JUnit.Part1Test.row72" />
         <item itemvalue="JUnit.Part1Test.row71" />
         <item itemvalue="JUnit.Part1Test.row70" />
         <item itemvalue="JUnit.Part1Test.row69" />
-        <item itemvalue="JUnit.Part1Test.row68" />
-        <item itemvalue="JUnit.Part1Test.row67" />
       </list>
     </recent_temporary>
   </component>
@@ -138,48 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00032" summary="A-TEST check Row45 test to see if the program is correct checking the number of skulls">
-      <created>1665410955813</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1665410955813</updated>
-    </task>
-    <task id="LOCAL-00033" summary="A-TEST test Row46 by checking what scores it is based on a certain number of dices">
-      <created>1665415165422</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1665415165422</updated>
-    </task>
-    <task id="LOCAL-00034" summary="U-TEST test a new rule that calculate the score based on the set of identical faces">
-      <created>1665415603550</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1665415603550</updated>
-    </task>
-    <task id="LOCAL-00035" summary="CODE add a new rule that calculate the score based on the set of the same faces">
-      <created>1665415917774</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1665415917774</updated>
-    </task>
-    <task id="LOCAL-00036" summary="A-TEST check if row 46 that check a certain number of faces gives a certain score">
-      <created>1665416038959</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1665416038959</updated>
-    </task>
-    <task id="LOCAL-00037" summary="CODE make a function that calculates the player's score based on the number of faces on dices and the rules">
-      <created>1665416204445</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1665416204445</updated>
     </task>
     <task id="LOCAL-00038" summary="A-TEST check row 47 test to see if it's giving the correct score">
       <created>1665416285984</created>
@@ -482,7 +439,49 @@
       <option name="project" value="LOCAL" />
       <updated>1666904002461</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="A-TEST implement the test case from row 66.">
+      <created>1666904038442</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904038442</updated>
+    </task>
+    <task id="LOCAL-00082" summary="A-TEST implement the test case from row 67.">
+      <created>1666904062341</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904062341</updated>
+    </task>
+    <task id="LOCAL-00083" summary="A-TEST implement the test case from row 68.">
+      <created>1666904099151</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904099151</updated>
+    </task>
+    <task id="LOCAL-00084" summary="A-TEST implement the test case from row 69.">
+      <created>1666904128768</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904128768</updated>
+    </task>
+    <task id="LOCAL-00085" summary="A-TEST implement the test case from row 70.">
+      <created>1666904158570</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904158570</updated>
+    </task>
+    <task id="LOCAL-00086" summary="A-TEST implement the test case from row 71.">
+      <created>1666904184223</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1666904184223</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,12 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card." />
-    <MESSAGE value="CODE - make the player Descriptor class" />
-    <MESSAGE value="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game" />
-    <MESSAGE value="CODE - finally implemented the main class that is the core of the game." />
-    <MESSAGE value="CODE make a new command called interact" />
-    <MESSAGE value="U-CODE make a new command called mode interacting" />
     <MESSAGE value="CODE make a new command called Interacting" />
     <MESSAGE value="A-TEST test the test case in row 52" />
     <MESSAGE value="A-TEST make a test case base in row 52" />
@@ -522,7 +515,13 @@
     <MESSAGE value="A-TEST implement the test case from row 64." />
     <MESSAGE value="CODE Implement a rule function that add 500 point to your score if all the dice give you points." />
     <MESSAGE value="A-TEST implement the test case from row 65." />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 65." />
+    <MESSAGE value="A-TEST implement the test case from row 66." />
+    <MESSAGE value="A-TEST implement the test case from row 67." />
+    <MESSAGE value="A-TEST implement the test case from row 68." />
+    <MESSAGE value="A-TEST implement the test case from row 69." />
+    <MESSAGE value="A-TEST implement the test case from row 70." />
+    <MESSAGE value="A-TEST implement the test case from row 71." />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 71." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

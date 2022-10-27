@@ -447,4 +447,18 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row72Test	score a set of 4 monkeys and a set of 3 coins (including the COIN fortune card) (SC 600)
+    @Test
+    @DisplayName("row72")
+    void row72() {
+        FCard fCard = new FCard("Coin", 100);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, monkey, monkey, coin, coin, skull, skull");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 600);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
