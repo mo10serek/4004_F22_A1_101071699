@@ -10,6 +10,14 @@ public class MessageProcessor {
     private ScoreEvaluator scoreEvaluator = null;
     private LineParser lineParser = null;
     private List<PlayerDescriptor> playerDescriptorList  = null;
+    private boolean RIGID = false;
+
+
+    public void turnOnRIGID() {
+        RIGID = !RIGID;
+    }
+
+    public boolean getRIGID() { return RIGID; }
 
     public MessageProcessor(FCardDeck fCardDeck, DiceSet diceSet, ScoreEvaluator scoreEvaluator, LineParser lineParser, List<PlayerDescriptor> playerDescriptorList) {
         this.fCardDeck = fCardDeck;
