@@ -134,4 +134,26 @@ public class DiceSet {
 
         return buffer;
     }
+
+
+    /**
+     * This method enables all roll in the set. There might be the case that after several
+     * (We think first roll on the whole set and then subsequent rerolls on the subset) rolls.
+     * This method is called in roll (the very firs roll for a player) so the player will roll the whole set.
+     *
+     */
+    public void enableAllDiceRoll(){
+        diceSet.stream().
+                forEach(dice -> dice.setCanRoll(true));
+    }
+
+    /**
+     * This method disables dice roll in the whole set. (Read above method for more clarity)
+     * This method is not to be used unless to facilitate testing.
+     */
+    public void disableAllDiceRoll(){
+        diceSet.stream().
+                forEach(dice -> dice.setCanRoll(false));
+
+    }
 }
