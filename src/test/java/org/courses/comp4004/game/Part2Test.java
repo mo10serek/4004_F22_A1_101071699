@@ -72,7 +72,28 @@ public class Part2Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
-    
+    // Row84Test        over several rolls get 3 monkeys, 4 parrots, 1 sword    SC 2000 (ie seq of 7)
+    @Test
+    @DisplayName("row84")
+    void row84() {
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("Monkey&Parrot", 0);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("diamond, sword, sword, sword, diamond, parrot, monkey, coin");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, parrot, sword, coin, parrot, parrot, coin");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, parrot, monkey, coin, parrot, parrot, diamond");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, parrot, monkey, sword, parrot, parrot, parrot");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 2000);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
 
 
 }
