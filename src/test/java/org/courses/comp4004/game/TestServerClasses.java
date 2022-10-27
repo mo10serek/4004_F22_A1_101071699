@@ -479,4 +479,25 @@ public class TestServerClasses {
         Assertions.assertTrue(toReturn.success);
     }
 
+    @Test
+    @DisplayName("messageRoll")
+    void testMessageRoll() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.roll);
+        Assertions.assertEquals(toReturn.outMsg, "roll, the player haven't drawn a card. Please draw a card by writing the command \'draw\'");
+        Assertions.assertTrue(toReturn.success);
+        toReturn = messageProcessor.ProcessMessage(Commands.draw);
+
+    }
+
 }
