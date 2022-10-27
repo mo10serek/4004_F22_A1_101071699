@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testMessageParameter">
+  <component name="RunManager" selected="JUnit.Part1Test">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -120,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestServerClasses.testMessageParameter" />
         <item itemvalue="JUnit.Part1Test" />
+        <item itemvalue="JUnit.TestServerClasses.testMessageParameter" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.Part1Test.row52Test" />
         <item itemvalue="JUnit.Part1Test.row50Test" />
@@ -424,13 +423,31 @@
       <option name="project" value="LOCAL" />
       <updated>1666887772708</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="REFACTOR - rename the functions of the test cases">
+      <created>1666888260234</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1666888260234</updated>
+    </task>
+    <task id="LOCAL-00043" summary="U-TEST - test the new parameter called message in the rule result class">
+      <created>1666888327032</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1666888327032</updated>
+    </task>
+    <task id="LOCAL-00044" summary="CODE - implement the parameter message and put setters and getters">
+      <created>1666888407363</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666888407363</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST make a new class containing the deck of cards where each player can draw a card" />
-    <MESSAGE value="U-TEST make a test case that test a class that is able to draw a card from a deck" />
-    <MESSAGE value="U-TEST test to see if the new class FCardDeck have all the current cards in the deck when it is initialized." />
     <MESSAGE value="CODE create the new class FCardDeck that initialize the whole deck of current cards" />
     <MESSAGE value="U-TEST test teh fCardDeck that it is able to draw a card from the top and a certain card even if it shuffled" />
     <MESSAGE value="CODE implement the two draw function, one for drawing from the top and a certain card and the shuffle" />
@@ -453,14 +470,17 @@
     <MESSAGE value="A-TEST check row 48 test to see if it's giving the correct score" />
     <MESSAGE value="A-TEST check row 50 test to see if it's giving the correct score" />
     <MESSAGE value="REFACTOR - add a logs' system, so I can save the print-out messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - add a logs' system, so I can save the print-out messages" />
+    <MESSAGE value="REFACTOR - rename the functions of the test cases" />
+    <MESSAGE value="U-TEST - test the new parameter called message in the rule result class" />
+    <MESSAGE value="CODE - implement the parameter message and put setters and getters" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the parameter message and put setters and getters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
-          <line>22</line>
+          <line>49</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -470,7 +490,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
-          <line>93</line>
+          <line>136</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
