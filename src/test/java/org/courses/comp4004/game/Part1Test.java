@@ -362,4 +362,21 @@ public class Part1Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
 
+    // Row67Test	score set of 8 monkeys over several rolls (SC 4600 because of FC is coin and full chest)
+    @Test
+    @DisplayName("row67")
+    void row67() {
+        FCard fCard = new FCard("Coin",0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, monkey, monkey, monkey, monkey, sword, sword");
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+        diceSet.setRollOutcome("monkey, monkey, monkey, monkey, monkey, monkey, monkey, monkey");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 4600);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+
 }
