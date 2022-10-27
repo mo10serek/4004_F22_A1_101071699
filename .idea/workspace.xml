@@ -137,20 +137,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00009" summary="U-TEST test to see if the roll and setRollOutCome functions work">
-      <created>1665348345733</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348345733</updated>
-    </task>
-    <task id="LOCAL-00010" summary="CODE - implement the roll and set roll outcome functions">
-      <created>1665348415395</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348415395</updated>
-    </task>
     <task id="LOCAL-00011" summary="U-TEST test to see if countDiceFaces work">
       <created>1665348481642</created>
       <option name="number" value="00011" />
@@ -480,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666895295612</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card.">
+      <created>1666895951636</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1666895951636</updated>
+    </task>
+    <task id="LOCAL-00059" summary="CODE - make the player Descriptor class">
+      <created>1666896060103</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896060103</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test a new rule that calculate the score based on the set of identical faces" />
-    <MESSAGE value="CODE add a new rule that calculate the score based on the set of the same faces" />
     <MESSAGE value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
     <MESSAGE value="CODE make a function that calculates the player's score based on the number of faces on dices and the rules" />
     <MESSAGE value="A-TEST check row 47 test to see if it's giving the correct score" />
@@ -520,7 +518,9 @@
     <MESSAGE value="U-TEST test the new class &quot;PlayerStreams&quot; to for the players input and output" />
     <MESSAGE value="U-TEST implement the PlayerStreams class and have the output and input stream" />
     <MESSAGE value="CODE implement the PlayerStreams class and have the output and input stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the PlayerStreams class and have the output and input stream" />
+    <MESSAGE value="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card." />
+    <MESSAGE value="CODE - make the player Descriptor class" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - make the player Descriptor class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
