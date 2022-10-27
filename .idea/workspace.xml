@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="A-TEST test the test case in row 52">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,27 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00013" summary="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice">
-      <created>1665348849011</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348849011</updated>
-    </task>
-    <task id="LOCAL-00014" summary="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice">
-      <created>1665349384821</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1665349384821</updated>
-    </task>
-    <task id="LOCAL-00015" summary="CODE implement both functions, one for counting a specific faces and another for counting all faces">
-      <created>1665349441572</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1665349441572</updated>
     </task>
     <task id="LOCAL-00016" summary="U-TEST test the entire class of FCard">
       <created>1665349639639</created>
@@ -480,7 +459,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666896486591</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="U-CODE make a new command called mode interacting">
+      <created>1666896572403</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896572404</updated>
+    </task>
+    <task id="LOCAL-00063" summary="CODE make a new command called interact">
+      <created>1666896887783</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896887783</updated>
+    </task>
+    <task id="LOCAL-00064" summary="U-CODE make a new command called mode interacting">
+      <created>1666896921156</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896921156</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,9 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST check row 47 test to see if it's giving the correct score" />
-    <MESSAGE value="A-TEST check row 48 test to see if it's giving the correct score" />
-    <MESSAGE value="A-TEST check row 50 test to see if it's giving the correct score" />
     <MESSAGE value="REFACTOR - add a logs' system, so I can save the print-out messages" />
     <MESSAGE value="REFACTOR - rename the functions of the test cases" />
     <MESSAGE value="U-TEST - test the new parameter called message in the rule result class" />
@@ -520,7 +517,10 @@
     <MESSAGE value="CODE - make the player Descriptor class" />
     <MESSAGE value="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game" />
     <MESSAGE value="CODE - finally implemented the main class that is the core of the game." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - finally implemented the main class that is the core of the game." />
+    <MESSAGE value="CODE make a new command called interact" />
+    <MESSAGE value="U-CODE make a new command called mode interacting" />
+    <MESSAGE value="CODE make a new command called Interacting" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE make a new command called Interacting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

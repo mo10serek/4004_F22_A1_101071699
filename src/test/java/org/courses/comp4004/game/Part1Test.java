@@ -148,4 +148,19 @@ public class Part1Test {
         log.println(diceSet);
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
+
+    // Row52Test	score first roll with nothing but 2 diamonds and 2 coins and FC is captain (SC 800)
+    @Test
+    @DisplayName("row52")
+    void row52() {
+        FCard fCard = new FCard("Captain", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, parrot, parrot, diamond, diamond, coin, coin");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 800);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
+    
 }
