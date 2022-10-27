@@ -137,20 +137,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00011" summary="U-TEST test to see if countDiceFaces work">
-      <created>1665348481642</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348481642</updated>
-    </task>
-    <task id="LOCAL-00012" summary="CODE implement the countDiceFaces function to count the faces of the dices">
-      <created>1665348719068</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1665348719068</updated>
-    </task>
     <task id="LOCAL-00013" summary="U-TEST test the function getDiceFacesCounts to count a specific number of faces in each dice">
       <created>1665348849011</created>
       <option name="number" value="00013" />
@@ -480,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666896060103</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game">
+      <created>1666896329167</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896329167</updated>
+    </task>
+    <task id="LOCAL-00061" summary="CODE - finally implemented the main class that is the core of the game.">
+      <created>1666896486591</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1666896486591</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST check if row 46 that check a certain number of faces gives a certain score" />
-    <MESSAGE value="CODE make a function that calculates the player's score based on the number of faces on dices and the rules" />
     <MESSAGE value="A-TEST check row 47 test to see if it's giving the correct score" />
     <MESSAGE value="A-TEST check row 48 test to see if it's giving the correct score" />
     <MESSAGE value="A-TEST check row 50 test to see if it's giving the correct score" />
@@ -520,7 +518,9 @@
     <MESSAGE value="CODE implement the PlayerStreams class and have the output and input stream" />
     <MESSAGE value="U-TEST test the playerDescriptor class that contains all the player's data which is playerStream that connect to the player local terminal, ScorePad to save their score, Dice Set to save the dice faces, and fcard to save the fae of the card." />
     <MESSAGE value="CODE - make the player Descriptor class" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - make the player Descriptor class" />
+    <MESSAGE value="U-TEST make a test case to test the main class: message Processor that can process the player input command and print to the players what is the outcome which are the dice faces, card faces, player score, and status of the game" />
+    <MESSAGE value="CODE - finally implemented the main class that is the core of the game." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - finally implemented the main class that is the core of the game." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
