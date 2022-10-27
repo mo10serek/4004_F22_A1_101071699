@@ -39,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testGetDiceFaceCountsParameter">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -86,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testMessageParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testGetDiceFaceCountsParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +96,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testMessageParameter" />
+      <option name="METHOD_NAME" value="testGetDiceFaceCountsParameter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testGetDiceFaceCountsParameter" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testRulePlayerDieIf3Skulls" />
         <item itemvalue="JUnit.TestServerClasses.SetRuleResult" />
         <item itemvalue="JUnit.Part1Test" />
-        <item itemvalue="JUnit.TestServerClasses.testMessageParameter" />
       </list>
     </recent_temporary>
   </component>

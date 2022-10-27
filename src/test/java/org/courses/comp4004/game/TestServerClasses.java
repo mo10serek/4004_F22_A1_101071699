@@ -91,6 +91,16 @@ public class TestServerClasses {
     }
 
     @Test
+    @DisplayName("testGetDiceFaceCountsParameter")
+    void testGetDiceFaceCountsParameter() {
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("coin, coin, coin, coin, monkey, monkey, monkey, monkey");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("coin"), "4 coin");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("monkey"), "4 monkey");
+        Assertions.assertEquals(diceSet.getDiceFacesCounts("aa"), "0 aa");
+    }
+
+    @Test
     @DisplayName("testGetDiceFaceCounts")
     void testGetDiceFaceCounts() {
         DiceSet diceSet = new DiceSet();
