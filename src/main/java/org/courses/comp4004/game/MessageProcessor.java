@@ -61,6 +61,17 @@ public class MessageProcessor {
                 interactingPlayerDescriptor.setDrawnFCard(fCard);
                 String fCardFigure = fCard.getFigure();
                 toReturn = new PostStatus(Commands.outcome + " " + fCardFigure, true);
+            }else if(cmd.equalsIgnoreCase(Commands.roll)) {
+                if (interactingPlayerDescriptor.getDrawnFCard() == null) {
+                    msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
+                    toReturn = new PostStatus(Commands.roll + msg,true);
+                } else {
+                    if (lineParser.getParmsLine().length() == 0) {  //"roll"; //  <null> (roll the whole DiceSet)
+                        diceSet.roll();
+                    } else { //"roll"; //  <Dice1>,<Dice2>,...,<DiceN>   (player request rolling SELECTED SUBSET OF DICE)
+                        diceSet.roll(lineParser.getParmsLine());
+                    }
+                }
             }
         } else {
             msg = "unknown command";

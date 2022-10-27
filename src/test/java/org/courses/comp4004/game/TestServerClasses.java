@@ -497,6 +497,7 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, "roll, the player haven't drawn a card. Please draw a card by writing the command \'draw\'");
         Assertions.assertTrue(toReturn.success);
         toReturn = messageProcessor.ProcessMessage(Commands.draw);
+        Assertions.assertTrue(toReturn.success);
 
     }
 

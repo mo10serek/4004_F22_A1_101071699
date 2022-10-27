@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testMessageDraw">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testMessageRoll">
     <configuration name="TestServerClasses.testDiceCanHoldOrNot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -87,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testMessageRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -97,7 +97,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRoll" />
+      <option name="METHOD_NAME" value="testMessageRoll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testMessageRoll" />
         <item itemvalue="JUnit.TestServerClasses.testMessageDraw" />
         <item itemvalue="JUnit.TestServerClasses.testRollsInSet" />
         <item itemvalue="JUnit.TestServerClasses.testEnableAndDisableAllDiceRolls" />
         <item itemvalue="JUnit.TestServerClasses.testDiceCanHoldOrNot" />
-        <item itemvalue="JUnit.TestServerClasses.testRoll" />
       </list>
     </recent_temporary>
   </component>
