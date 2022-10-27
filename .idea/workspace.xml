@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="U-TEST test a new command which is message Inform">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,20 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00043" summary="U-TEST - test the new parameter called message in the rule result class">
-      <created>1666888327032</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1666888327032</updated>
-    </task>
-    <task id="LOCAL-00044" summary="CODE - implement the parameter message and put setters and getters">
-      <created>1666888407363</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1666888407363</updated>
     </task>
     <task id="LOCAL-00045" summary="REFACTOR - put a logs system in the test case part one">
       <created>1666888522042</created>
@@ -481,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666906252765</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game">
+      <created>1666906572816</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1666906572817</updated>
+    </task>
+    <task id="LOCAL-00093" summary="CODE implemented the RIGID boolean variable.">
+      <created>1666906641639</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1666906641639</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 53." />
-    <MESSAGE value="A-TEST implement the test case from row 54." />
     <MESSAGE value="A-TEST implement the test case from row 55." />
     <MESSAGE value="A-TEST implement the test case from row 56." />
     <MESSAGE value="A-TEST implement the test case from row 5." />
@@ -521,7 +518,9 @@
     <MESSAGE value="CODE implement the new command which is Broadcasting" />
     <MESSAGE value="U-TEST test a new command which is message Inform" />
     <MESSAGE value="CODE implement the new command which is inform" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the new command which is inform" />
+    <MESSAGE value="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game" />
+    <MESSAGE value="CODE implemented the RIGID boolean variable." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implemented the RIGID boolean variable." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

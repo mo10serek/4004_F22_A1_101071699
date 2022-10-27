@@ -88,11 +88,11 @@ public class TestServerClasses {
     @Test
     @DisplayName("testCountDiceFaces")
     void testCountDiceFaces() {
-        DiceSet diceSet =new DiceSet();
+        DiceSet diceSet = new DiceSet();
         diceSet.setRollOutcome("parrot, parrot, parrot, diamond, diamond, monkey, monkey, monkey");
-        Assertions.assertEquals(diceSet.countDiceFaces("parrot"),3);
-        Assertions.assertEquals(diceSet.countDiceFaces("diamond"),2);
-        Assertions.assertEquals(diceSet.countDiceFaces("monkey"),3);
+        Assertions.assertEquals(diceSet.countDiceFaces("parrot"), 3);
+        Assertions.assertEquals(diceSet.countDiceFaces("diamond"), 2);
+        Assertions.assertEquals(diceSet.countDiceFaces("monkey"), 3);
     }
 
     @Test
@@ -246,7 +246,7 @@ public class TestServerClasses {
         list.add("two");
         list.add("three");
         lineParser.setParmsList(list);
-        Assertions.assertEquals(lineParser.getParmsList().get(1),"two");
+        Assertions.assertEquals(lineParser.getParmsList().get(1), "two");
         Assertions.assertEquals(lineParser.toString(), "LineParser{" +
                 "line='parameter', " +
                 "cmd='command', " +
@@ -259,14 +259,14 @@ public class TestServerClasses {
     void testInt() {
         LineParser lineParser = new LineParser();
         lineParser.init("roll monkey, parrot, skull");
-        Assertions.assertEquals(lineParser.getParmsList().get(0),"monkey");
-        Assertions.assertEquals(lineParser.getParmsList().get(1),"parrot");
-        Assertions.assertEquals(lineParser.getParmsList().get(2),"skull");
+        Assertions.assertEquals(lineParser.getParmsList().get(0), "monkey");
+        Assertions.assertEquals(lineParser.getParmsList().get(1), "parrot");
+        Assertions.assertEquals(lineParser.getParmsList().get(2), "skull");
     }
 
     @Test
     @DisplayName("messageParameter")
-    void testMessageParameter(){
+    void testMessageParameter() {
         RuleResult ruleResult = new RuleResult(true, 0, "first Message");
         Assertions.assertEquals(ruleResult.getMessage(), "first Message");
         ruleResult.setMessage("second Message");
@@ -277,7 +277,7 @@ public class TestServerClasses {
     @DisplayName("testPlayerStream")
     void testPlayerStream() throws IOException {
         PrintWriter out = new PrintWriter("text.txt");
-        FileReader fr =new FileReader("text.txt");
+        FileReader fr = new FileReader("text.txt");
         BufferedReader in = new BufferedReader(fr);
 
         PlayerStreams playerStreams = new PlayerStreams(out, in);
@@ -290,7 +290,7 @@ public class TestServerClasses {
     @DisplayName("test Player Descriptor")
     void testPlayerDescriptor() throws FileNotFoundException {
         PrintWriter out = new PrintWriter("text.txt");
-        FileReader fr =new FileReader("text.txt");
+        FileReader fr = new FileReader("text.txt");
         BufferedReader in = new BufferedReader(fr);
 
         PlayerStreams playerStreams = new PlayerStreams(out, in);
@@ -388,9 +388,23 @@ public class TestServerClasses {
         Assertions.assertFalse(messageProcessor.getRIGID());
         messageProcessor.turnOnRIGID();
         Assertions.assertTrue(messageProcessor.getRIGID());
-
-
     }
 
+    @Test
+    @DisplayName("testInteractingPlayerDescriptor")
+    void testInteractingPlayerDescriptor() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
 
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        Assertions.assertEquals(messageProcessor.getInteractingPlayerDescriptor(), interactingPlayerDescriptor);
+
+    }
 }
