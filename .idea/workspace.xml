@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +39,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRIGID">
-    <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRoll">
+    <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -48,23 +49,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part1Test.row72" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part1Test" />
-      <option name="METHOD_NAME" value="row72" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row77" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,13 +104,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRoll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRoll" />
+        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testRIGID" />
         <item itemvalue="JUnit.TestServerClasses.testMessageInform" />
         <item itemvalue="JUnit.TestServerClasses.testModeServerBroadcasting" />
-        <item itemvalue="JUnit.Part1Test" />
-        <item itemvalue="JUnit.Part1Test.row72" />
       </list>
     </recent_temporary>
   </component>
@@ -136,20 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00045" summary="REFACTOR - put a logs system in the test case part one">
-      <created>1666888522042</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1666888522042</updated>
-    </task>
-    <task id="LOCAL-00046" summary="REFACTOR - fix the test cases">
-      <created>1666890188830</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1666890188830</updated>
     </task>
     <task id="LOCAL-00047" summary="U-TEST test the GetDiceFaceCount function to see if it works">
       <created>1666890331488</created>
@@ -480,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666906641639</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="U-TEST implement the test case that check if it stores the current player descriptor.">
+      <created>1666907205041</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1666907205041</updated>
+    </task>
+    <task id="LOCAL-00095" summary="CODE implement the interactingPlayerDescriptor varible">
+      <created>1666907260086</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1666907260086</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 55." />
-    <MESSAGE value="A-TEST implement the test case from row 56." />
     <MESSAGE value="A-TEST implement the test case from row 5." />
     <MESSAGE value="A-TEST implement the test case from row 57." />
     <MESSAGE value="A-TEST implement the test case from row 58." />
@@ -520,7 +520,9 @@
     <MESSAGE value="CODE implement the new command which is inform" />
     <MESSAGE value="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game" />
     <MESSAGE value="CODE implemented the RIGID boolean variable." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE implemented the RIGID boolean variable." />
+    <MESSAGE value="U-TEST implement the test case that check if it stores the current player descriptor." />
+    <MESSAGE value="CODE implement the interactingPlayerDescriptor varible" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the interactingPlayerDescriptor varible" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

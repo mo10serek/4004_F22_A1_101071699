@@ -1,5 +1,6 @@
 package org.courses.comp4004.game;
 
+import com.beust.ah.A;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -405,6 +406,26 @@ public class TestServerClasses {
 
         messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
         Assertions.assertEquals(messageProcessor.getInteractingPlayerDescriptor(), interactingPlayerDescriptor);
+
+    }
+
+    @Test
+    @DisplayName("testRoll")
+    void testRoll() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+
+        PostStatus toReturn = messageProcessor.ProcessMessage("roll");
+        Assertions.assertTrue(toReturn.success);
+        toReturn = messageProcessor.ProcessMessage("roll diamond, monkey");
+        Assertions.assertTrue(toReturn.success);
+
 
     }
 }
