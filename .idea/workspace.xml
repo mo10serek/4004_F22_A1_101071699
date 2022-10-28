@@ -36,8 +36,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row99">
-    <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Part2Test.row103">
+    <configuration name="Part2Test.row103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -47,7 +47,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row87" />
+      <option name="METHOD_NAME" value="row103" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row103" />
         <item itemvalue="JUnit.Part2Test.row99" />
         <item itemvalue="JUnit.Part2Test.row98" />
         <item itemvalue="JUnit.Part2Test.row97" />
         <item itemvalue="JUnit.Part2Test.row92" />
-        <item itemvalue="JUnit.Part2Test.row87" />
       </list>
     </recent_temporary>
   </component>

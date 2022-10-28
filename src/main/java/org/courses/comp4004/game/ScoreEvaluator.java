@@ -19,7 +19,7 @@ public class ScoreEvaluator {
         RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSet, fCard);
         scorePad.addScore(ruleDiamondsAndGold.getScore());
 
-        RuleResult ruleFullChest = ruleFullChest(diceSet);
+        RuleResult ruleFullChest = ruleFullChest(diceSet, fCard);
         scorePad.addScore(ruleFullChest.getScore());
 
         score = scorePad.getTotalScore();
@@ -121,7 +121,7 @@ public class ScoreEvaluator {
         RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSetHold, fCard);
         scorePad.addScore(ruleDiamondsAndGold.getScore());
 
-        RuleResult ruleFullChest = ruleFullChest(diceSetHold);
+        RuleResult ruleFullChest = ruleFullChest(diceSetHold, fCard);
         scorePad.addScore(ruleFullChest.getScore());
 
         score = scorePad.getTotalScore();
@@ -174,7 +174,7 @@ public class ScoreEvaluator {
         return new RuleResult(true, scorePad.getTotalScore());
     }
 
-    public RuleResult ruleFullChest(DiceSet diceSet) {
+    public RuleResult ruleFullChest(DiceSet diceSet, FCard fCard) {
         ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArray();
         List<Dice> allDice = diceSet.getDiceSet();
         int totalOfScoredDice = 0;
@@ -189,6 +189,20 @@ public class ScoreEvaluator {
             if ((dice.getFigure().contains("coin") && diceSet.countDiceFaces("coin") <=2) ||
                     dice.getFigure().contains("diamond") && diceSet.countDiceFaces("diamond") <=2) {
                 totalOfScoredDice += 1;
+            }
+        }
+
+        if (fCard.getFigure().contains("Monkey&Parrot")) {
+            int monkeyFaces = diceSet.countDiceFaces("monkey");
+            int parrotFaces = diceSet.countDiceFaces("parrot");
+            if ((monkeyFaces == 1) && (parrotFaces == 2) ||
+                    (monkeyFaces == 2) && (parrotFaces == 1)) {
+                totalOfScoredDice += 3;
+            } else if ((monkeyFaces == 2) && (parrotFaces == 2)) {
+                totalOfScoredDice += 4;
+            } else if ((monkeyFaces == 2) && (parrotFaces >= 3) ||
+                    (monkeyFaces >= 3) && (parrotFaces == 2)) {
+                totalOfScoredDice += 2;
             }
         }
 
