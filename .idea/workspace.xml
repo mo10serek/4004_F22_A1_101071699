@@ -38,8 +38,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row124">
-    <configuration name="Part2Test.row118" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Part2Test.row116">
+    <configuration name="Part2Test.row116" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -49,7 +49,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row118" />
+      <option name="METHOD_NAME" value="row116" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row116" />
         <item itemvalue="JUnit.Part2Test.row124" />
         <item itemvalue="JUnit.Part2Test.row122" />
         <item itemvalue="JUnit.Part2Test.row121" />
         <item itemvalue="JUnit.Part2Test.row120" />
-        <item itemvalue="JUnit.Part2Test.row118" />
       </list>
     </recent_temporary>
   </component>
@@ -137,62 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00153" summary="CODE - implement the function that can hold or take off dices">
-      <created>1666930054939</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930054939</updated>
-    </task>
-    <task id="LOCAL-00154" summary="U-TEST test the hold chest command to see if it works">
-      <created>1666930179369</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930179369</updated>
-    </task>
-    <task id="LOCAL-00155" summary="CODE - implement the hold chest command in MessageProcessor class">
-      <created>1666930264510</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930264510</updated>
-    </task>
-    <task id="LOCAL-00156" summary="U-TEST test the take-out chest command to see if it works">
-      <created>1666930622382</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930622382</updated>
-    </task>
-    <task id="LOCAL-00157" summary="CODE - implement the take-out chest command in MessageProcessor class">
-      <created>1666930742923</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930742924</updated>
-    </task>
-    <task id="LOCAL-00158" summary="A-TEST implement the test case from row 87.">
-      <created>1666930862712</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1666930862712</updated>
-    </task>
-    <task id="LOCAL-00159" summary="A-TEST implement the test case from row 92.">
-      <created>1666931050783</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1666931050783</updated>
-    </task>
-    <task id="LOCAL-00160" summary="U-TEST calculate the score of the ones that are in hold">
-      <created>1666936149731</created>
-      <option name="number" value="00160" />
-      <option name="presentableId" value="LOCAL-00160" />
-      <option name="project" value="LOCAL" />
-      <updated>1666936149731</updated>
     </task>
     <task id="LOCAL-00161" summary="CODE - implement the function that calculate the score on the held dice">
       <created>1666936472293</created>
@@ -481,7 +425,63 @@
       <option name="project" value="LOCAL" />
       <updated>1666976043442</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="A-TEST implement the test case from row 114">
+      <created>1666976086950</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976086950</updated>
+    </task>
+    <task id="LOCAL-00203" summary="A-TEST implement the test case from row 116">
+      <created>1666976121798</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976121798</updated>
+    </task>
+    <task id="LOCAL-00204" summary="A-TEST implement the test case from row 117">
+      <created>1666976154860</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976154860</updated>
+    </task>
+    <task id="LOCAL-00205" summary="A-TEST implement the test case from row 118">
+      <created>1666976191444</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976191444</updated>
+    </task>
+    <task id="LOCAL-00206" summary="A-TEST implement the test case from row 120">
+      <created>1666976220512</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976220512</updated>
+    </task>
+    <task id="LOCAL-00207" summary="A-TEST implement the test case from row 121">
+      <created>1666976250032</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976250032</updated>
+    </task>
+    <task id="LOCAL-00208" summary="A-TEST implement the test case from row 123">
+      <created>1666976276847</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976276847</updated>
+    </task>
+    <task id="LOCAL-00209" summary="A-TEST implement the test case from row 124">
+      <created>1666976300772</created>
+      <option name="number" value="00209" />
+      <option name="presentableId" value="LOCAL-00209" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976300772</updated>
+    </task>
+    <option name="localTasksCounter" value="210" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,13 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE - implement a function that will subtract other players scores" />
-    <MESSAGE value="U-TEST test the rule that tells you when you need to leave skull island" />
-    <MESSAGE value="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls" />
-    <MESSAGE value="U-TEST test a new score function that can subtract other players scores if there are new skulls" />
-    <MESSAGE value="CODE - implement the new score skull function that can subtract other players score and update the rule leave Skull Island" />
-    <MESSAGE value="A-TEST implement the test case from row 106" />
-    <MESSAGE value="CODE - put the skull inland mechanic in the message Processor" />
     <MESSAGE value="A-TEST implement the test case from row 107" />
     <MESSAGE value="CODE make changes to the files so it will implement the skull island mechanic" />
     <MESSAGE value="A-TEST implement the test case from row 108" />
@@ -519,9 +512,16 @@
     <MESSAGE value="CODE - implement the score you get to sea battle" />
     <MESSAGE value="U-TEST implement a new score function when you are in the sea battle" />
     <MESSAGE value="CODE - implement the score function for sea battle" />
-    <MESSAGE value="A-TEST implement the test case from row 114" />
     <MESSAGE value="CODE - update the message processor to contain the sea battle mechanic." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - update the message processor to contain the sea battle mechanic." />
+    <MESSAGE value="A-TEST implement the test case from row 114" />
+    <MESSAGE value="A-TEST implement the test case from row 116" />
+    <MESSAGE value="A-TEST implement the test case from row 117" />
+    <MESSAGE value="A-TEST implement the test case from row 118" />
+    <MESSAGE value="A-TEST implement the test case from row 120" />
+    <MESSAGE value="A-TEST implement the test case from row 121" />
+    <MESSAGE value="A-TEST implement the test case from row 123" />
+    <MESSAGE value="A-TEST implement the test case from row 124" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 124" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
