@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleGoToSkullIslandIf4Skulls">
+  <component name="RunManager" selected="JUnit.Part2Test.row87">
     <configuration name="Part2Test.row78" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -71,6 +72,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row87" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -82,22 +99,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServerClasses.testMessageProcessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testMessageProcessor" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row87" />
         <item itemvalue="JUnit.TestServerClasses.testRuleGoToSkullIslandIf4Skulls" />
         <item itemvalue="JUnit.Part2Test.row79" />
         <item itemvalue="JUnit.Part2Test.row78" />
         <item itemvalue="JUnit.TestServerClasses" />
-        <item itemvalue="JUnit.TestServerClasses.testMessageProcessor" />
       </list>
     </recent_temporary>
   </component>
@@ -136,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00098" summary="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice.">
-      <created>1666908208560</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908208560</updated>
-    </task>
-    <task id="LOCAL-00099" summary="CODE - implement the can hold boolean varible">
-      <created>1666908367971</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908367971</updated>
     </task>
     <task id="LOCAL-00100" summary="U-TEST implement the test case to enable and disable all dices">
       <created>1666908644993</created>
@@ -480,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666926627224</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="REFACTOR - put the 4skull rule in the score function">
+      <created>1666926893897</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926893897</updated>
+    </task>
+    <task id="LOCAL-00148" summary="REFACTOR - put the 3 skull rule in the score function">
+      <created>1666926926329</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926926329</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card" />
-    <MESSAGE value="A-TEST implement the test case in row 83" />
-    <MESSAGE value="A-TEST implement the test case in row 84" />
     <MESSAGE value="U-TEST test the useTheSorceressCard function to see if it can reroll a skull" />
     <MESSAGE value="CODE - implement the useTheSorceressCard" />
     <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
@@ -520,7 +518,10 @@
     <MESSAGE value="A-TEST implement the test case from row79" />
     <MESSAGE value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
     <MESSAGE value="CODE - develop a function that tell if you need to go to skull island" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - develop a function that tell if you need to go to skull island" />
+    <MESSAGE value="REFACTOR - put the 4skull rule in the score function" />
+    <MESSAGE value="REFACTOR - put the 3skull rule in the score function" />
+    <MESSAGE value="REFACTOR - put the 3 skull rule in the score function" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - put the 3 skull rule in the score function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

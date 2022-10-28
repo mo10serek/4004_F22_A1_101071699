@@ -733,4 +733,19 @@ public class TestServerClasses {
         ruleResult = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
         Assertions.assertTrue(ruleResult.isPass());
     }
+
+    @Test
+    @DisplayName("testHoldChest")
+    void testHoldChest() {
+        FCard fCard = new FCard("Chest", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult = scoreEvaluator.ruleCanHoldDices(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+        fCard = new FCard("Parrot", 0);
+        ruleResult = scoreEvaluator.ruleCanHoldDices(diceSet, fCard);
+        Assertions.assertFalse(ruleResult.isPass());
+
+    }
 }
