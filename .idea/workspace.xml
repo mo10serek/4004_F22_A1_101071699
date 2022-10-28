@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row114">
+  <component name="RunManager" selected="JUnit.Part2Test.row115">
     <configuration name="Part2Test.row114" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -55,6 +55,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part2Test.row115" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row115" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses.testGetScoreInSeaBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -66,22 +82,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
       <option name="METHOD_NAME" value="testGetScoreInSeaBattle" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServerClasses.testRuleGoToSeaBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRuleGoToSeaBattle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row115" />
         <item itemvalue="JUnit.Part2Test.row114" />
         <item itemvalue="JUnit.TestServerClasses.testScoreSeaBattle" />
         <item itemvalue="JUnit.TestServerClasses.testGetScoreInSeaBattle" />
         <item itemvalue="JUnit.TestServerClasses.testloseScoreInSeaBattle" />
-        <item itemvalue="JUnit.TestServerClasses.testRuleGoToSeaBattle" />
       </list>
     </recent_temporary>
   </component>
@@ -137,34 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00149" summary="U-TEST test the hold chest rule to see if you can hold some dices">
-      <created>1666927283014</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1666927283014</updated>
-    </task>
-    <task id="LOCAL-00150" summary="CODE implement the canHoldDices rule function">
-      <created>1666927370447</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1666927370447</updated>
-    </task>
-    <task id="LOCAL-00151" summary="U-TEST test to see if the hold chest command works">
-      <created>1666928994177</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1666928994177</updated>
-    </task>
-    <task id="LOCAL-00152" summary="U-TEST test to see if we can select which dice to hold or not">
-      <created>1666929931454</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1666929931454</updated>
     </task>
     <task id="LOCAL-00153" summary="CODE - implement the function that can hold or take off dices">
       <created>1666930054939</created>
@@ -481,7 +453,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666975055034</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="U-TEST implement a new score function when you are in the sea battle">
+      <created>1666975740523</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1666975740523</updated>
+    </task>
+    <task id="LOCAL-00199" summary="CODE - implement the score function for sea battle">
+      <created>1666975786456</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1666975786456</updated>
+    </task>
+    <task id="LOCAL-00200" summary="A-TEST implement the test case from row 114">
+      <created>1666975858395</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1666975858395</updated>
+    </task>
+    <task id="LOCAL-00201" summary="CODE - update the message processor to contain the sea battle mechanic.">
+      <created>1666976043442</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1666976043442</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,10 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR - move and organize the functions around the class" />
-    <MESSAGE value="U-TEST - test the ruleSkullIsland that calculates the scores that other players loses" />
-    <MESSAGE value="CODE - implement the rule skull Island that calculate how much each player lose" />
-    <MESSAGE value="U-TEST test a function that will subtract all other players scores" />
     <MESSAGE value="CODE - implement a function that will subtract other players scores" />
     <MESSAGE value="U-TEST test the rule that tells you when you need to leave skull island" />
     <MESSAGE value="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls" />
@@ -521,7 +517,11 @@
     <MESSAGE value="CODE implement the new rule that you can loose in the sea battle" />
     <MESSAGE value="U-TEST test the new rule that you get a score during a sea battle" />
     <MESSAGE value="CODE - implement the score you get to sea battle" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the score you get to sea battle" />
+    <MESSAGE value="U-TEST implement a new score function when you are in the sea battle" />
+    <MESSAGE value="CODE - implement the score function for sea battle" />
+    <MESSAGE value="A-TEST implement the test case from row 114" />
+    <MESSAGE value="CODE - update the message processor to contain the sea battle mechanic." />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - update the message processor to contain the sea battle mechanic." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,7 +548,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>135</line>
+          <line>154</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -558,12 +558,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>245</line>
+          <line>264</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>297</line>
+          <line>316</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -573,7 +573,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>250</line>
+          <line>269</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
