@@ -1,6 +1,7 @@
 package org.courses.comp4004.game;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ScoreEvaluator {
 
@@ -98,6 +99,33 @@ public class ScoreEvaluator {
         }
 
         return buffer;
+    }
+
+    int getScoreWhenDiceHold(FCard fCard, DiceSet diceSet) {
+        int score = 0;
+        ScorePad scorePad = new ScorePad();
+
+        DiceSet diceSetHold = new DiceSet();
+        List<Dice> holdDiceList = new ArrayList<>();
+        for (Dice dice : diceSet.getDiceSet()) {
+            if (dice.getCanHold()) {
+                holdDiceList.add(dice);
+            }
+        }
+
+        diceSetHold.setDiceSet(holdDiceList);
+
+        RuleResult ruleResultSetsOfIdenticalObjects = ruleSetOfIdenticalObjects(diceSetHold, fCard);
+        scorePad.addScore(ruleResultSetsOfIdenticalObjects.getScore());
+
+        RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSetHold, fCard);
+        scorePad.addScore(ruleDiamondsAndGold.getScore());
+
+        RuleResult ruleFullChest = ruleFullChest(diceSetHold);
+        scorePad.addScore(ruleFullChest.getScore());
+
+        score = scorePad.getTotalScore();
+        return score;
     }
 
     public RuleResult ruleCanHoldDices(DiceSet diceSet, FCard fCard) {
