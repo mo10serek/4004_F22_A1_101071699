@@ -173,8 +173,6 @@ public class MessageProcessor {
         RuleResult useSorceress = scoreEvaluator.ruleRollOneSkull(diceSet,
                 interactingPlayerDescriptor.getDrawnFCard());
 
-        int numberOfSkulls = diceSet.countDiceFaces("skull");
-
         if (useSorceress.isPass() && have3Skulls.isPass()) {
             boolean canUseSorceressCard;
             if (RIGID) {
