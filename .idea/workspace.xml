@@ -36,7 +36,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testHoldChestCommand">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testTakeOutChestCommand">
     <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -101,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testRuleGoToSkullIslandIf4Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerClasses.testTakeOutChestCommand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testRuleGoToSkullIslandIf4Skulls" />
+      <option name="METHOD_NAME" value="testTakeOutChestCommand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testTakeOutChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldOrTakeOffSetOfDices" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChest" />
         <item itemvalue="JUnit.Part2Test.row87" />
-        <item itemvalue="JUnit.TestServerClasses.testRuleGoToSkullIslandIf4Skulls" />
       </list>
     </recent_temporary>
   </component>

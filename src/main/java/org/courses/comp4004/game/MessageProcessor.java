@@ -110,6 +110,17 @@ public class MessageProcessor {
                     } else {
                         msg = holdDiceRule.getMessage();
                     }
+            }else if (cmd.equalsIgnoreCase(Commands.takeOutChest)) {
+                RuleResult takeOutDiceRule = scoreEvaluator.ruleCanHoldDices(diceSet,
+                        interactingPlayerDescriptor.getDrawnFCard());
+                if (takeOutDiceRule.isPass()) {
+                    if (lineParser.getParmsLine().length() != 0) {
+                        diceSet.holdOrTakeOffSetOfDices(lineParser.getParmsLine(), false);
+                        msg = takeOutDiceRule.getMessage();
+                    } else {
+                        msg = "choose to use the chest card but did not choose which dice to take out";
+                    }
+                }
             }else if (cmd.equalsIgnoreCase(Commands.help)) {
                 toReturn = new PostStatus(Commands.outcome + " list of command to use " +
                         " , outcome: notify the player of what is the current card, dice set and all of the players scores" +

@@ -12,5 +12,6 @@ public class Commands {
     public final static String setDice          = "set.dice"; // <Dice1>,<Dice2>,...,<DiceN> (pick which faces to use for testing)
     public final static String useSorceress     = "use.sorceress"; //  <null> (player use sorceress to reroll one skull dice dice
     public final static String holdChest        = "hold"; // <Dice1>,<Dice2>,...,<DiceN>   (player request which dice to hold)
+    public final static String takeOutChest     = "takeOut"; // <Dice1>,<Dice2>,...,<DiceN>   (player request which dice to take out)
 
 }
