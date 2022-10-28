@@ -579,33 +579,20 @@ public class TestServerClasses {
     }
 
     @Test
-    @DisplayName("testUseTheSorceressCard")
-    public void testUseTheSorceressCardInput() {
-        FCardDeck fCardDeck = new FCardDeck();
+    @DisplayName("testRerollSetOutcome")
+    void testRerollSetOutcome() {
         DiceSet diceSet = new DiceSet();
-        diceSet.setRollOutcome("coin, diamond, coin, skull, skull, monkey, sword, sword");
-        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
-        LineParser lineParser = new LineParser();
-        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
-        PlayerDescriptor playerDescriptor = new PlayerDescriptor();
-        ScorePad scorePad = new ScorePad();
-        playerDescriptor.setScorePad(scorePad);
-        playerDescriptor.setDrawnFCard(new FCard("Coin", 0));
-        playerDescriptorList.add(playerDescriptor);
 
-        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
-                playerDescriptorList);
-        messageProcessor.setInteractingPlayerDescriptor(playerDescriptor);
-        boolean itWorked = messageProcessor.useTheSorceressCardInput("coin");
-        Assertions.assertTrue(itWorked);
-        diceSet.setRollOutcome("coin, diamond, coin, sword, sword, monkey, sword, sword");
-        messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
-                playerDescriptorList);
-        messageProcessor.setInteractingPlayerDescriptor(playerDescriptor);
-        itWorked = messageProcessor.useTheSorceressCardInput();
-        Assertions.assertFalse(itWorked);
+        diceSet.setRollOutcome("skull, monkey, parrot, monkey, sword, sword, skull, coin");
+
+        String message = diceSet.rerollSetOutcome("monkey, sword", "sword, diamond");
+        System.out.println(message);
+        Assertions.assertEquals(message, "");
+
+        Assertions.assertEquals(diceSet.getDiceSet().get(1).getFigure(), "sword");
+        Assertions.assertEquals(diceSet.getDiceSet().get(4).getFigure(), "diamond");
+
     }
 
-}
 
 }

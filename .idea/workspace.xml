@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00073" summary="A-TEST implement the test case from row 58.">
-      <created>1666903423994</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903423994</updated>
-    </task>
-    <task id="LOCAL-00074" summary="A-TEST implement the test case from row 59.">
-      <created>1666903446985</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903446985</updated>
     </task>
     <task id="LOCAL-00075" summary="A-TEST implement the test case from row 60.">
       <created>1666903524424</created>
@@ -479,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666915702497</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only">
+      <created>1666915728812</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1666915728812</updated>
+    </task>
+    <task id="LOCAL-00123" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only">
+      <created>1666915802038</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1666915802038</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST making a test case to roll the dice" />
     <MESSAGE value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
     <MESSAGE value="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice." />
     <MESSAGE value="CODE - implement the can hold boolean varible" />
@@ -519,7 +520,8 @@
     <MESSAGE value="A-TEST implement the test case in row 84" />
     <MESSAGE value="U-TEST test the useTheSorceressCard function to see if it can reroll a skull" />
     <MESSAGE value="CODE - implement the useTheSorceressCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the useTheSorceressCard" />
+    <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
