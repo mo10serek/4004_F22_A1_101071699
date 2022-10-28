@@ -96,6 +96,20 @@ public class MessageProcessor {
                 interactingPlayerDescriptor.getScorePad().addScore(
                         scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet));
                 msg = useSorceress.getMessage();
+
+            }else if (cmd.equalsIgnoreCase(Commands.holdChest)) {
+                    RuleResult holdDiceRule = scoreEvaluator.ruleCanHoldDices(diceSet,
+                            interactingPlayerDescriptor.getDrawnFCard());
+                    if (holdDiceRule.isPass()) {
+                        if (lineParser.getParmsLine().length() != 0) {
+                            diceSet.holdOrTakeOffSetOfDices(lineParser.getParmsLine(), true);
+                            msg = holdDiceRule.getMessage();
+                        } else {
+                            msg = "choose to use the chest card but did not choose which dice to hold";
+                        }
+                    } else {
+                        msg = holdDiceRule.getMessage();
+                    }
             }else if (cmd.equalsIgnoreCase(Commands.help)) {
                 toReturn = new PostStatus(Commands.outcome + " list of command to use " +
                         " , outcome: notify the player of what is the current card, dice set and all of the players scores" +
