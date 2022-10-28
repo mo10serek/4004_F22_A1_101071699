@@ -72,6 +72,23 @@ public class ScoreEvaluator {
                 "sorceress card");
     }
 
+    public RuleResult ruleSkullIsland(DiceSet diceSet, FCard fCard) {
+        int currentNumberOfSkulls = 0;
+        if (fCard.getFigure().contains("2skulls")) {
+            currentNumberOfSkulls += 2;
+        } else if (fCard.getFigure().contains("1skull")) {
+            currentNumberOfSkulls += 1;
+        }
+        currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+
+        int score = -100 * currentNumberOfSkulls;
+        if (fCard.getFigure().contains("Captain")) {
+            score = score * 2;
+        }
+
+        return new RuleResult(true, score, "player got more skull so subtracts other players");
+    }
+
     public RuleResult ruleGoToSkullIslandIf4Skulls(DiceSet diceSet, FCard fCard) {
         int currentNumberOfSkulls = 0;
         if (fCard.getFigure().contains("2skulls")) {
