@@ -850,4 +850,50 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row124")
+    void row124() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("4swords", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 4swords you are in sea battle");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice monkey, monkey, monkey, sword, skull, diamond, parrot, parrot";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 4swords, [monkey, monkey, monkey, sword, skull, diamond, parrot, parrot], 200, 0, 0, did not receive correct number of swords");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice monkey, monkey, monkey, sword, skull, diamond, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 4swords, [monkey, monkey, monkey, sword, skull, diamond, sword, sword], 300, 0, 0, did not receive correct number of swords");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice sword, parrot, parrot, sword, skull, diamond, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 4swords, [sword, parrot, parrot, sword, skull, diamond, sword, sword], 1300, 0, 0, receive correct number of swords");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
