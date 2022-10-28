@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,27 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00100" summary="U-TEST implement the test case to enable and disable all dices">
-      <created>1666908644993</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908644993</updated>
-    </task>
-    <task id="LOCAL-00101" summary="U-TEST implement the test case to enable and disable all dices">
-      <created>1666908707020</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908707020</updated>
-    </task>
-    <task id="LOCAL-00102" summary="CODE implement function in the dice set class to enable and disable all dices">
-      <created>1666908749277</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908749277</updated>
     </task>
     <task id="LOCAL-00103" summary="U-TEST implement a function roll in the dice set to roll the certain faces">
       <created>1666909368660</created>
@@ -482,7 +462,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666926926329</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="U-TEST test the hold chest rule to see if you can hold some dices">
+      <created>1666927283014</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1666927283014</updated>
+    </task>
+    <task id="LOCAL-00150" summary="CODE implement the canHoldDices rule function">
+      <created>1666927370447</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1666927370447</updated>
+    </task>
+    <task id="LOCAL-00151" summary="U-TEST test to see if the hold chest command works">
+      <created>1666928994177</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1666928994177</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,9 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test the useTheSorceressCard function to see if it can reroll a skull" />
-    <MESSAGE value="CODE - implement the useTheSorceressCard" />
-    <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
     <MESSAGE value="U-TEST test the rerollSetOutcome that is usefully for testing that can select the faces you need and change them to the faces you needed" />
     <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only." />
     <MESSAGE value="CODE - implement the rerollSetOutcome function for testing" />
@@ -522,7 +520,10 @@
     <MESSAGE value="REFACTOR - put the 4skull rule in the score function" />
     <MESSAGE value="REFACTOR - put the 3skull rule in the score function" />
     <MESSAGE value="REFACTOR - put the 3 skull rule in the score function" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - put the 3 skull rule in the score function" />
+    <MESSAGE value="U-TEST test the hold chest rule to see if you can hold some dices" />
+    <MESSAGE value="CODE implement the canHoldDices rule function" />
+    <MESSAGE value="U-TEST test to see if the hold chest command works" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test to see if the hold chest command works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

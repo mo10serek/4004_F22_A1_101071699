@@ -746,6 +746,23 @@ public class TestServerClasses {
         fCard = new FCard("Parrot", 0);
         ruleResult = scoreEvaluator.ruleCanHoldDices(diceSet, fCard);
         Assertions.assertFalse(ruleResult.isPass());
+    }
 
+    @Test
+    @DisplayName("testHoldOrTakeOffSetOfDices")
+    void testHoldOrTakeOffSetOfDices() {
+        DiceSet diceSet = new DiceSet();
+
+        diceSet.setRollOutcome("skull, monkey, parrot, monkey, sword, sword, skull, coin");
+
+        String message = diceSet.holdOrTakeOffSetOfDices("parrot, monkey", true);
+        Assertions.assertEquals(message, "");
+
+        Assertions.assertFalse(diceSet.getDiceSet().get(6).getCanHold());
+        Assertions.assertTrue(diceSet.getDiceSet().get(2).getCanHold());
+
+        message = diceSet.holdOrTakeOffSetOfDices("parrot", false);
+        Assertions.assertEquals(message, "");
+        Assertions.assertFalse(diceSet.getDiceSet().get(2).getCanHold());
     }
 }
