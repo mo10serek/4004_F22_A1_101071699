@@ -102,6 +102,8 @@ public class MessageProcessor {
         return success;
     }
 
+
+
     public PostStatus scoreNormal() {
         if (interactingPlayerDescriptor.getDrawnFCard() == null) {
             msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
