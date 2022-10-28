@@ -14,6 +14,8 @@ public class MessageProcessor {
     private List<PlayerDescriptor> playerDescriptorList  = null;
     private boolean RIGID = false;
     private MODES currentMode = MODES.FIRSTROLL;
+    private final int[] otherPlayersSaveScores = new int[3];
+    private final int[] otherPlayersRegularScores = new int[3];
 
 
     public void turnOnRIGID() {
@@ -28,6 +30,21 @@ public class MessageProcessor {
 
     public void setInteractingPlayerDescriptor(PlayerDescriptor interactingPlayerDescriptor) {
         this.interactingPlayerDescriptor = interactingPlayerDescriptor;
+    }
+
+    public String getPlayersScoresString(){
+        String scoresListString = "";
+
+        for (PlayerDescriptor playerDescriptor : playerDescriptorList) {
+            scoresListString = scoresListString + playerDescriptor.getScorePad().getTotalScore() + ", ";
+        }
+        scoresListString.trim();
+
+        //Remove trailing ','
+        if(scoresListString.lastIndexOf(',') == scoresListString.length()-1){
+            scoresListString = scoresListString.substring(0,scoresListString.length()-1);
+        }
+        return scoresListString;
     }
 
     public MessageProcessor(FCardDeck fCardDeck, DiceSet diceSet, ScoreEvaluator scoreEvaluator, LineParser lineParser, List<PlayerDescriptor> playerDescriptorList) {
@@ -54,6 +71,10 @@ public class MessageProcessor {
     public PostStatus ProcessMessage(String line) {
         PostStatus toReturn = null;
         boolean success = true;
+        for (int counter = 0; counter < playerDescriptorList.size(); counter++) {
+            otherPlayersRegularScores[counter] = playerDescriptorList.get(counter).getScorePad().getTotalScore();
+        }
+
         if(!isNull(line)) {
             lineParser.init(line);
             String cmd = lineParser.getCmd();
@@ -173,6 +194,16 @@ public class MessageProcessor {
             toReturn = new PostStatus(msg, true);
         }
 
+        for (int counter = 0; counter < playerDescriptorList.size(); counter++) {
+            assert toReturn != null;
+            if (toReturn.success) {
+                otherPlayersSaveScores[counter] = playerDescriptorList.get(counter).getScorePad().getTotalScore();
+                playerDescriptorList.get(counter).getScorePad().setTotalScore(otherPlayersRegularScores[counter]);
+            } else {
+                playerDescriptorList.get(counter).getScorePad().setTotalScore(otherPlayersSaveScores[counter]);
+            }
+        }
+
         return toReturn;
     }
 
@@ -210,7 +241,7 @@ public class MessageProcessor {
         if (interactingPlayerDescriptor.getDrawnFCard() == null) {
             msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
             return new PostStatus(Commands.roll
-                    + msg, true);
+                    + msg,true);
         }
         int score = scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
 
@@ -229,7 +260,7 @@ public class MessageProcessor {
 
             msg = have4SkullsOnFirstRoll.getMessage();
             currentMode = MODES.SKULLISLAND;
-        } else if (useSorceress.isPass() && have3Skulls.isPass()) {
+        } else if (have3Skulls.isPass() && useSorceress.isPass()) {
             boolean canUseSorceressCard;
             if (RIGID) {
                 canUseSorceressCard = useTheSorceressCardInput("parrot");
@@ -244,16 +275,22 @@ public class MessageProcessor {
             score = scoreEvaluator.getScoreWhenDiceHold(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
             msg = "the player died but still score points";
         } else if (have3Skulls.isPass()) {
-            msg = "Player {0, number, integer} died.";
+            msg = "Player died.";
             success = false;
         }
+
+        interactingPlayerDescriptor.getScorePad().addScore(score);
 
         PostStatus toReturn = new PostStatus(Commands.outcome
                 + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
                 + ", " + diceSet.toString()
-                + ", " + score
-                + ", " + msg,
+                + ", " + getPlayersScoresString()
+                + msg,
                 success);
+
+        if (currentMode == MODES.FIRSTROLL) {
+            currentMode = MODES.NORMAL;
+        }
         return toReturn;
     }
 
@@ -264,19 +301,18 @@ public class MessageProcessor {
         msg = "player got more skull so subtracts other players";
         boolean success = true;
         if (leaveSkullIsland.isPass()) {
+            currentMode = MODES.NORMAL;
             msg = "player did not get any more skulls so his turn ends";
             success = false;
         } else {
             playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
                     interactingPlayerDescriptor, diceSet);
         }
-        return new PostStatus(Commands.roll
+        return new PostStatus(Commands.outcome
                 + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
                 + ", " + diceSet.toString()
-                + ", " + playerDescriptorList.get(0).getScorePad().getTotalScore()
-                + ", " + playerDescriptorList.get(1).getScorePad().getTotalScore()
-                + ", " + playerDescriptorList.get(2).getScorePad().getTotalScore()
-                + ", " + msg,
+                + ", " + getPlayersScoresString()
+                + msg,
                 success);
     }
 

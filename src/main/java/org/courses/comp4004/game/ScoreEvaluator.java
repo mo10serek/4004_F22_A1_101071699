@@ -15,7 +15,7 @@ public class ScoreEvaluator {
             return 0;
         }
 
-        RuleResult ruleResultSetsOfIdenticalObjects  = ruleSetOfIdenticalObjects(diceSet, fCard);
+        RuleResult ruleResultSetsOfIdenticalObjects = ruleSetOfIdenticalObjects(diceSet, fCard);
         scorePad.addScore(ruleResultSetsOfIdenticalObjects.getScore());
 
         RuleResult ruleDiamondsAndGold = ruleDiamondsAndGold(diceSet, fCard);
@@ -141,7 +141,7 @@ public class ScoreEvaluator {
         }
         numberOfSkulls += diceSet.countDiceFaces("skull");
 
-        return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
+        return numberOfSkulls >= 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
     }
 
     /**
