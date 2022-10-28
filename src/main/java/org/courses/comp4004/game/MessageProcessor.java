@@ -168,12 +168,14 @@ public class MessageProcessor {
         msg = "the player got a score of " + score + " points from this dice set";
         boolean success = true;
 
+        RuleResult have3Skulls = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, interactingPlayerDescriptor.getDrawnFCard());
+        RuleResult have4SkullsOnFirstRoll = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, interactingPlayerDescriptor.getDrawnFCard());
         RuleResult useSorceress = scoreEvaluator.ruleRollOneSkull(diceSet,
                 interactingPlayerDescriptor.getDrawnFCard());
 
         int numberOfSkulls = diceSet.countDiceFaces("skull");
 
-        if (useSorceress.isPass() && numberOfSkulls >= 3) {
+        if (useSorceress.isPass() && have3Skulls.isPass()) {
             boolean canUseSorceressCard;
             if (RIGID) {
                 canUseSorceressCard = useTheSorceressCardInput("parrot");

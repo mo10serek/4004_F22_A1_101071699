@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,20 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00096" summary="U-TEST making a test case to see if the command roll is able to roll the dice set.">
-      <created>1666907688459</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1666907688459</updated>
-    </task>
-    <task id="LOCAL-00097" summary="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice.">
-      <created>1666908109311</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1666908109311</updated>
     </task>
     <task id="LOCAL-00098" summary="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice.">
       <created>1666908208560</created>
@@ -480,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666926233734</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
+      <created>1666926558099</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926558099</updated>
+    </task>
+    <task id="LOCAL-00146" summary="CODE - develop a function that tell if you need to go to skull island">
+      <created>1666926627224</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926627224</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case in row 82" />
     <MESSAGE value="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card" />
     <MESSAGE value="A-TEST implement the test case in row 83" />
     <MESSAGE value="A-TEST implement the test case in row 84" />
@@ -520,7 +519,8 @@
     <MESSAGE value="A-TEST implement the test case from row78" />
     <MESSAGE value="A-TEST implement the test case from row79" />
     <MESSAGE value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
+    <MESSAGE value="CODE - develop a function that tell if you need to go to skull island" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - develop a function that tell if you need to go to skull island" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
