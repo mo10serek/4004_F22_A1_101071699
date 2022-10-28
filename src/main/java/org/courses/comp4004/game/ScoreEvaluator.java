@@ -176,11 +176,19 @@ public class ScoreEvaluator {
 
     public RuleResult ruleFullChest(DiceSet diceSet) {
         ArrayList<Integer> buffer = diceSet.getDiceFacesCountsArray();
+        List<Dice> allDice = diceSet.getDiceSet();
         int totalOfScoredDice = 0;
 
         for (int value: buffer) {
             if (2 < value) {
                 totalOfScoredDice += value;
+            }
+        }
+
+        for (Dice dice: allDice) {
+            if ((dice.getFigure().contains("coin") && diceSet.countDiceFaces("coin") <=2) ||
+                    dice.getFigure().contains("diamond") && diceSet.countDiceFaces("diamond") <=2) {
+                totalOfScoredDice += 1;
             }
         }
 
