@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,20 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00133" summary="CODE - implement the command set dice">
-      <created>1666921468496</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1666921468496</updated>
-    </task>
-    <task id="LOCAL-00134" summary="U-TEST test a new command called use.Sorceress that is used to use the sorceress card you have">
-      <created>1666923348842</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1666923348842</updated>
     </task>
     <task id="LOCAL-00135" summary="CODE implement the useSorceress command to use the card">
       <created>1666923946068</created>
@@ -481,7 +469,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666968514040</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="A-TEST implement the test case from row 106">
+      <created>1666968577743</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1666968577743</updated>
+    </task>
+    <task id="LOCAL-00183" summary="CODE - put the skull inland mechanic in the message Processor">
+      <created>1666969218529</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1666969218529</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE - implement the hold chest command in MessageProcessor class" />
-    <MESSAGE value="U-TEST test the take-out chest command to see if it works" />
     <MESSAGE value="CODE - implement the take-out chest command in MessageProcessor class" />
     <MESSAGE value="A-TEST implement the test case from row 87." />
     <MESSAGE value="A-TEST implement the test case from row 92." />
@@ -521,7 +521,9 @@
     <MESSAGE value="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls" />
     <MESSAGE value="U-TEST test a new score function that can subtract other players scores if there are new skulls" />
     <MESSAGE value="CODE - implement the new score skull function that can subtract other players score and update the rule leave Skull Island" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the new score skull function that can subtract other players score and update the rule leave Skull Island" />
+    <MESSAGE value="A-TEST implement the test case from row 106" />
+    <MESSAGE value="CODE - put the skull inland mechanic in the message Processor" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - put the skull inland mechanic in the message Processor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,13 +550,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>103</line>
+          <line>114</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
           <line>720</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>225</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>226</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
+          <line>246</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -134,6 +134,11 @@ public class ScoreEvaluator {
     public RuleResult rulePlayerDieIf3Skulls(DiceSet diceSet, FCard fCard){
         int numberOfSkulls = 0;
 
+        if (fCard.getFigure().contains("2skulls")) {
+            numberOfSkulls += 2;
+        } else if (fCard.getFigure().contains("1skull")) {
+            numberOfSkulls += 1;
+        }
         numberOfSkulls += diceSet.countDiceFaces("skull");
 
         return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);

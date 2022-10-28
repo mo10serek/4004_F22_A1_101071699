@@ -5,6 +5,7 @@ import java.util.List;
 import static java.util.Objects.isNull;
 
 public class MessageProcessor {
+    enum MODES {NORMAL, SKULLISLAND, FIRSTROLL}
     private FCardDeck fCardDeck = null;
     private DiceSet diceSet = null;
     private ScoreEvaluator scoreEvaluator = null;
@@ -12,6 +13,7 @@ public class MessageProcessor {
     private LineParser lineParser = null;
     private List<PlayerDescriptor> playerDescriptorList  = null;
     private boolean RIGID = false;
+    private MODES currentMode = MODES.FIRSTROLL;
 
 
     public void turnOnRIGID() {
@@ -63,7 +65,11 @@ public class MessageProcessor {
                     toReturn = new PostStatus(Commands.takeCard + " " + fCardFigure, true);
                 } else if (cmd.equalsIgnoreCase(Commands.setDice)) {
                     diceSet.setRollOutcome(lineParser.getParmsLine());
-                    toReturn = scoreNormal();
+                    if (currentMode == MODES.NORMAL || currentMode == MODES.FIRSTROLL) {
+                        toReturn = scoreNormal();
+                    } else if (currentMode == MODES.SKULLISLAND) {
+                        toReturn = scoreSkullIsland();
+                    }
                 }
             }
             if (cmd.equalsIgnoreCase(Commands.modeInteracting)) {//"mode.interacting"; //  <null>
@@ -94,6 +100,11 @@ public class MessageProcessor {
                         diceSet.roll();
                     } else { //"roll"; //  <Dice1>,<Dice2>,...,<DiceN>   (player request rolling SELECTED SUBSET OF DICE)
                         diceSet.roll(lineParser.getParmsLine());
+                    }
+                    if (currentMode == MODES.NORMAL || currentMode == MODES.FIRSTROLL) {
+                        toReturn = scoreNormal();
+                    } else if (currentMode == MODES.SKULLISLAND) {
+                        toReturn = scoreSkullIsland();
                     }
                 }
             }else if (cmd.equalsIgnoreCase(Commands.useSorceress)) {
@@ -212,7 +223,13 @@ public class MessageProcessor {
                 interactingPlayerDescriptor.getDrawnFCard());
         RuleResult useChest = scoreEvaluator.ruleCanHoldDices(diceSet, interactingPlayerDescriptor.getDrawnFCard());
 
-        if (useSorceress.isPass() && have3Skulls.isPass()) {
+        if(currentMode == MODES.FIRSTROLL && have4SkullsOnFirstRoll.isPass()) {
+            playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
+                    interactingPlayerDescriptor, diceSet);
+
+            msg = have4SkullsOnFirstRoll.getMessage();
+            currentMode = MODES.SKULLISLAND;
+        } else if (useSorceress.isPass() && have3Skulls.isPass()) {
             boolean canUseSorceressCard;
             if (RIGID) {
                 canUseSorceressCard = useTheSorceressCardInput("parrot");
@@ -226,6 +243,9 @@ public class MessageProcessor {
         } else if (have3Skulls.isPass() && useChest.isPass()) {
             score = scoreEvaluator.getScoreWhenDiceHold(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
             msg = "the player died but still score points";
+        } else if (have3Skulls.isPass()) {
+            msg = "Player {0, number, integer} died.";
+            success = false;
         }
 
         PostStatus toReturn = new PostStatus(Commands.outcome
