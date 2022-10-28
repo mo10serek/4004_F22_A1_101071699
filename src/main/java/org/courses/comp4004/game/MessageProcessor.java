@@ -102,7 +102,22 @@ public class MessageProcessor {
         return success;
     }
 
-
+    public boolean useTheSorceressCardInput(String input) {
+        boolean success = false;
+        for (int counter = 0; counter < diceSet.getMAX_SIZE(); counter++) {
+            if (diceSet.getDiceSet().get(counter).getFigure().contains("skull")) {
+                diceSet.getDiceSet().get(counter).enableRollIfFigure("skull");
+                if (lineParser.getParmsLine().length() == 0) {
+                    diceSet.reroll("skull");
+                } else {
+                    diceSet.rerollSetOutcome("skull", input);
+                }
+                success = true;
+                break;
+            }
+        }
+        return success;
+    }
 
     public PostStatus scoreNormal() {
         if (interactingPlayerDescriptor.getDrawnFCard() == null) {
