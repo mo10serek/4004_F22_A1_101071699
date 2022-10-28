@@ -36,7 +36,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testTakeOutChestCommand">
+  <component name="RunManager" selected="JUnit.Part2Test.row87">
     <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -119,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row87" />
         <item itemvalue="JUnit.TestServerClasses.testTakeOutChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldOrTakeOffSetOfDices" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChest" />
-        <item itemvalue="JUnit.Part2Test.row87" />
       </list>
     </recent_temporary>
   </component>
