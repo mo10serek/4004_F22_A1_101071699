@@ -5,7 +5,7 @@ import java.util.List;
 import static java.util.Objects.isNull;
 
 public class MessageProcessor {
-    enum MODES {NORMAL, SKULLISLAND, FIRSTROLL}
+    enum MODES {NORMAL, SKULLISLAND, SEABATTLE, FIRSTROLL}
     private FCardDeck fCardDeck = null;
     private DiceSet diceSet = null;
     private ScoreEvaluator scoreEvaluator = null;
@@ -84,12 +84,23 @@ public class MessageProcessor {
                     interactingPlayerDescriptor.setDrawnFCard(fCard);
                     String fCardFigure = fCard.getFigure();
                     toReturn = new PostStatus(Commands.takeCard + " " + fCardFigure, true);
+                    RuleResult goToSeaBattle = scoreEvaluator.ruleGoToSeaBattle(diceSet,
+                            interactingPlayerDescriptor.getDrawnFCard());
+                    if (goToSeaBattle.isPass()) {
+                        currentMode = MODES.SEABATTLE;
+                        toReturn = new PostStatus(Commands.outcome
+                                + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                                + " " + goToSeaBattle.getMessage(),
+                                true);
+                    }
                 } else if (cmd.equalsIgnoreCase(Commands.setDice)) {
                     diceSet.setRollOutcome(lineParser.getParmsLine());
                     if (currentMode == MODES.NORMAL || currentMode == MODES.FIRSTROLL) {
                         toReturn = scoreNormal();
                     } else if (currentMode == MODES.SKULLISLAND) {
                         toReturn = scoreSkullIsland();
+                    } else if (currentMode == MODES.SEABATTLE) {
+                        toReturn = scoreSeaBattle();
                     }
                 }
             }
@@ -112,6 +123,12 @@ public class MessageProcessor {
                 interactingPlayerDescriptor.setDrawnFCard(fCard);
                 String fCardFigure = fCard.getFigure();
                 toReturn = new PostStatus(Commands.outcome + " " + fCardFigure, true);
+                RuleResult goToSeaBattle = scoreEvaluator.ruleGoToSeaBattle(diceSet,
+                        interactingPlayerDescriptor.getDrawnFCard());
+                if (goToSeaBattle.isPass()) {
+                    currentMode = MODES.SEABATTLE;
+                    msg = goToSeaBattle.getMessage();
+                }
             }else if(cmd.equalsIgnoreCase(Commands.roll)) {
                 if (interactingPlayerDescriptor.getDrawnFCard() == null) {
                     msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
@@ -126,6 +143,8 @@ public class MessageProcessor {
                         toReturn = scoreNormal();
                     } else if (currentMode == MODES.SKULLISLAND) {
                         toReturn = scoreSkullIsland();
+                    } else if (currentMode == MODES.SEABATTLE) {
+                        toReturn = scoreSeaBattle();
                     }
                 }
             }else if (cmd.equalsIgnoreCase(Commands.useSorceress)) {
