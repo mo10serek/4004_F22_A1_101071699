@@ -29,78 +29,6 @@ public class ScoreEvaluator {
         return score;
     }
 
-    public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
-        if (fCard.getFigure().contains("Sorceress")) {
-            return new RuleResult(true, 0, "player use the sorceress card to roll one skull");
-        }
-        return new RuleResult(false, 0, "player tried to roll one skull but does not have the " +
-                "sorceress card");
-    }
-
-    public RuleResult ruleGoToSkullIslandIf4Skulls(DiceSet diceSet, FCard fCard) {
-        int currentNumberOfSkulls = 0;
-        if (fCard.getFigure().contains("2skulls")) {
-            currentNumberOfSkulls += 2;
-        } else if (fCard.getFigure().contains("1skull")) {
-            currentNumberOfSkulls += 1;
-        }
-        currentNumberOfSkulls += diceSet.countDiceFaces("skull");
-
-        return currentNumberOfSkulls >= 4 ? new RuleResult(true, 0, "player got 4 skulls in first roll " +
-                "and need to go to skull Island") : new RuleResult(false, 0);
-    }
-
-    /**
-     * Rule checks if player selected less than 2 dice to roll
-     * @param diceFigures
-     * @return
-     */
-    public RuleResult rulePlayerCannotRerollLessThan2dice(String diceFigures){
-
-        String[] figureArray = diceFigures.trim().split("\\s*,\\s*");
-        return figureArray.length < 2 ? new RuleResult(true, 0) : new RuleResult(false, 0);
-    }
-
-    /**
-     * Rule checks if 3 skulls are present in the dice set.
-     * Returns true if rule finds that this is the case
-     * @param diceSet
-     * @return
-     */
-    public RuleResult rulePlayerDieIf3Skulls(DiceSet diceSet, FCard fCard){
-        int numberOfSkulls = 0;
-
-        numberOfSkulls += diceSet.countDiceFaces("skull");
-
-        return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
-    }
-
-    public ArrayList<Integer> getDiceFacesCountsArrayCard(DiceSet diceSet, FCard fCard) {
-        ArrayList<Integer> buffer = new ArrayList<Integer>();
-
-        buffer.add(diceSet.countDiceFaces("skull"));
-        buffer.add(diceSet.countDiceFaces("sword"));
-        if (fCard.getFigure().equals("Monkey&Parrot")) {
-            buffer.add(diceSet.countDiceFaces("monkey") +
-                    diceSet.countDiceFaces("parrot"));
-        } else {
-            buffer.add(diceSet.countDiceFaces("monkey"));
-            buffer.add(diceSet.countDiceFaces("parrot"));
-        }
-        if (fCard.getFigure().equals("Diamond")) {
-            buffer.add(diceSet.countDiceFaces("diamond") + 1);
-        } else {
-            buffer.add(diceSet.countDiceFaces("diamond"));
-        }
-        if (fCard.getFigure().equals("Coin")) {
-            buffer.add(diceSet.countDiceFaces("coin") + 1);
-        } else {
-            buffer.add(diceSet.countDiceFaces("coin"));
-        }
-
-        return buffer;
-    }
-
     int getScoreWhenDiceHold(FCard fCard, DiceSet diceSet) {
         int score = 0;
         ScorePad scorePad = new ScorePad();
@@ -134,6 +62,78 @@ public class ScoreEvaluator {
         } else {
             return new RuleResult(false,0,"dices cannot be hold");
         }
+    }
+
+    public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
+        if (fCard.getFigure().contains("Sorceress")) {
+            return new RuleResult(true, 0, "player use the sorceress card to roll one skull");
+        }
+        return new RuleResult(false, 0, "player tried to roll one skull but does not have the " +
+                "sorceress card");
+    }
+
+    public RuleResult ruleGoToSkullIslandIf4Skulls(DiceSet diceSet, FCard fCard) {
+        int currentNumberOfSkulls = 0;
+        if (fCard.getFigure().contains("2skulls")) {
+            currentNumberOfSkulls += 2;
+        } else if (fCard.getFigure().contains("1skull")) {
+            currentNumberOfSkulls += 1;
+        }
+        currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+
+        return currentNumberOfSkulls >= 4 ? new RuleResult(true, 0, "player got 4 skulls in first roll " +
+                "and need to go to skull Island") : new RuleResult(false, 0);
+    }
+
+    /**
+     * Rule checks if 3 skulls are present in the dice set.
+     * Returns true if rule finds that this is the case
+     * @param diceSet
+     * @return
+     */
+    public RuleResult rulePlayerDieIf3Skulls(DiceSet diceSet, FCard fCard){
+        int numberOfSkulls = 0;
+
+        numberOfSkulls += diceSet.countDiceFaces("skull");
+
+        return numberOfSkulls == 3 ? new RuleResult(true, 0) : new RuleResult(false, 0);
+    }
+
+    /**
+     * Rule checks if player selected less than 2 dice to roll
+     * @param diceFigures
+     * @return
+     */
+    public RuleResult rulePlayerCannotRerollLessThan2dice(String diceFigures){
+
+        String[] figureArray = diceFigures.trim().split("\\s*,\\s*");
+        return figureArray.length < 2 ? new RuleResult(true, 0) : new RuleResult(false, 0);
+    }
+
+    public ArrayList<Integer> getDiceFacesCountsArrayCard(DiceSet diceSet, FCard fCard) {
+        ArrayList<Integer> buffer = new ArrayList<Integer>();
+
+        buffer.add(diceSet.countDiceFaces("skull"));
+        buffer.add(diceSet.countDiceFaces("sword"));
+        if (fCard.getFigure().equals("Monkey&Parrot")) {
+            buffer.add(diceSet.countDiceFaces("monkey") +
+                    diceSet.countDiceFaces("parrot"));
+        } else {
+            buffer.add(diceSet.countDiceFaces("monkey"));
+            buffer.add(diceSet.countDiceFaces("parrot"));
+        }
+        if (fCard.getFigure().equals("Diamond")) {
+            buffer.add(diceSet.countDiceFaces("diamond") + 1);
+        } else {
+            buffer.add(diceSet.countDiceFaces("diamond"));
+        }
+        if (fCard.getFigure().equals("Coin")) {
+            buffer.add(diceSet.countDiceFaces("coin") + 1);
+        } else {
+            buffer.add(diceSet.countDiceFaces("coin"));
+        }
+
+        return buffer;
     }
 
     public RuleResult ruleSetOfIdenticalObjects(DiceSet diceSet, FCard fCard) {
