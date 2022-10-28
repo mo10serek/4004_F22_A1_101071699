@@ -1007,4 +1007,27 @@ public class TestServerClasses {
         diceSet.setRollOutcome("skull, skull, sword, sword, sword, parrot, coin, diamond");
         Assertions.assertEquals(scoreEvaluator.loseScoreInSeaBattle(diceSet, fCard),-1000);
     }
+
+    @Test
+    @DisplayName("testGetScoreInSeaBattle")
+    void testGetScoreInSeaBattle() {
+        FCard fCard = new FCard("Chest", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        Assertions.assertEquals(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).getScore(),0);
+        Assertions.assertFalse(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).isPass());
+        fCard = new FCard("2swords", 0);
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).getScore(),300);
+        Assertions.assertTrue(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).isPass());
+        fCard = new FCard("3swords", 0);
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).getScore(),500);
+        Assertions.assertTrue(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).isPass());
+        fCard = new FCard("4swords", 0);
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, sword, sword, sword, sword");
+        Assertions.assertEquals(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).getScore(),1000);
+        Assertions.assertTrue(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).isPass());
+    }
 }

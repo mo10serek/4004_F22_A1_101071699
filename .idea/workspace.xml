@@ -135,27 +135,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00144" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
-      <created>1666926233734</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1666926233734</updated>
-    </task>
-    <task id="LOCAL-00145" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
-      <created>1666926558099</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1666926558099</updated>
-    </task>
-    <task id="LOCAL-00146" summary="CODE - develop a function that tell if you need to go to skull island">
-      <created>1666926627224</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1666926627224</updated>
-    </task>
     <task id="LOCAL-00147" summary="REFACTOR - put the 4skull rule in the score function">
       <created>1666926893897</created>
       <option name="number" value="00147" />
@@ -478,7 +457,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666974234215</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="CODE implement the rule that tells that you need to go to sea battle">
+      <created>1666974670439</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974670439</updated>
+    </task>
+    <task id="LOCAL-00194" summary="U-TEST test the new rule to see if you lose in the sea battle">
+      <created>1666974708425</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974708425</updated>
+    </task>
+    <task id="LOCAL-00195" summary="CODE implement the new rule that you can loose in the sea battle">
+      <created>1666974757945</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974757945</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,11 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE - implement the use Chest rule in the add score function" />
-    <MESSAGE value="A-TEST implement the test case from 97" />
-    <MESSAGE value="A-TEST implement the test case from 98" />
-    <MESSAGE value="CODE - improve the ruleFullChest so it can count coins and diamonds as scored dices" />
-    <MESSAGE value="A-TEST implement the test case from 99" />
     <MESSAGE value="A-TEST implement the test case from 103" />
     <MESSAGE value="CODE - put the monkey and parrot card involved in the ruleFullChest function" />
     <MESSAGE value="REFACTOR - move and organize the functions around the class" />
@@ -518,7 +513,12 @@
     <MESSAGE value="CODE fix thing so row 110 test can pass" />
     <MESSAGE value="U-TEST test the new rule to see if you are in a sea battle" />
     <MESSAGE value="U-test implement the rule that tells that you need to go to sea battle" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-test implement the rule that tells that you need to go to sea battle" />
+    <MESSAGE value="U-test implement the rule that tells you that you lose in the sea battle and looses points" />
+    <MESSAGE value="U-TEST implement the rule that tells you that you lose in the sea battle and looses points" />
+    <MESSAGE value="CODE implement the rule that tells that you need to go to sea battle" />
+    <MESSAGE value="U-TEST test the new rule to see if you lose in the sea battle" />
+    <MESSAGE value="CODE implement the new rule that you can loose in the sea battle" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE implement the new rule that you can loose in the sea battle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
