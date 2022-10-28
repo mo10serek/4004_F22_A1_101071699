@@ -641,5 +641,28 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, "take.card Sorceress");
     }
 
+    @Test
+    @DisplayName("messageSetDice")
+    void testSetDice() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        ScorePad scorePad = new ScorePad();
+        interactingPlayerDescriptor.setScorePad(scorePad);
+        playerDescriptorList.add(interactingPlayerDescriptor);
 
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        messageProcessor.turnOnRIGID();
+
+        messageProcessor.ProcessMessage(Commands.takeCard + " Sorceress");
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.setDice + " skull, skull, monkey, parrot, " +
+                "diamond, coin, sword, coin");
+        Assertions.assertEquals(toReturn.outMsg,"outcome Sorceress, [skull, skull, monkey, parrot, diamond, coin," +
+                " sword, coin], 300, the player got a score of 300 points from this dice set");
+    }
 }

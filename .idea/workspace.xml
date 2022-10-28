@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,34 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00079" summary="CODE Implement a rule function that add 500 point to your score if all the dice give you points.">
-      <created>1666903931087</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903931087</updated>
-    </task>
-    <task id="LOCAL-00080" summary="A-TEST implement the test case from row 65.">
-      <created>1666904002461</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1666904002461</updated>
-    </task>
-    <task id="LOCAL-00081" summary="A-TEST implement the test case from row 66.">
-      <created>1666904038442</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1666904038442</updated>
-    </task>
-    <task id="LOCAL-00082" summary="A-TEST implement the test case from row 67.">
-      <created>1666904062341</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1666904062341</updated>
     </task>
     <task id="LOCAL-00083" summary="A-TEST implement the test case from row 68.">
       <created>1666904099151</created>
@@ -482,7 +453,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666918470363</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="U-TEST test a new command called take card that takes the card you need. Used for testing.">
+      <created>1666918975286</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1666918975286</updated>
+    </task>
+    <task id="LOCAL-00129" summary="U-TEST test a new command called take card that takes the card you need. Used for testing.">
+      <created>1666919109969</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1666919109969</updated>
+    </task>
+    <task id="LOCAL-00130" summary="CODE make a testing command that can pick up the card and use it for testing">
+      <created>1666920203239</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1666920203239</updated>
+    </task>
+    <task id="LOCAL-00131" summary="U-TEST test the new setDice command that can set certain faces to a dice set">
+      <created>1666921101681</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1666921101681</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,9 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE implement function in the dice set class to enable and disable all dices" />
-    <MESSAGE value="U-TEST implement a function roll in the dice set to roll the certain faces" />
-    <MESSAGE value="CODE implement a roll function to select the faces you want to roll" />
     <MESSAGE value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
     <MESSAGE value="CODE implement a reroll function to select the faces you want to reroll" />
     <MESSAGE value="U-TEST test the draw command in the message processor" />
@@ -522,7 +518,10 @@
     <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only." />
     <MESSAGE value="CODE - implement the rerollSetOutcome function for testing" />
     <MESSAGE value="CODE develop the useTheSorceressCardInput function." />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE develop the useTheSorceressCardInput function." />
+    <MESSAGE value="U-TEST test a new command called take card that takes the card you need. Used for testing." />
+    <MESSAGE value="CODE make a testing command that can pick up the card and use it for testing" />
+    <MESSAGE value="U-TEST test the new setDice command that can set certain faces to a dice set" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new setDice command that can set certain faces to a dice set" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
