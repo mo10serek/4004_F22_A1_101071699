@@ -48,6 +48,9 @@ public class MessageProcessor {
                     interactingPlayerDescriptor.setDrawnFCard(fCard);
                     String fCardFigure = fCard.getFigure();
                     toReturn = new PostStatus(Commands.takeCard + " " + fCardFigure, true);
+                } else if (cmd.equalsIgnoreCase(Commands.setDice)) {
+                    diceSet.setRollOutcome(lineParser.getParmsLine());
+                    toReturn = scoreNormal();
                 }
             }
             if (cmd.equalsIgnoreCase(Commands.modeInteracting)) {//"mode.interacting"; //  <null>
