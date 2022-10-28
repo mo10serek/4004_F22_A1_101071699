@@ -36,6 +36,19 @@ public class ScoreEvaluator {
                 "sorceress card");
     }
 
+    public RuleResult ruleGoToSkullIslandIf4Skulls(DiceSet diceSet, FCard fCard) {
+        int currentNumberOfSkulls = 0;
+        if (fCard.getFigure().contains("2skulls")) {
+            currentNumberOfSkulls += 2;
+        } else if (fCard.getFigure().contains("1skull")) {
+            currentNumberOfSkulls += 1;
+        }
+        currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+
+        return currentNumberOfSkulls >= 4 ? new RuleResult(true, 0, "player got 4 skulls in first roll " +
+                "and need to go to skull Island") : new RuleResult(false, 0);
+    }
+
     /**
      * Rule checks if player selected less than 2 dice to roll
      * @param diceFigures
