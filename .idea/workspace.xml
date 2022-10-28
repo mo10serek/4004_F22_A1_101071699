@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/Commands.java" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="A-TEST implement the test case in row 130">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses">
+  <component name="RunManager" selected="JUnit.Part3Test.row130">
     <configuration name="Part2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -72,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2Test.row116" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Part3Test.row130" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +81,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row116" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part3Test" />
+      <option name="METHOD_NAME" value="row130" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2Test.row124" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Part3Test.row131" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +97,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row124" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part3Test" />
+      <option name="METHOD_NAME" value="row131" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part3Test.row130" />
+        <item itemvalue="JUnit.Part3Test.row131" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.Part2Test" />
         <item itemvalue="JUnit.Part2Test.row100" />
-        <item itemvalue="JUnit.Part2Test.row116" />
-        <item itemvalue="JUnit.Part2Test.row124" />
       </list>
     </recent_temporary>
   </component>
@@ -137,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00163" summary="A-TEST implement the test case from row 92">
-      <created>1666936718771</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1666936718771</updated>
-    </task>
-    <task id="LOCAL-00164" summary="CODE - implement the use Chest rule in the add score function">
-      <created>1666936801460</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1666936801461</updated>
     </task>
     <task id="LOCAL-00165" summary="A-TEST implement the test case from 97">
       <created>1666936915107</created>
@@ -481,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666976454085</updated>
     </task>
-    <option name="localTasksCounter" value="212" />
+    <task id="LOCAL-00212" summary="CODE - update the message processor to run test case in row 100">
+      <created>1666977104064</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1666977104064</updated>
+    </task>
+    <task id="LOCAL-00213" summary="A-TEST implement the test case in row 130">
+      <created>1666977265305</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1666977265305</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE make changes to the files so it will implement the skull island mechanic" />
-    <MESSAGE value="A-TEST implement the test case from row 108" />
     <MESSAGE value="A-TEST implement the test case from row 110" />
     <MESSAGE value="CODE fix thing so row 110 test can pass" />
     <MESSAGE value="U-TEST test the new rule to see if you are in a sea battle" />
@@ -521,7 +519,9 @@
     <MESSAGE value="A-TEST implement the test case from row 124" />
     <MESSAGE value="A-TEST implement the test case from row 116" />
     <MESSAGE value="A-TEST implement the test case from row 100" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 100" />
+    <MESSAGE value="CODE - update the message processor to run test case in row 100" />
+    <MESSAGE value="A-TEST implement the test case in row 130" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case in row 130" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,12 +558,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>280</line>
+          <line>279</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>332</line>
+          <line>331</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -573,7 +573,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>285</line>
+          <line>284</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -585,6 +585,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java</url>
           <line>413</line>
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
