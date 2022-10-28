@@ -83,6 +83,18 @@ public class MessageProcessor {
                         diceSet.roll(lineParser.getParmsLine());
                     }
                 }
+            }else if (cmd.equalsIgnoreCase(Commands.useSorceress)) {
+                boolean useSorceress = interactingPlayerDescriptor.getDrawnFCard().getFigure().contains("Sorceress");
+                if (useSorceress) {
+                    if (RIGID) {
+                        useTheSorceressCardInput(lineParser.getParmsLine());
+                    } else {
+                        useTheSorceressCard();
+                    }
+                }
+                interactingPlayerDescriptor.getScorePad().addScore(
+                        scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet));
+                msg = "player use the sorceress card to roll one skull";
             }else if (cmd.equalsIgnoreCase(Commands.help)) {
                 toReturn = new PostStatus(Commands.outcome + " list of command to use " +
                         " , outcome: notify the player of what is the current card, dice set and all of the players scores" +
@@ -93,10 +105,24 @@ public class MessageProcessor {
                         " , use.sorceress: to allow the player have the sorceress card",
                         true);
             }
+            if (!cmd.equalsIgnoreCase(Commands.help) &&
+                    !cmd.equalsIgnoreCase(Commands.setDice) && !cmd.equalsIgnoreCase(Commands.takeCard) &&
+                    !cmd.equalsIgnoreCase(Commands.roll) && !cmd.equalsIgnoreCase(Commands.draw) &&
+                    !cmd.equalsIgnoreCase(Commands.modeInteracting) &&
+                    !cmd.equalsIgnoreCase(Commands.modeServerBroadcasting) && !cmd.equalsIgnoreCase(Commands.inform) &&
+                    !msg.contains("unknown command")) {
+                toReturn = new PostStatus(cmd
+                        + ", " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                        + ", " + diceSet.toString()
+                        + ", " + interactingPlayerDescriptor.getScorePad().getTotalScore()
+                        + ", " + msg,
+                        success);
+            }
         } else {
             msg = "unknown command";
             toReturn = new PostStatus(msg, true);
         }
+
         return toReturn;
     }
 
