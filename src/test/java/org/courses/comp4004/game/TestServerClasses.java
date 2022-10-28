@@ -966,4 +966,25 @@ public class TestServerClasses {
         Assertions.assertEquals(postStatus.outMsg, "roll Coin, [skull, skull, skull, skull, coin, diamond, coin, " +
                 "sword], 1000, 600, 600, player did not get any more skulls so his turn ends");
     }
+
+    @Test
+    @DisplayName("testRuleGoToSeaBattle")
+    void testRuleGoToSeaBattle() {
+        FCard fCard = new FCard("Chest", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        Assertions.assertEquals(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).getMessage(),"");
+        Assertions.assertFalse(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).isPass());
+        fCard = new FCard("2swords", 0);
+        Assertions.assertEquals(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).getMessage(),"you are in sea battle");
+        Assertions.assertTrue(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).isPass());
+        fCard = new FCard("3swords", 0);
+        Assertions.assertEquals(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).getMessage(),"you are in sea battle");
+        Assertions.assertTrue(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).isPass());;
+        fCard = new FCard("4swords", 0);
+        Assertions.assertEquals(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).getMessage(),"you are in sea battle");
+        Assertions.assertTrue(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).isPass());
+
+    }
 }
