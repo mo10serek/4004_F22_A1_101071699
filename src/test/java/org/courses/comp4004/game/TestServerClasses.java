@@ -765,4 +765,40 @@ public class TestServerClasses {
         Assertions.assertEquals(message, "");
         Assertions.assertFalse(diceSet.getDiceSet().get(2).getCanHold());
     }
+
+    @Test
+    @DisplayName("testHoldChestCommand")
+    void testHoldChestCommand() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        ScorePad scorePad = new ScorePad();
+        interactingPlayerDescriptor.setScorePad(scorePad);
+        playerDescriptorList.add(interactingPlayerDescriptor);
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        messageProcessor.turnOnRIGID();
+
+        messageProcessor.ProcessMessage(Commands.setDice + " skull, skull, monkey, parrot, " +
+                "diamond, coin, sword, coin");
+        messageProcessor.ProcessMessage(Commands.takeCard + " Coin");
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.holdChest + " diamond, coin");
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, "hold, Coin, [skull, skull, monkey, parrot, diamond, coin, " +
+                "sword, coin], 0, dices cannot be hold");
+        messageProcessor.ProcessMessage(Commands.takeCard + " Chest");
+        toReturn = messageProcessor.ProcessMessage(Commands.holdChest);
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, "hold, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
+                "sword, coin], 0, choose to use the chest card but did not choose which dice to hold");
+        toReturn = messageProcessor.ProcessMessage(Commands.holdChest + " diamond, coin");
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, "hold, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
+                "sword, coin], 0, dices can be hold");
+    }
 }
