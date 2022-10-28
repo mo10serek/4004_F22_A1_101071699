@@ -988,4 +988,23 @@ public class TestServerClasses {
 
     }
 
+
+    @Test
+    @DisplayName("testloseScoreInSeaBattle")
+    void testloseScoreInSeaBattle() {
+        FCard fCard = new FCard("Chest", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, diamond, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        Assertions.assertEquals(scoreEvaluator.loseScoreInSeaBattle(diceSet, fCard),0);
+        fCard = new FCard("2swords", 0);
+        diceSet.setRollOutcome("skull, skull, coin, sword, parrot, parrot, coin, diamond");
+        Assertions.assertEquals(scoreEvaluator.loseScoreInSeaBattle(diceSet, fCard),-300);
+        fCard = new FCard("3swords", 0);
+        diceSet.setRollOutcome("skull, skull, sword, sword, parrot, parrot, coin, diamond");
+        Assertions.assertEquals(scoreEvaluator.loseScoreInSeaBattle(diceSet, fCard),-500);
+        fCard = new FCard("4swords", 0);
+        diceSet.setRollOutcome("skull, skull, sword, sword, sword, parrot, coin, diamond");
+        Assertions.assertEquals(scoreEvaluator.loseScoreInSeaBattle(diceSet, fCard),-1000);
+    }
 }
