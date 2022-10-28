@@ -833,4 +833,19 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, "takeOut, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
                 "sword, coin], 0, dices can be hold");
     }
+
+    @Test
+    @DisplayName("testGetScoreWhenDiceHold")
+    void testGetScoreWhenDiceHold() {
+        FCard fCard = new FCard("Coin", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("coin, diamond, coin, diamond, skull, skull, diamond, coin");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.holdOrTakeOffSetOfDices("coin, diamond, coin, diamond", true);
+
+        int score = scoreEvaluator.getScoreWhenDiceHold(fCard, diceSet);
+
+        Assertions.assertEquals(score, 600);
+    }
 }

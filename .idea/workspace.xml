@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row87">
+  <component name="RunManager" selected="JUnit.Part2Test.row92">
     <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -53,7 +57,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses.testHoldChest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Part2Test.row92" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -62,8 +66,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="METHOD_NAME" value="testHoldChest" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
+      <option name="METHOD_NAME" value="row92" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row92" />
         <item itemvalue="JUnit.Part2Test.row87" />
         <item itemvalue="JUnit.TestServerClasses.testTakeOutChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldOrTakeOffSetOfDices" />
-        <item itemvalue="JUnit.TestServerClasses.testHoldChest" />
       </list>
     </recent_temporary>
   </component>
@@ -135,34 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00107" summary="U-TEST test the draw command in the message processor">
-      <created>1666910325669</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1666910325669</updated>
-    </task>
-    <task id="LOCAL-00108" summary="CODE implement the draw command">
-      <created>1666910458727</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1666910458727</updated>
-    </task>
-    <task id="LOCAL-00109" summary="U-TEST test the roll command in the message processor">
-      <created>1666910613330</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1666910613330</updated>
-    </task>
-    <task id="LOCAL-00110" summary="CODE implement the roll command">
-      <created>1666910889723</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1666910889723</updated>
     </task>
     <task id="LOCAL-00111" summary="U-TEST implement the help command">
       <created>1666911921400</created>
@@ -479,7 +455,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666930264510</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="U-TEST test the take-out chest command to see if it works">
+      <created>1666930622382</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1666930622382</updated>
+    </task>
+    <task id="LOCAL-00157" summary="CODE - implement the take-out chest command in MessageProcessor class">
+      <created>1666930742923</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1666930742924</updated>
+    </task>
+    <task id="LOCAL-00158" summary="A-TEST implement the test case from row 87.">
+      <created>1666930862712</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1666930862712</updated>
+    </task>
+    <task id="LOCAL-00159" summary="A-TEST implement the test case from row 92.">
+      <created>1666931050783</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1666931050783</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,10 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test a new command called take card that takes the card you need. Used for testing." />
-    <MESSAGE value="CODE make a testing command that can pick up the card and use it for testing" />
-    <MESSAGE value="U-TEST test the new setDice command that can set certain faces to a dice set" />
-    <MESSAGE value="CODE - implement the command set dice" />
     <MESSAGE value="U-TEST test a new command called use.Sorceress that is used to use the sorceress card you have" />
     <MESSAGE value="CODE implement the useSorceress command to use the card" />
     <MESSAGE value="U-TEST test a new rule that you can roll one skull when you have the sorceress card" />
@@ -519,7 +519,11 @@
     <MESSAGE value="CODE - implement the function that can hold or take off dices" />
     <MESSAGE value="U-TEST test the hold chest command to see if it works" />
     <MESSAGE value="CODE - implement the hold chest command in MessageProcessor class" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the hold chest command in MessageProcessor class" />
+    <MESSAGE value="U-TEST test the take-out chest command to see if it works" />
+    <MESSAGE value="CODE - implement the take-out chest command in MessageProcessor class" />
+    <MESSAGE value="A-TEST implement the test case from row 87." />
+    <MESSAGE value="A-TEST implement the test case from row 92." />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 92." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,11 +552,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
           <line>90</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
