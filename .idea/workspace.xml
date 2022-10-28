@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="CODE - make changes for the test case in row 78">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row79">
-    <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row77" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleGoToSkullIslandIf4Skulls">
     <configuration name="Part2Test.row78" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -119,13 +102,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRuleGoToSkullIslandIf4Skulls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRuleGoToSkullIslandIf4Skulls" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRuleGoToSkullIslandIf4Skulls" />
         <item itemvalue="JUnit.Part2Test.row79" />
         <item itemvalue="JUnit.Part2Test.row78" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testMessageProcessor" />
-        <item itemvalue="JUnit.Part2Test.row77" />
       </list>
     </recent_temporary>
   </component>
@@ -137,34 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00092" summary="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game">
-      <created>1666906572816</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1666906572817</updated>
-    </task>
-    <task id="LOCAL-00093" summary="CODE implemented the RIGID boolean variable.">
-      <created>1666906641639</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1666906641639</updated>
-    </task>
-    <task id="LOCAL-00094" summary="U-TEST implement the test case that check if it stores the current player descriptor.">
-      <created>1666907205041</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1666907205041</updated>
-    </task>
-    <task id="LOCAL-00095" summary="CODE implement the interactingPlayerDescriptor varible">
-      <created>1666907260086</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1666907260086</updated>
     </task>
     <task id="LOCAL-00096" summary="U-TEST making a test case to see if the command roll is able to roll the dice set.">
       <created>1666907688459</created>
@@ -481,7 +452,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666924925453</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="CODE - make changes for the test case in row 78">
+      <created>1666925442233</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1666925442233</updated>
+    </task>
+    <task id="LOCAL-00142" summary="A-TEST implement the test case from row79">
+      <created>1666925546746</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1666925546746</updated>
+    </task>
+    <task id="LOCAL-00143" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
+      <created>1666926077501</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926077501</updated>
+    </task>
+    <task id="LOCAL-00144" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
+      <created>1666926233734</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1666926233734</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,9 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE implment the help command" />
-    <MESSAGE value="U-TEST test the score function that will calculate the score based on the dice set and card" />
-    <MESSAGE value="CODE implement the score function that will calculate the score based on the dice set and card" />
     <MESSAGE value="A-TEST implement the test case in row 82" />
     <MESSAGE value="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card" />
     <MESSAGE value="A-TEST implement the test case in row 83" />
@@ -520,8 +516,11 @@
     <MESSAGE value="CODE - make a new rule function ruleRollOneSkull" />
     <MESSAGE value="REFACTOR - use the ruleRollOneSkull function in the use.Sorceress command." />
     <MESSAGE value="A-TEST implement the test case from row77" />
+    <MESSAGE value="CODE - make changes for the test case in row 78" />
     <MESSAGE value="A-TEST implement the test case from row78" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row78" />
+    <MESSAGE value="A-TEST implement the test case from row79" />
+    <MESSAGE value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -555,6 +554,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java</url>
           <line>119</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
+          <line>720</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

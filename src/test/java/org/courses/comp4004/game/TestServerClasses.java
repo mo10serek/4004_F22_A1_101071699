@@ -710,4 +710,27 @@ public class TestServerClasses {
         Assertions.assertTrue(ruleResult.isPass());
         Assertions.assertEquals(ruleResult.getMessage(),"player use the sorceress card to roll one skull");
     }
+
+    @Test
+    @DisplayName("testRuleGoToSkullIslandIf4Skulls")
+    void testRuleGoToSkullIslandIf4Skulls() {
+        FCard fCard = new FCard("Diamond", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, skull, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
+        Assertions.assertFalse(ruleResult.isPass());
+        diceSet.setRollOutcome("skull, skull, skull, skull, parrot, parrot, sword, sword");
+        scoreEvaluator = new ScoreEvaluator();
+        ruleResult = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+        diceSet.setRollOutcome("skull, skull, skull, parrot, parrot, parrot, sword, sword");
+        fCard = new FCard("1skull", 0);
+        ruleResult = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+        diceSet.setRollOutcome("skull, skull, sword, parrot, parrot, parrot, sword, sword");
+        fCard = new FCard("2skulls", 0);
+        ruleResult = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+    }
 }
