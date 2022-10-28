@@ -849,5 +849,23 @@ public class TestServerClasses {
         Assertions.assertEquals(score, 600);
     }
 
-
+    @Test
+    @DisplayName("testRuleSkullIsland")
+    void testRuleSkullIsland() {
+        FCard fCard = new FCard("Diamond", 0);
+        DiceSet diceSet = new DiceSet();
+        diceSet.setRollOutcome("skull, skull, skull, monkey, parrot, parrot, sword, sword");
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult = scoreEvaluator.ruleSkullIsland(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), -300);
+        fCard = new FCard("2skulls", 0);
+        ruleResult = scoreEvaluator.ruleSkullIsland(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), -500);
+        fCard = new FCard("1skull", 0);
+        ruleResult = scoreEvaluator.ruleSkullIsland(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), -400);
+        fCard = new FCard("Captain", 0);
+        ruleResult = scoreEvaluator.ruleSkullIsland(diceSet, fCard);
+        Assertions.assertEquals(ruleResult.getScore(), -600);
+    }
 }

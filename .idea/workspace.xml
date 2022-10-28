@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part2Test.row103">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleSkullIsland">
     <configuration name="Part2Test.row103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -51,22 +51,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
       <option name="METHOD_NAME" value="row103" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part2Test.row92" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row92" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,13 +104,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRuleSkullIsland" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRuleSkullIsland" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRuleSkullIsland" />
         <item itemvalue="JUnit.Part2Test.row103" />
         <item itemvalue="JUnit.Part2Test.row99" />
         <item itemvalue="JUnit.Part2Test.row98" />
         <item itemvalue="JUnit.Part2Test.row97" />
-        <item itemvalue="JUnit.Part2Test.row92" />
       </list>
     </recent_temporary>
   </component>
@@ -138,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00122" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only">
-      <created>1666915728812</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1666915728812</updated>
     </task>
     <task id="LOCAL-00123" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only">
       <created>1666915802038</created>
@@ -482,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666937425383</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="REFACTOR - move and organize the functions around the class">
+      <created>1666938071322</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1666938071322</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR - put the 4skull rule in the score function" />
     <MESSAGE value="REFACTOR - put the 3skull rule in the score function" />
     <MESSAGE value="REFACTOR - put the 3 skull rule in the score function" />
     <MESSAGE value="U-TEST test the hold chest rule to see if you can hold some dices" />
@@ -522,7 +521,8 @@
     <MESSAGE value="A-TEST implement the test case from 99" />
     <MESSAGE value="A-TEST implement the test case from 103" />
     <MESSAGE value="CODE - put the monkey and parrot card involved in the ruleFullChest function" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - put the monkey and parrot card involved in the ruleFullChest function" />
+    <MESSAGE value="REFACTOR - move and organize the functions around the class" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - move and organize the functions around the class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
