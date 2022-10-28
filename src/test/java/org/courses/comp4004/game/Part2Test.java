@@ -284,4 +284,55 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row92")
+    void row92() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("Chest", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Chest");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, parrot, parrot, parrot, coin, coin, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome Chest, [skull, skull, parrot, parrot, parrot, coin, coin, coin], 500, the player got a score of 500 points from this dice set");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "hold coin, coin, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, diamond, diamond, coin, coin, coin, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "hold coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, coin, coin, coin, coin, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome Chest, [skull, skull, skull, coin, coin, coin, coin, coin], 600, the player died but still score points");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
