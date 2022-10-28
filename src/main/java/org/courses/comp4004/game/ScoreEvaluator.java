@@ -28,6 +28,14 @@ public class ScoreEvaluator {
         return score;
     }
 
+    public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
+        if (fCard.getFigure().contains("Sorceress")) {
+            return new RuleResult(true, 0, "player use the sorceress card to roll one skull");
+        }
+        return new RuleResult(false, 0, "player tried to roll one skull but does not have the " +
+                "sorceress card");
+    }
+
     /**
      * Rule checks if player selected less than 2 dice to roll
      * @param diceFigures
