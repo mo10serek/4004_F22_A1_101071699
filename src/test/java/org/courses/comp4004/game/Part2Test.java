@@ -541,4 +541,45 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row111")
+    void row111() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("2skulls", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card 2skulls");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, sword, sword, sword, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, skull, skull, sword, sword, sword, sword, sword], 0, -500, -500, player got 4 skulls in first roll and need to go to skull Island");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, coin, coin, coin, coin, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, skull, skull, coin, coin, coin, coin, coin], 0, -500, -500, player did not get any more skulls so his turn ends");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }

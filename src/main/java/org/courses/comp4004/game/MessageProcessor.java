@@ -298,15 +298,14 @@ public class MessageProcessor {
         RuleResult leaveSkullIsland = scoreEvaluator.ruleLeaveSkullIsland(diceSet,
                 interactingPlayerDescriptor.getDrawnFCard());
 
+        playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
+                interactingPlayerDescriptor, diceSet);
         msg = "player got more skull so subtracts other players";
         boolean success = true;
         if (leaveSkullIsland.isPass()) {
             currentMode = MODES.NORMAL;
             msg = "player did not get any more skulls so his turn ends";
             success = false;
-        } else {
-            playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
-                    interactingPlayerDescriptor, diceSet);
         }
         return new PostStatus(Commands.outcome
                 + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
