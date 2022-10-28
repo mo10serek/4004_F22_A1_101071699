@@ -100,6 +100,14 @@ public class ScoreEvaluator {
         return buffer;
     }
 
+    public RuleResult ruleCanHoldDices(DiceSet diceSet, FCard fCard) {
+        if (fCard.getFigure().contains("Chest")) {
+            return new RuleResult(true, 0,"dices can be hold");
+        } else {
+            return new RuleResult(false,0,"dices cannot be hold");
+        }
+    }
+
     public RuleResult ruleSetOfIdenticalObjects(DiceSet diceSet, FCard fCard) {
         ScorePad scorePad = new ScorePad();
 
