@@ -322,4 +322,53 @@ public class DiceSet {
         }
         return status[0];
     }
+
+    public String holdOrTakeOffSetOfDices(String diceFigures, boolean hold) {
+        final boolean TRACEON    = true;
+        final String[] status = {"" };
+        String[] figureToRoll = {""};
+        String[] figureArray = diceFigures.trim().split("\\s*,\\s*");
+        List<String> figureList = new ArrayList<String>();
+        Collections.addAll(figureList, figureArray);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult;
+
+        Map<String, Long> figureCount = figureList.stream().collect(Collectors.groupingBy(figure -> figure, Collectors.counting()));
+        Map<String, Long> figureDiceSetCount = diceSet.stream().collect(Collectors.groupingBy(dice -> dice.getFigure(), Collectors.counting()));
+
+        // Check the preconditions for re-roll
+        // 1. check number of parameters for the rules
+        // 2. it is not allowable to re-roll skulls (skulls cannot be re-rolled)
+        ruleResult = scoreEvaluator.rulePlayerCannotRerollLessThan2dice(diceFigures);
+        status[0] = status[0] + ruleResult.getMessage();
+        if(status[0].length() != 0){
+            return status[0];
+        }
+
+
+        if (status[0].length() == 0) {  //no errors
+            //Enable roll of all dies that could be skull from the previous player
+            //disableAllDiceRoll();
+
+            diceSet.stream().
+                    forEach(dice -> {
+                        //Returns: This method returns new remapped value associated with the specified key, or null if mapping returns null.
+                        figureToRoll[0] = dice.getFigure();
+                        if ( !isNull(figureCount.get(dice.getFigure())) && figureCount.get(dice.getFigure()).intValue() != 0) {
+                            // A die with a figure matching figure specified in the re-roll selection has been found in the diceSet;
+                            //
+                            if (!isNull(figureCount.computeIfPresent(dice.getFigure(), (key, oldValue) -> oldValue - 1))) {
+                                if(TRACEON) System.out.println("      Before dice re-roll : " + dice.getFigure());
+                                if (hold) {
+                                    dice.setCanHold(true);
+                                } else {
+                                    dice.setCanHold(false);
+                                }
+                            }
+                        }
+                    });
+        }
+
+        return status[0];
+    }
 }
