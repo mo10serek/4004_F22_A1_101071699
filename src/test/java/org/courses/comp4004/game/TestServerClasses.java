@@ -622,5 +622,24 @@ public class TestServerClasses {
         Assertions.assertFalse(itWorked);
     }
 
+    @Test
+    @DisplayName("messageTakeCard")
+    void testTakeCard() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        messageProcessor.turnOnRIGID();
+
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.takeCard + " Sorceress");
+        Assertions.assertEquals(toReturn.outMsg, "take.card Sorceress");
+    }
+
 
 }
