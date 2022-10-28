@@ -454,4 +454,50 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row108")
+    void row108() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("2skulls", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card 2skulls");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, parrot, parrot, parrot, monkey, monkey, monkey";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, skull, parrot, parrot, parrot, monkey, monkey, monkey], 0, -400, -400, player got 4 skulls in first roll and need to go to skull Island");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, skull, sword, monkey, monkey, monkey";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, skull, skull, skull, sword, monkey, monkey, monkey], 0, -600, -600, player got more skull so subtracts other players");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, skull, skull, skull, skull, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, skull, skull, skull, skull, skull, skull, sword], 0, -900, -900, player got more skull so subtracts other players");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
