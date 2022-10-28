@@ -1030,4 +1030,33 @@ public class TestServerClasses {
         Assertions.assertEquals(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).getScore(),1000);
         Assertions.assertTrue(scoreEvaluator.getScoreInSeaBattle(diceSet, fCard).isPass());
     }
+
+    @Test
+    @DisplayName("testScoreSeaBattle")
+    void testScoreSeaBattle() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        interactingPlayerDescriptor.setDrawnFCard(new FCard("3swords", 0));
+        interactingPlayerDescriptor.setScorePad(new ScorePad());
+        interactingPlayerDescriptor.getScorePad().setTotalScore(0);
+
+        diceSet.setRollOutcome("sword, sword, sword, parrot, parrot, skull, skull, monkey");
+
+        playerDescriptorList.add(interactingPlayerDescriptor);
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+
+        PostStatus postStatus = messageProcessor.scoreSeaBattle();
+
+        System.out.println(postStatus.outMsg);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 3swords, [sword, sword, sword, parrot, parrot, " +
+                "skull, skull, monkey], 600, receive correct number of swords");
+    }
 }
