@@ -868,4 +868,40 @@ public class TestServerClasses {
         ruleResult = scoreEvaluator.ruleSkullIsland(diceSet, fCard);
         Assertions.assertEquals(ruleResult.getScore(), -600);
     }
+    @Test
+    @DisplayName("testSubtractOtherPlayersScore")
+    void testSubtractOtherPlayersScore() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        interactingPlayerDescriptor.setDrawnFCard(new FCard("Coin", 0));
+        interactingPlayerDescriptor.setScorePad(new ScorePad());
+        interactingPlayerDescriptor.getScorePad().setTotalScore(1500);
+        diceSet = new DiceSet();
+
+        diceSet.setRollOutcome("skull, skull, skull, skull, skull, diamond, coin, sword");
+
+        PlayerDescriptor playerDescriptor = new PlayerDescriptor();
+        playerDescriptor.setScorePad(new ScorePad());
+        playerDescriptor.getScorePad().setTotalScore(1000);
+        playerDescriptorList.add(playerDescriptor);
+        playerDescriptorList.add(interactingPlayerDescriptor);
+        playerDescriptor = new PlayerDescriptor();
+        playerDescriptor.setScorePad(new ScorePad());
+        playerDescriptor.getScorePad().setTotalScore(2000);
+        playerDescriptorList.add(playerDescriptor);
+
+        playerDescriptorList = messageProcessor.subtractOtherPlayersScore(playerDescriptorList,
+                interactingPlayerDescriptor, diceSet);
+
+        Assertions.assertEquals(playerDescriptorList.get(0).getScorePad().getTotalScore(), 500);
+        Assertions.assertEquals(playerDescriptorList.get(1).getScorePad().getTotalScore(), 1500);
+        Assertions.assertEquals(playerDescriptorList.get(2).getScorePad().getTotalScore(), 1500);
+    }
 }

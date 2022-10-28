@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00123" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only">
-      <created>1666915802038</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1666915802038</updated>
-    </task>
-    <task id="LOCAL-00124" summary="U-TEST test the rerollSetOutcome that is usefully for testing that can select the faces you need and change them to the faces you needed">
-      <created>1666916279331</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1666916279331</updated>
     </task>
     <task id="LOCAL-00125" summary="CODE - implement the rerollSetOutcome function for testing">
       <created>1666918118449</created>
@@ -482,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666938071322</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="U-TEST - test the ruleSkullIsland that calculates the scores that other players loses">
+      <created>1666938785283</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1666938785283</updated>
+    </task>
+    <task id="LOCAL-00173" summary="CODE - implement the rule skull Island that calculate how much each player lose">
+      <created>1666938862352</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1666938862352</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,8 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="REFACTOR - put the 3skull rule in the score function" />
-    <MESSAGE value="REFACTOR - put the 3 skull rule in the score function" />
     <MESSAGE value="U-TEST test the hold chest rule to see if you can hold some dices" />
     <MESSAGE value="CODE implement the canHoldDices rule function" />
     <MESSAGE value="U-TEST test to see if the hold chest command works" />
@@ -522,7 +519,9 @@
     <MESSAGE value="A-TEST implement the test case from 103" />
     <MESSAGE value="CODE - put the monkey and parrot card involved in the ruleFullChest function" />
     <MESSAGE value="REFACTOR - move and organize the functions around the class" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR - move and organize the functions around the class" />
+    <MESSAGE value="U-TEST - test the ruleSkullIsland that calculates the scores that other players loses" />
+    <MESSAGE value="CODE - implement the rule skull Island that calculate how much each player lose" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the rule skull Island that calculate how much each player lose" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
