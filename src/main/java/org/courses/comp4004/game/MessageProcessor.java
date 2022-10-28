@@ -35,6 +35,19 @@ public class MessageProcessor {
         this.lineParser = lineParser;
         this.playerDescriptorList = playerDescriptorList;
     }
+
+    public List<PlayerDescriptor> subtractOtherPlayersScore(List<PlayerDescriptor> playerDescriptorList,
+                                                            PlayerDescriptor interactingPlayerDescriptor,
+                                                            DiceSet diceSet) {
+        for (PlayerDescriptor playerDescriptor : playerDescriptorList) {
+            if (!interactingPlayerDescriptor.equals(playerDescriptor)) {
+                playerDescriptor.getScorePad().addScore(
+                        scoreEvaluator.ruleSkullIsland(diceSet, interactingPlayerDescriptor.getDrawnFCard()).getScore());
+            }
+        }
+        return playerDescriptorList;
+    }
+    
     private String msg = null;
     public PostStatus ProcessMessage(String line) {
         PostStatus toReturn = null;
