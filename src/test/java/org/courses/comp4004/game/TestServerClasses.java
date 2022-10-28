@@ -924,4 +924,46 @@ public class TestServerClasses {
         ruleResult = scoreEvaluator.ruleLeaveSkullIsland(diceSet, fCard);
         Assertions.assertFalse(ruleResult.isPass());
     }
+
+    @Test
+    @DisplayName("testScoreSkullIsland")
+    void testScoreSkullIsland() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        interactingPlayerDescriptor.setDrawnFCard(new FCard("Coin", 0));
+        interactingPlayerDescriptor.setScorePad(new ScorePad());
+        interactingPlayerDescriptor.getScorePad().setTotalScore(1000);
+
+        diceSet.setRollOutcome("skull, skull, skull, skull, coin, diamond, coin, sword");
+
+        playerDescriptorList.add(interactingPlayerDescriptor);
+        PlayerDescriptor playerDescriptor = new PlayerDescriptor();
+        playerDescriptor.setScorePad(new ScorePad());
+        playerDescriptor.getScorePad().setTotalScore(1000);
+        playerDescriptorList.add(playerDescriptor);
+        playerDescriptor = new PlayerDescriptor();
+        playerDescriptor.setScorePad(new ScorePad());
+        playerDescriptor.getScorePad().setTotalScore(1000);
+        playerDescriptorList.add(playerDescriptor);
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+
+        PostStatus postStatus = messageProcessor.scoreSkullIsland();
+
+        Assertions.assertTrue(postStatus.success);
+        Assertions.assertEquals(postStatus.outMsg, "roll Coin, [skull, skull, skull, skull, coin, diamond, coin, " +
+                "sword], 1000, 600, 600, player got more skull so subtracts other players");
+
+        postStatus = messageProcessor.scoreSkullIsland();
+        Assertions.assertFalse(postStatus.success);
+        Assertions.assertEquals(postStatus.outMsg, "roll Coin, [skull, skull, skull, skull, coin, diamond, coin, " +
+                "sword], 1000, 600, 600, player did not get any more skulls so his turn ends");
+    }
 }

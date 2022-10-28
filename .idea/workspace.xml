@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleLeaveSkullIsland">
+  <component name="RunManager" selected="JUnit.Part2Test.row106">
     <configuration name="Part2Test.row103" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -55,7 +55,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2Test.row98" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Part2Test.row106" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -65,7 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row98" />
+      <option name="METHOD_NAME" value="row106" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row106" />
         <item itemvalue="JUnit.TestServerClasses.testRuleLeaveSkullIsland" />
         <item itemvalue="JUnit.TestServerClasses.testRuleSkullIsland" />
         <item itemvalue="JUnit.Part2Test.row103" />
         <item itemvalue="JUnit.Part2Test.row99" />
-        <item itemvalue="JUnit.Part2Test.row98" />
       </list>
     </recent_temporary>
   </component>
@@ -137,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00129" summary="U-TEST test a new command called take card that takes the card you need. Used for testing.">
-      <created>1666919109969</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1666919109969</updated>
-    </task>
-    <task id="LOCAL-00130" summary="CODE make a testing command that can pick up the card and use it for testing">
-      <created>1666920203239</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1666920203239</updated>
     </task>
     <task id="LOCAL-00131" summary="U-TEST test the new setDice command that can set certain faces to a dice set">
       <created>1666921101681</created>
@@ -481,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666962595052</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="U-TEST test the rule that tells you when you need to leave skull island">
+      <created>1666963359969</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1666963359969</updated>
+    </task>
+    <task id="LOCAL-00179" summary="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls">
+      <created>1666963551830</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1666963551830</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
