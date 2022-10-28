@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,27 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00117" summary="A-TEST implement the test case in row 82">
-      <created>1666914726282</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1666914726282</updated>
-    </task>
-    <task id="LOCAL-00118" summary="A-TEST implement the test case in row 83">
-      <created>1666914782376</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1666914782376</updated>
-    </task>
-    <task id="LOCAL-00119" summary="A-TEST implement the test case in row 84">
-      <created>1666914813967</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1666914813967</updated>
     </task>
     <task id="LOCAL-00120" summary="U-TEST test the useTheSorceressCard function to see if it can reroll a skull">
       <created>1666915444758</created>
@@ -481,7 +458,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666936915107</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="A-TEST implement the test case from 98">
+      <created>1666936943363</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1666936943363</updated>
+    </task>
+    <task id="LOCAL-00167" summary="CODE - improve the ruleFullChest so it can count coins and diamonds as scored dices">
+      <created>1666937117828</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1666937117828</updated>
+    </task>
+    <task id="LOCAL-00168" summary="A-TEST implement the test case from 99">
+      <created>1666937176103</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1666937176103</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,9 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE - make changes for the test case in row 78" />
-    <MESSAGE value="A-TEST implement the test case from row78" />
-    <MESSAGE value="A-TEST implement the test case from row79" />
     <MESSAGE value="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls" />
     <MESSAGE value="CODE - develop a function that tell if you need to go to skull island" />
     <MESSAGE value="REFACTOR - put the 4skull rule in the score function" />
@@ -521,7 +516,10 @@
     <MESSAGE value="A-TEST implement the test case from row 92" />
     <MESSAGE value="CODE - implement the use Chest rule in the add score function" />
     <MESSAGE value="A-TEST implement the test case from 97" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from 97" />
+    <MESSAGE value="A-TEST implement the test case from 98" />
+    <MESSAGE value="CODE - improve the ruleFullChest so it can count coins and diamonds as scored dices" />
+    <MESSAGE value="A-TEST implement the test case from 99" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from 99" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

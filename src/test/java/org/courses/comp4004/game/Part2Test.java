@@ -375,4 +375,17 @@ public class Part2Test {
         log.println(scoreEvaluator.getScore(fCard, diceSet));
 
     }
+
+    @Test
+    @DisplayName("row103")
+    void row103() {
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("Monkey&Parrot", 0);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, parrot, coin, coin, diamond, diamond, diamond");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 1200);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+    }
 }
