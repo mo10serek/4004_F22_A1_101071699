@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/DiceSet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testUseTheSorceressCard">
-    <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row77" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRerollSetOutcome">
     <configuration name="Part2Test.row82" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -103,6 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRerollSetOutcome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRerollSetOutcome" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses.testUseTheSorceressCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRerollSetOutcome" />
         <item itemvalue="JUnit.TestServerClasses.testUseTheSorceressCard" />
         <item itemvalue="JUnit.Part2Test.row84" />
         <item itemvalue="JUnit.Part2Test.row83" />
         <item itemvalue="JUnit.Part2Test.row82" />
-        <item itemvalue="JUnit.Part2Test.row77" />
       </list>
     </recent_temporary>
   </component>
@@ -137,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00075" summary="A-TEST implement the test case from row 60.">
-      <created>1666903524424</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903524424</updated>
     </task>
     <task id="LOCAL-00076" summary="A-TEST implement the test case from row 62.">
       <created>1666903553130</created>
@@ -481,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666915802038</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="U-TEST test the rerollSetOutcome that is usefully for testing that can select the faces you need and change them to the faces you needed">
+      <created>1666916279331</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1666916279331</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
     <MESSAGE value="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice." />
     <MESSAGE value="CODE - implement the can hold boolean varible" />
     <MESSAGE value="U-TEST implement the test case to enable and disable all dices" />
@@ -521,7 +521,8 @@
     <MESSAGE value="U-TEST test the useTheSorceressCard function to see if it can reroll a skull" />
     <MESSAGE value="CODE - implement the useTheSorceressCard" />
     <MESSAGE value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only" />
+    <MESSAGE value="U-TEST test the rerollSetOutcome that is usefully for testing that can select the faces you need and change them to the faces you needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the rerollSetOutcome that is usefully for testing that can select the faces you need and change them to the faces you needed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
