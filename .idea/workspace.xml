@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testGetScoreWhenDiceHold">
+  <component name="RunManager" selected="JUnit.Part2Test.row87">
     <configuration name="Part2Test.row87" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -119,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row87" />
         <item itemvalue="JUnit.TestServerClasses.testGetScoreWhenDiceHold" />
         <item itemvalue="JUnit.Part2Test.row92" />
-        <item itemvalue="JUnit.Part2Test.row87" />
         <item itemvalue="JUnit.TestServerClasses.testTakeOutChestCommand" />
         <item itemvalue="JUnit.TestServerClasses.testHoldChestCommand" />
       </list>
@@ -135,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00112" summary="CODE implment the help command">
-      <created>1666912059533</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1666912059533</updated>
     </task>
     <task id="LOCAL-00113" summary="U-TEST test the score function that will calculate the score based on the dice set and card">
       <created>1666913601729</created>
@@ -479,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666936149731</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="CODE - implement the function that calculate the score on the held dice">
+      <created>1666936472293</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1666936472293</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE implement the useSorceress command to use the card" />
     <MESSAGE value="U-TEST test a new rule that you can roll one skull when you have the sorceress card" />
     <MESSAGE value="CODE - make a new rule function ruleRollOneSkull" />
     <MESSAGE value="REFACTOR - use the ruleRollOneSkull function in the use.Sorceress command." />
@@ -519,7 +521,8 @@
     <MESSAGE value="A-TEST implement the test case from row 87." />
     <MESSAGE value="A-TEST implement the test case from row 92." />
     <MESSAGE value="U-TEST calculate the score of the ones that are in hold" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST calculate the score of the ones that are in hold" />
+    <MESSAGE value="CODE - implement the function that calculate the score on the held dice" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the function that calculate the score on the held dice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
