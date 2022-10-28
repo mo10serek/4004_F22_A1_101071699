@@ -86,6 +86,48 @@ public class Part2Test {
         log.println(postStatus.outMsg);
     }
 
+    // Row78Test	      roll 2 skulls, reroll one of them due to sorceress, then go to next round of turn
+    @Test
+    @DisplayName("row78")
+    void row78() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("Sorceress", 0);
+        diceSet.setRollOutcome("skull, skull, skull, parrot, parrot, parrot, sword, sword");
+
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Sorceress");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, parrot, parrot, parrot, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome Sorceress, [parrot, skull, skull, parrot, parrot, parrot, sword, sword], 200, player got 3 skull but reroll one skull since got one Sorceress card");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice parrot, skull, skull, parrot, parrot, parrot, parrot, parrot";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome Sorceress, [parrot, skull, skull, parrot, parrot, parrot, parrot, parrot], 1000, the player got a score of 1000 points from this dice set");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
+
     // Row82Test	      first roll gets 3 monkeys 3 parrots  1 skull 1 coin  SC = 1100  (i.e., sequence of of 6 + coin)
     @Test
     @DisplayName("row82")
