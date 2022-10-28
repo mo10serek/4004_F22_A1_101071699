@@ -693,4 +693,21 @@ public class TestServerClasses {
         toReturn = messageProcessor.ProcessMessage(Commands.useSorceress);
         Assertions.assertTrue(toReturn.success);
     }
+
+    @Test
+    @DisplayName("testRuleRollOneSkull")
+    void testRuleRollOneSkull() {
+        FCard fCard = new FCard("Diamond", 0);
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        RuleResult ruleResult = scoreEvaluator.ruleRollOneSkull(diceSet, fCard);
+        Assertions.assertFalse(ruleResult.isPass());
+        Assertions.assertEquals(ruleResult.getMessage(),"player tried to roll one skull but does not have the " +
+                "sorceress card");
+        fCard = new FCard("Sorceress", 0);
+        diceSet = new DiceSet();
+        ruleResult = scoreEvaluator.ruleRollOneSkull(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+        Assertions.assertEquals(ruleResult.getMessage(),"player use the sorceress card to roll one skull");
+    }
 }
