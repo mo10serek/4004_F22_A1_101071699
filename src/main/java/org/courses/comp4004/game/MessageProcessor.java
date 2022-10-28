@@ -42,6 +42,14 @@ public class MessageProcessor {
         if(!isNull(line)) {
             lineParser.init(line);
             String cmd = lineParser.getCmd();
+            if (RIGID) {
+                if (cmd.equalsIgnoreCase(Commands.takeCard)) {
+                    FCard fCard = fCardDeck.draw(lineParser.getParmsLine()); //fCardDeck.draw();
+                    interactingPlayerDescriptor.setDrawnFCard(fCard);
+                    String fCardFigure = fCard.getFigure();
+                    toReturn = new PostStatus(Commands.takeCard + " " + fCardFigure, true);
+                }
+            }
             if (cmd.equalsIgnoreCase(Commands.modeInteracting)) {//"mode.interacting"; //  <null>
 
                 toReturn = new PostStatus(Commands.modeInteracting + "", true);
