@@ -89,6 +89,26 @@ public class ScoreEvaluator {
         return 0;
     }
 
+    public RuleResult getScoreInSeaBattle(DiceSet diceSet, FCard fCard) {
+        int numOfSwords = diceSet.countDiceFaces("sword");
+        int score = 0;
+        if ((fCard.getFigure().contains("2swords")) && (numOfSwords >= 2)) {
+            score = 300;
+        }
+        else if ((fCard.getFigure().contains("3swords")) && (numOfSwords >= 3)) {
+            score = 500;
+        }
+        else if ((fCard.getFigure().contains("4swords")) && (numOfSwords >= 4)) {
+            score = 1000;
+        }
+
+        if (score > 0) {
+            return new RuleResult(true, score, "receive correct number of swords");
+        } else {
+            return new RuleResult(false, score, "did not receive correct number of swords");
+        }
+    }
+
     public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
         if (fCard.getFigure().contains("Sorceress")) {
             return new RuleResult(true, 0, "player use the sorceress card to roll one skull");
