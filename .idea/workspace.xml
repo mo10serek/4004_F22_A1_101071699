@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="CODE - make changes for the test case in row 78">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses">
+  <component name="RunManager" selected="JUnit.Part2Test.row78">
     <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,9 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row78" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.TestServerClasses.testMessageProcessor" />
-        <item itemvalue="JUnit.Part2Test.row78" />
         <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testRuleRollOneSkull" />
       </list>
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00091" summary="CODE implement the new command which is inform">
-      <created>1666906252764</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1666906252765</updated>
     </task>
     <task id="LOCAL-00092" summary="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game">
       <created>1666906572816</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666924714108</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="A-TEST implement the test case from row78">
+      <created>1666924925453</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1666924925453</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST implement the help command" />
     <MESSAGE value="CODE implment the help command" />
     <MESSAGE value="U-TEST test the score function that will calculate the score based on the dice set and card" />
     <MESSAGE value="CODE implement the score function that will calculate the score based on the dice set and card" />
@@ -521,7 +520,8 @@
     <MESSAGE value="CODE - make a new rule function ruleRollOneSkull" />
     <MESSAGE value="REFACTOR - use the ruleRollOneSkull function in the use.Sorceress command." />
     <MESSAGE value="A-TEST implement the test case from row77" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row77" />
+    <MESSAGE value="A-TEST implement the test case from row78" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row78" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -550,6 +550,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
           <line>90</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

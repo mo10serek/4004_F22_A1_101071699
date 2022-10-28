@@ -168,6 +168,24 @@ public class MessageProcessor {
         msg = "the player got a score of " + score + " points from this dice set";
         boolean success = true;
 
+        RuleResult useSorceress = scoreEvaluator.ruleRollOneSkull(diceSet,
+                interactingPlayerDescriptor.getDrawnFCard());
+
+        int numberOfSkulls = diceSet.countDiceFaces("skull");
+
+        if (useSorceress.isPass() && numberOfSkulls >= 3) {
+            boolean canUseSorceressCard;
+            if (RIGID) {
+                canUseSorceressCard = useTheSorceressCardInput("parrot");
+            } else {
+                canUseSorceressCard = useTheSorceressCard();
+            }
+            if (canUseSorceressCard) {
+                score = scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
+                msg = "player got 3 skull but reroll one skull since got one Sorceress card";
+            }
+        }
+
         PostStatus toReturn = new PostStatus(Commands.outcome
                 + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
                 + ", " + diceSet.toString()
