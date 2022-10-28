@@ -315,4 +315,33 @@ public class MessageProcessor {
                 success);
     }
 
+    public PostStatus scoreSeaBattle() {
+        int normalScore;
+
+        RuleResult getScoreInSeaBattle = scoreEvaluator.getScoreInSeaBattle(diceSet, interactingPlayerDescriptor.getDrawnFCard());
+
+        normalScore = scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
+        normalScore += getScoreInSeaBattle.getScore();
+
+        RuleResult have3Skulls = scoreEvaluator.rulePlayerDieIf3Skulls(diceSet, interactingPlayerDescriptor.getDrawnFCard());
+
+        msg = getScoreInSeaBattle.getMessage();
+        boolean success = true;
+        if (have3Skulls.isPass()) {
+            currentMode = MODES.NORMAL;
+            normalScore = scoreEvaluator.loseScoreInSeaBattle(diceSet, interactingPlayerDescriptor.getDrawnFCard());
+            msg = "did not got the bonus so the player looses points and end his turn";
+            success = false;
+        }
+
+        interactingPlayerDescriptor.getScorePad().setTotalScore(normalScore);
+
+        return new PostStatus(Commands.outcome
+                + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                + ", " + diceSet.toString()
+                + ", " + getPlayersScoresString()
+                + msg,
+                success);
+    }
+
 }
