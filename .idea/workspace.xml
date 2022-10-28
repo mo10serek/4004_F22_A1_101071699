@@ -138,34 +138,6 @@
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
     </task>
-    <task id="LOCAL-00125" summary="CODE - implement the rerollSetOutcome function for testing">
-      <created>1666918118449</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1666918118449</updated>
-    </task>
-    <task id="LOCAL-00126" summary="U-TEST test the useTheSorceressCardInput function to change the first skull to a certain face. Testing use only.">
-      <created>1666918344485</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1666918344485</updated>
-    </task>
-    <task id="LOCAL-00127" summary="CODE develop the useTheSorceressCardInput function.">
-      <created>1666918470363</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1666918470363</updated>
-    </task>
-    <task id="LOCAL-00128" summary="U-TEST test a new command called take card that takes the card you need. Used for testing.">
-      <created>1666918975286</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1666918975286</updated>
-    </task>
     <task id="LOCAL-00129" summary="U-TEST test a new command called take card that takes the card you need. Used for testing.">
       <created>1666919109969</created>
       <option name="number" value="00129" />
@@ -481,7 +453,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666938862352</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="U-TEST test a function that will subtract all other players scores">
+      <created>1666939963547</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1666939963547</updated>
+    </task>
+    <task id="LOCAL-00175" summary="CODE - implement a function that will subtract other players scores">
+      <created>1666940050162</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1666940050162</updated>
+    </task>
+    <task id="LOCAL-00176" summary="U-TEST test the rule that tells you when you need to leave skull island">
+      <created>1666962449869</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1666962449869</updated>
+    </task>
+    <task id="LOCAL-00177" summary="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls">
+      <created>1666962595052</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1666962595052</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,10 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST test the hold chest rule to see if you can hold some dices" />
-    <MESSAGE value="CODE implement the canHoldDices rule function" />
-    <MESSAGE value="U-TEST test to see if the hold chest command works" />
-    <MESSAGE value="U-TEST test to see if we can select which dice to hold or not" />
     <MESSAGE value="CODE - implement the function that can hold or take off dices" />
     <MESSAGE value="U-TEST test the hold chest command to see if it works" />
     <MESSAGE value="CODE - implement the hold chest command in MessageProcessor class" />
@@ -521,7 +517,11 @@
     <MESSAGE value="REFACTOR - move and organize the functions around the class" />
     <MESSAGE value="U-TEST - test the ruleSkullIsland that calculates the scores that other players loses" />
     <MESSAGE value="CODE - implement the rule skull Island that calculate how much each player lose" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the rule skull Island that calculate how much each player lose" />
+    <MESSAGE value="U-TEST test a function that will subtract all other players scores" />
+    <MESSAGE value="CODE - implement a function that will subtract other players scores" />
+    <MESSAGE value="U-TEST test the rule that tells you when you need to leave skull island" />
+    <MESSAGE value="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the function that you need to leave skull island when you don't have any new number of skulls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -548,7 +548,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java</url>
-          <line>90</line>
+          <line>103</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

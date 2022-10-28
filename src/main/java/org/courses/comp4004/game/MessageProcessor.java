@@ -47,7 +47,7 @@ public class MessageProcessor {
         }
         return playerDescriptorList;
     }
-    
+
     private String msg = null;
     public PostStatus ProcessMessage(String line) {
         PostStatus toReturn = null;

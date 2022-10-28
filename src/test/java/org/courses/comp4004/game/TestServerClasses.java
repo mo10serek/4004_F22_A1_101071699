@@ -904,4 +904,24 @@ public class TestServerClasses {
         Assertions.assertEquals(playerDescriptorList.get(1).getScorePad().getTotalScore(), 1500);
         Assertions.assertEquals(playerDescriptorList.get(2).getScorePad().getTotalScore(), 1500);
     }
+
+    @Test
+    @DisplayName("testRuleLeaveSkullIsland")
+    void testRuleLeaveSkullIsland() {
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("1skull", 0);
+        diceSet.setRollOutcome("skull, skull, skull, skull, monkey, monkey, sword, sword");
+
+        RuleResult ruleResult = scoreEvaluator.ruleLeaveSkullIsland(diceSet, fCard);
+        Assertions.assertFalse(ruleResult.isPass());
+
+        scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, fCard);
+        ruleResult = scoreEvaluator.ruleLeaveSkullIsland(diceSet, fCard);
+        Assertions.assertTrue(ruleResult.isPass());
+
+        diceSet.setRollOutcome("skull, skull, skull, skull, skull, skull, sword, sword");
+        ruleResult = scoreEvaluator.ruleLeaveSkullIsland(diceSet, fCard);
+        Assertions.assertFalse(ruleResult.isPass());
+    }
 }
