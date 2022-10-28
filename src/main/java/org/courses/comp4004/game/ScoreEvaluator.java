@@ -66,6 +66,16 @@ public class ScoreEvaluator {
         }
     }
 
+    public RuleResult ruleGoToSeaBattle(DiceSet diceSet, FCard fCard) {
+        if (fCard.getFigure().contains("2swords") ||
+                fCard.getFigure().contains("3swords") ||
+                fCard.getFigure().contains("4swords")) {
+            return new RuleResult(true, 0, "you are in sea battle");
+        }
+        return new RuleResult(false, 0);
+    }
+
+
     public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
         if (fCard.getFigure().contains("Sorceress")) {
             return new RuleResult(true, 0, "player use the sorceress card to roll one skull");

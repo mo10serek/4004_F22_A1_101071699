@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part1Test">
+  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleGoToSeaBattle">
     <configuration name="Part1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -66,22 +65,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part2Test.row110" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row110" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,13 +100,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerClasses.testRuleGoToSeaBattle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
+      <option name="METHOD_NAME" value="testRuleGoToSeaBattle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestServerClasses.testRuleGoToSeaBattle" />
         <item itemvalue="JUnit.Part1Test" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.Part2Test" />
         <item itemvalue="JUnit.Part2Test.row111" />
-        <item itemvalue="JUnit.Part2Test.row110" />
       </list>
     </recent_temporary>
   </component>
@@ -135,20 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00142" summary="A-TEST implement the test case from row79">
-      <created>1666925546746</created>
-      <option name="number" value="00142" />
-      <option name="presentableId" value="LOCAL-00142" />
-      <option name="project" value="LOCAL" />
-      <updated>1666925546746</updated>
-    </task>
-    <task id="LOCAL-00143" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
-      <created>1666926077501</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1666926077501</updated>
     </task>
     <task id="LOCAL-00144" summary="U-TEST implement the test case to check if the function that tells you to go to skull island if you have a certain number of skulls">
       <created>1666926233734</created>
@@ -479,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666973652568</updated>
     </task>
-    <option name="localTasksCounter" value="191" />
+    <task id="LOCAL-00191" summary="U-TEST test the new rule to see if you are in a sea battle">
+      <created>1666974146777</created>
+      <option name="number" value="00191" />
+      <option name="presentableId" value="LOCAL-00191" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974146777</updated>
+    </task>
+    <task id="LOCAL-00192" summary="U-test implement the rule that tells that you need to go to sea battle">
+      <created>1666974234215</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1666974234215</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,8 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 87" />
-    <MESSAGE value="A-TEST implement the test case from row 92" />
     <MESSAGE value="CODE - implement the use Chest rule in the add score function" />
     <MESSAGE value="A-TEST implement the test case from 97" />
     <MESSAGE value="A-TEST implement the test case from 98" />
@@ -519,7 +516,9 @@
     <MESSAGE value="A-TEST implement the test case from row 108" />
     <MESSAGE value="A-TEST implement the test case from row 110" />
     <MESSAGE value="CODE fix thing so row 110 test can pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="CODE fix thing so row 110 test can pass" />
+    <MESSAGE value="U-TEST test the new rule to see if you are in a sea battle" />
+    <MESSAGE value="U-test implement the rule that tells that you need to go to sea battle" />
+    <option name="LAST_COMMIT_MESSAGE" value="U-test implement the rule that tells that you need to go to sea battle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

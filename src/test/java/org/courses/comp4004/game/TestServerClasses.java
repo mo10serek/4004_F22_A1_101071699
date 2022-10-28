@@ -987,4 +987,5 @@ public class TestServerClasses {
         Assertions.assertTrue(scoreEvaluator.ruleGoToSeaBattle(diceSet, fCard).isPass());
 
     }
+
 }
