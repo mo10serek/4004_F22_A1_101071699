@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
-    </list>
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,20 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00071" summary="A-TEST implement the test case from row 57.">
-      <created>1666903294484</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903294484</updated>
-    </task>
-    <task id="LOCAL-00072" summary="A-TEST implement the test case from row 57.">
-      <created>1666903373962</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903373962</updated>
     </task>
     <task id="LOCAL-00073" summary="A-TEST implement the test case from row 58.">
       <created>1666903423994</created>
@@ -482,7 +465,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666914813967</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="U-TEST test the useTheSorceressCard function to see if it can reroll a skull">
+      <created>1666915444758</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1666915444758</updated>
+    </task>
+    <task id="LOCAL-00121" summary="CODE - implement the useTheSorceressCard">
+      <created>1666915702497</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1666915702497</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,8 +494,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST implement the test case that check if it stores the current player descriptor." />
-    <MESSAGE value="CODE implement the interactingPlayerDescriptor varible" />
     <MESSAGE value="U-TEST making a test case to roll the dice" />
     <MESSAGE value="U-TEST making a test case to see if the command roll is able to roll the dice set." />
     <MESSAGE value="U-TEST implementing a boolean varible in the dice class to see if it can hold the dice." />
@@ -522,7 +517,9 @@
     <MESSAGE value="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card" />
     <MESSAGE value="A-TEST implement the test case in row 83" />
     <MESSAGE value="A-TEST implement the test case in row 84" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case in row 84" />
+    <MESSAGE value="U-TEST test the useTheSorceressCard function to see if it can reroll a skull" />
+    <MESSAGE value="CODE - implement the useTheSorceressCard" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the useTheSorceressCard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
