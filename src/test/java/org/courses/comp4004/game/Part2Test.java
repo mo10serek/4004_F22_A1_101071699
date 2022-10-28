@@ -582,4 +582,41 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row114")
+    void row114() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("2swords", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2swords you are in sea battle");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice monkey, monkey, monkey, monkey, skull, skull, skull, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        System.out.println(postStatus.outMsg);
+        Assertions.assertEquals(postStatus.outMsg,"outcome 2swords, [monkey, monkey, monkey, monkey, skull, skull, skull, sword], -300, 0, 0, did not got the bonus so the player looses points and end his turn");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
