@@ -84,8 +84,9 @@ public class MessageProcessor {
                     }
                 }
             }else if (cmd.equalsIgnoreCase(Commands.useSorceress)) {
-                boolean useSorceress = interactingPlayerDescriptor.getDrawnFCard().getFigure().contains("Sorceress");
-                if (useSorceress) {
+                RuleResult useSorceress = scoreEvaluator.ruleRollOneSkull(diceSet,
+                        interactingPlayerDescriptor.getDrawnFCard());
+                if (useSorceress.isPass()) {
                     if (RIGID) {
                         useTheSorceressCardInput(lineParser.getParmsLine());
                     } else {
@@ -94,7 +95,7 @@ public class MessageProcessor {
                 }
                 interactingPlayerDescriptor.getScorePad().addScore(
                         scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet));
-                msg = "player use the sorceress card to roll one skull";
+                msg = useSorceress.getMessage();
             }else if (cmd.equalsIgnoreCase(Commands.help)) {
                 toReturn = new PostStatus(Commands.outcome + " list of command to use " +
                         " , outcome: notify the player of what is the current card, dice set and all of the players scores" +
