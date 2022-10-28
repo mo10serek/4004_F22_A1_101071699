@@ -38,7 +38,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testRuleRollOneSkull">
+  <component name="RunManager" selected="JUnit.Part2Test.row77">
     <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,9 +121,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testRuleRollOneSkull" />
         <item itemvalue="JUnit.TestServerClasses.testUseSorceress" />
-        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testSetDice" />
         <item itemvalue="JUnit.TestServerClasses.testTakeCard" />
       </list>
