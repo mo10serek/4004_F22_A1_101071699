@@ -89,6 +89,19 @@ public class MessageProcessor {
         return toReturn;
     }
 
+    public boolean useTheSorceressCard() {
+        boolean success = false;
+        for (int counter = 0; counter < diceSet.getMAX_SIZE(); counter++) {
+            if (diceSet.getDiceSet().get(counter).getFigure().contains("skull")) {
+                diceSet.getDiceSet().get(counter).enableRollIfFigure("skull");
+                diceSet.reroll("skull");
+                success = true;
+                break;
+            }
+        }
+        return success;
+    }
+
     public PostStatus scoreNormal() {
         if (interactingPlayerDescriptor.getDrawnFCard() == null) {
             msg = ", the player haven't drawn a card. Please draw a card by writing the command \'draw\'";
