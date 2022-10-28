@@ -197,6 +197,7 @@ public class MessageProcessor {
         RuleResult have4SkullsOnFirstRoll = scoreEvaluator.ruleGoToSkullIslandIf4Skulls(diceSet, interactingPlayerDescriptor.getDrawnFCard());
         RuleResult useSorceress = scoreEvaluator.ruleRollOneSkull(diceSet,
                 interactingPlayerDescriptor.getDrawnFCard());
+        RuleResult useChest = scoreEvaluator.ruleCanHoldDices(diceSet, interactingPlayerDescriptor.getDrawnFCard());
 
         if (useSorceress.isPass() && have3Skulls.isPass()) {
             boolean canUseSorceressCard;
@@ -209,6 +210,9 @@ public class MessageProcessor {
                 score = scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
                 msg = "player got 3 skull but reroll one skull since got one Sorceress card";
             }
+        } else if (have3Skulls.isPass() && useChest.isPass()) {
+            score = scoreEvaluator.getScoreWhenDiceHold(interactingPlayerDescriptor.getDrawnFCard(), diceSet);
+            msg = "the player died but still score points";
         }
 
         PostStatus toReturn = new PostStatus(Commands.outcome
