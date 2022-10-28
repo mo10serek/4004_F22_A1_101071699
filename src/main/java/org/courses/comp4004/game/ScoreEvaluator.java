@@ -5,6 +5,8 @@ import java.util.List;
 
 public class ScoreEvaluator {
 
+    private int numberOfSkulls = 0;
+
     int getScore(FCard fCard, DiceSet diceSet) {
         int score = 0;
         ScorePad scorePad = new ScorePad();
@@ -80,6 +82,7 @@ public class ScoreEvaluator {
             currentNumberOfSkulls += 1;
         }
         currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+        numberOfSkulls = currentNumberOfSkulls;
 
         int score = -100 * currentNumberOfSkulls;
         if (fCard.getFigure().contains("Captain")) {
@@ -97,9 +100,24 @@ public class ScoreEvaluator {
             currentNumberOfSkulls += 1;
         }
         currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+        numberOfSkulls = currentNumberOfSkulls;
 
         return currentNumberOfSkulls >= 4 ? new RuleResult(true, 0, "player got 4 skulls in first roll " +
                 "and need to go to skull Island") : new RuleResult(false, 0);
+    }
+
+    public RuleResult ruleLeaveSkullIsland(DiceSet diceSet, FCard fCard) {
+        int currentNumberOfSkulls = 0;
+
+        if (fCard.getFigure().contains("2skulls")) {
+            currentNumberOfSkulls += 2;
+        } else if (fCard.getFigure().contains("1skull")) {
+            currentNumberOfSkulls += 1;
+        }
+        currentNumberOfSkulls += diceSet.countDiceFaces("skull");
+
+        return numberOfSkulls == currentNumberOfSkulls ? new RuleResult(true, 0, "no new skulls " +
+                "leaving skull Island and move to the next player") : new RuleResult(false, 0);
     }
 
     /**
