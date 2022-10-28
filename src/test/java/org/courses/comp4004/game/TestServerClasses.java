@@ -665,4 +665,32 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg,"outcome Sorceress, [skull, skull, monkey, parrot, diamond, coin," +
                 " sword, coin], 300, the player got a score of 300 points from this dice set");
     }
+
+    @Test
+    @DisplayName("messageUseSorceress")
+    void testUseSorceress() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        ScorePad scorePad = new ScorePad();
+        interactingPlayerDescriptor.setScorePad(scorePad);
+        playerDescriptorList.add(interactingPlayerDescriptor);
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        messageProcessor.turnOnRIGID();
+
+        messageProcessor.ProcessMessage(Commands.takeCard + " Sorceress");
+        messageProcessor.ProcessMessage(Commands.setDice + " skull, skull, monkey, parrot, " +
+                "diamond, coin, sword, coin");
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.useSorceress + " monkey");
+        Assertions.assertEquals(toReturn.outMsg,"use.sorceress, Sorceress, [monkey, skull, monkey, parrot, diamond, coin," +
+                " sword, coin], 300, player use the sorceress card to roll one skull");
+        toReturn = messageProcessor.ProcessMessage(Commands.useSorceress);
+        Assertions.assertTrue(toReturn.success);
+    }
 }

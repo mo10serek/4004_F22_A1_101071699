@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestServerClasses.testSetDice">
+  <component name="RunManager" selected="JUnit.Part2Test.row77">
     <configuration name="Part2Test.row77" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testSetDice" />
         <item itemvalue="JUnit.TestServerClasses.testTakeCard" />
-        <item itemvalue="JUnit.Part2Test.row77" />
         <item itemvalue="JUnit.TestServerClasses.testUseTheSorceressCardInput" />
         <item itemvalue="JUnit.TestServerClasses.testRerollSetOutcome" />
       </list>
@@ -137,20 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00083" summary="A-TEST implement the test case from row 68.">
-      <created>1666904099151</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1666904099151</updated>
-    </task>
-    <task id="LOCAL-00084" summary="A-TEST implement the test case from row 69.">
-      <created>1666904128768</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1666904128768</updated>
     </task>
     <task id="LOCAL-00085" summary="A-TEST implement the test case from row 70.">
       <created>1666904158570</created>
@@ -481,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666921101681</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="U-TEST test the new setDice command that can set certain faces to a dice set">
+      <created>1666921212715</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1666921212715</updated>
+    </task>
+    <task id="LOCAL-00133" summary="CODE - implement the command set dice">
+      <created>1666921468496</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1666921468496</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="U-TEST implement a function reroll in the dice set to reroll certain faces" />
     <MESSAGE value="CODE implement a reroll function to select the faces you want to reroll" />
     <MESSAGE value="U-TEST test the draw command in the message processor" />
     <MESSAGE value="CODE implement the draw command" />
@@ -521,7 +521,8 @@
     <MESSAGE value="U-TEST test a new command called take card that takes the card you need. Used for testing." />
     <MESSAGE value="CODE make a testing command that can pick up the card and use it for testing" />
     <MESSAGE value="U-TEST test the new setDice command that can set certain faces to a dice set" />
-    <option name="LAST_COMMIT_MESSAGE" value="U-TEST test the new setDice command that can set certain faces to a dice set" />
+    <MESSAGE value="CODE - implement the command set dice" />
+    <option name="LAST_COMMIT_MESSAGE" value="CODE - implement the command set dice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -535,6 +536,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part1Test.java</url>
           <line>136</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
+          <line>662</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java</url>
+          <line>664</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
