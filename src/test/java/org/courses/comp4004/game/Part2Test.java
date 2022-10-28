@@ -361,4 +361,18 @@ public class Part2Test {
         log.println(diceSet);
         log.println(scoreEvaluator.getScore(fCard, diceSet));
     }
+
+    @Test
+    @DisplayName("row99")
+    void row99() {
+        DiceSet diceSet = new DiceSet();
+        FCard fCard = new FCard("Coin", 0);
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+
+        diceSet.setRollOutcome("monkey, monkey, monkey, sword, sword, sword, sword, diamond");
+        Assertions.assertEquals(scoreEvaluator.getScore(fCard, diceSet), 1000);
+        log.println(diceSet);
+        log.println(scoreEvaluator.getScore(fCard, diceSet));
+
+    }
 }
