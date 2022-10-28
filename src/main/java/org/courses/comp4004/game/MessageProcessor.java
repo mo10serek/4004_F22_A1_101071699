@@ -194,6 +194,22 @@ public class MessageProcessor {
                         " , done: the player end their turn" +
                         " , use.sorceress: to allow the player have the sorceress card",
                         true);
+            } else if(cmd.equalsIgnoreCase(Commands.done)) {//"done"; //  <null> (player concluded his turn)
+
+                toReturn = new PostStatus("the player end his turn", false);
+
+                if (currentMode == MODES.SEABATTLE) {
+                    int loseScoreInSeaBattle = scoreEvaluator.loseScoreInSeaBattle(diceSet,
+                            interactingPlayerDescriptor.getDrawnFCard());
+                    interactingPlayerDescriptor.getScorePad().addScore(loseScoreInSeaBattle);
+                    toReturn = new PostStatus(Commands.done
+                            + ", " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                            + ", " + diceSet.toString()
+                            + ", " + getPlayersScoresString()
+                            + "the player end his turn but have not receive the correct number of swords,"
+                            + "so he loose points",
+                            false);
+                }
             }
             if (!cmd.equalsIgnoreCase(Commands.help) &&
                     !cmd.equalsIgnoreCase(Commands.setDice) && !cmd.equalsIgnoreCase(Commands.takeCard) &&

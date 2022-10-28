@@ -294,6 +294,17 @@ public class ScoreEvaluator {
             }
         }
 
+        if (fCard.getFigure().contains("2swords") ||
+                fCard.getFigure().contains("3swords") ||
+                fCard.getFigure().contains("4swords")) {
+            RuleResult getScoreInSwords = getScoreInSeaBattle(diceSet, fCard);
+            if (getScoreInSwords.isPass()) {
+                if (fCard.getFigure().contains("2swords")) {
+                    totalOfScoredDice += 2;
+                }
+            }
+        }
+
         if (totalOfScoredDice >= 8){
             return new RuleResult(true, 500);
         }
