@@ -801,4 +801,36 @@ public class TestServerClasses {
         Assertions.assertEquals(toReturn.outMsg, "hold, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
                 "sword, coin], 0, dices can be hold");
     }
+
+    @Test
+    @DisplayName("testTakeOutChestCommand")
+    void testTakeOutChestCommand() {
+        FCardDeck fCardDeck = new FCardDeck();
+        DiceSet diceSet = new DiceSet();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        PlayerDescriptor interactingPlayerDescriptor = new PlayerDescriptor();
+        ScorePad scorePad = new ScorePad();
+        interactingPlayerDescriptor.setScorePad(scorePad);
+        playerDescriptorList.add(interactingPlayerDescriptor);
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser,
+                playerDescriptorList);
+        messageProcessor.setInteractingPlayerDescriptor(interactingPlayerDescriptor);
+        messageProcessor.turnOnRIGID();
+
+        messageProcessor.ProcessMessage(Commands.setDice + " skull, skull, monkey, parrot, " +
+                "diamond, coin, sword, coin");
+        messageProcessor.ProcessMessage(Commands.takeCard + " Chest");
+        PostStatus toReturn = messageProcessor.ProcessMessage(Commands.holdChest + " diamond, coin");
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, "hold, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
+                "sword, coin], 0, dices can be hold");
+        messageProcessor.ProcessMessage(Commands.takeCard + " Chest");
+        toReturn = messageProcessor.ProcessMessage(Commands.takeOutChest + " diamond, coin");
+        Assertions.assertTrue(toReturn.success);
+        Assertions.assertEquals(toReturn.outMsg, "takeOut, Chest, [skull, skull, monkey, parrot, diamond, coin, " +
+                "sword, coin], 0, dices can be hold");
+    }
 }
