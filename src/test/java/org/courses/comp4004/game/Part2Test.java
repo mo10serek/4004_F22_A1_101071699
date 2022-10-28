@@ -421,4 +421,37 @@ public class Part2Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    @Test
+    @DisplayName("row107")
+    void row107() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+
+        String line;
+        PostStatus postStatus;
+
+        FCard fCard = new FCard("1skull", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, sword, sword, sword, sword, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "outcome 1skull, [skull, skull, sword, sword, sword, sword, sword, sword], 0, Player died.");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
