@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/ScoreEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part2Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/TestServerClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,34 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00067" summary="A-TEST implement the test case from row 53.">
-      <created>1666903054615</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903054615</updated>
-    </task>
-    <task id="LOCAL-00068" summary="A-TEST implement the test case from row 54.">
-      <created>1666903092000</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903092000</updated>
-    </task>
-    <task id="LOCAL-00069" summary="A-TEST implement the test case from row 55.">
-      <created>1666903132176</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903132176</updated>
-    </task>
-    <task id="LOCAL-00070" summary="A-TEST implement the test case from row 56.">
-      <created>1666903159794</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1666903159794</updated>
     </task>
     <task id="LOCAL-00071" summary="A-TEST implement the test case from row 57.">
       <created>1666903294484</created>
@@ -483,7 +454,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666914387239</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card">
+      <created>1666914672261</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1666914672261</updated>
+    </task>
+    <task id="LOCAL-00117" summary="A-TEST implement the test case in row 82">
+      <created>1666914726282</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1666914726282</updated>
+    </task>
+    <task id="LOCAL-00118" summary="A-TEST implement the test case in row 83">
+      <created>1666914782376</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1666914782376</updated>
+    </task>
+    <task id="LOCAL-00119" summary="A-TEST implement the test case in row 84">
+      <created>1666914813967</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1666914813967</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,9 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CODE implement the new command which is inform" />
-    <MESSAGE value="U-TEST test a boolean varible RIGID that is used to activate parts of the code to rig the game" />
-    <MESSAGE value="CODE implemented the RIGID boolean variable." />
     <MESSAGE value="U-TEST implement the test case that check if it stores the current player descriptor." />
     <MESSAGE value="CODE implement the interactingPlayerDescriptor varible" />
     <MESSAGE value="U-TEST making a test case to roll the dice" />
@@ -523,7 +519,10 @@
     <MESSAGE value="U-TEST test the score function that will calculate the score based on the dice set and card" />
     <MESSAGE value="CODE implement the score function that will calculate the score based on the dice set and card" />
     <MESSAGE value="A-TEST implement the test case in row 82" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case in row 82" />
+    <MESSAGE value="CODE make the getDiceFacesCountsArrayCard function to apply the Monkey&amp;Parrot card" />
+    <MESSAGE value="A-TEST implement the test case in row 83" />
+    <MESSAGE value="A-TEST implement the test case in row 84" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case in row 84" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
