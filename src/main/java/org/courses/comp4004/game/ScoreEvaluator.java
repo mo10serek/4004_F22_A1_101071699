@@ -75,6 +75,19 @@ public class ScoreEvaluator {
         return new RuleResult(false, 0);
     }
 
+    public int loseScoreInSeaBattle(DiceSet diceSet, FCard fCard) {
+        int numOfSwords = diceSet.countDiceFaces("sword");
+        int numOfSkulls = diceSet.countDiceFaces("skull");
+        if (fCard.getFigure().contains("2swords") && ((numOfSwords < 2) || (numOfSkulls >= 3))) {
+            return -300;
+        } else if ((fCard.getFigure().contains("3swords")) && ((numOfSwords < 3) || (numOfSkulls >= 3))) {
+            return -500;
+        } else if ((fCard.getFigure().contains("4swords")) && ((numOfSwords < 4) || (numOfSkulls >= 3))) {
+            return -1000;
+        }
+
+        return 0;
+    }
 
     public RuleResult ruleRollOneSkull(DiceSet diceSet, FCard fCard) {
         if (fCard.getFigure().contains("Sorceress")) {
