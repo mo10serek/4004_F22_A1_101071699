@@ -116,8 +116,13 @@ public class ScoreEvaluator {
         }
         currentNumberOfSkulls += diceSet.countDiceFaces("skull");
 
-        return numberOfSkulls == currentNumberOfSkulls ? new RuleResult(true, 0, "no new skulls " +
-                "leaving skull Island and move to the next player") : new RuleResult(false, 0);
+        if (numberOfSkulls == currentNumberOfSkulls) {
+            numberOfSkulls = currentNumberOfSkulls;
+            return new RuleResult(true, 0, "no new skulls leaving skull Island and move to the " +
+                    "next player");
+        } else {
+            return new RuleResult(false, 0);
+        }
     }
 
     /**

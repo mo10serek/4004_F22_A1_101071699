@@ -237,4 +237,27 @@ public class MessageProcessor {
         return toReturn;
     }
 
+    public PostStatus scoreSkullIsland() {
+        RuleResult leaveSkullIsland = scoreEvaluator.ruleLeaveSkullIsland(diceSet,
+                interactingPlayerDescriptor.getDrawnFCard());
+
+        msg = "player got more skull so subtracts other players";
+        boolean success = true;
+        if (leaveSkullIsland.isPass()) {
+            msg = "player did not get any more skulls so his turn ends";
+            success = false;
+        } else {
+            playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
+                    interactingPlayerDescriptor, diceSet);
+        }
+        return new PostStatus(Commands.roll
+                + " " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
+                + ", " + diceSet.toString()
+                + ", " + playerDescriptorList.get(0).getScorePad().getTotalScore()
+                + ", " + playerDescriptorList.get(1).getScorePad().getTotalScore()
+                + ", " + playerDescriptorList.get(2).getScorePad().getTotalScore()
+                + ", " + msg,
+                success);
+    }
+
 }
