@@ -234,6 +234,7 @@ public class MessageProcessor {
                 otherPlayersSaveScores[counter] = playerDescriptorList.get(counter).getScorePad().getTotalScore();
                 playerDescriptorList.get(counter).getScorePad().setTotalScore(otherPlayersRegularScores[counter]);
             } else {
+                currentMode = MODES.FIRSTROLL;
                 playerDescriptorList.get(counter).getScorePad().setTotalScore(otherPlayersSaveScores[counter]);
             }
         }
