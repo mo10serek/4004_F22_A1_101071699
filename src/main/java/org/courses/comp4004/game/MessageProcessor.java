@@ -211,12 +211,11 @@ public class MessageProcessor {
                             false);
                 }
             }
-            if (!cmd.equalsIgnoreCase(Commands.help) &&
+            if (!cmd.equalsIgnoreCase(Commands.help) && !cmd.equalsIgnoreCase(Commands.done) &&
                     !cmd.equalsIgnoreCase(Commands.setDice) && !cmd.equalsIgnoreCase(Commands.takeCard) &&
                     !cmd.equalsIgnoreCase(Commands.roll) && !cmd.equalsIgnoreCase(Commands.draw) &&
-                    !cmd.equalsIgnoreCase(Commands.modeInteracting) &&
-                    !cmd.equalsIgnoreCase(Commands.modeServerBroadcasting) && !cmd.equalsIgnoreCase(Commands.inform) &&
-                    !msg.contains("unknown command")) {
+                    !cmd.equalsIgnoreCase(Commands.modeInteracting) && !cmd.equalsIgnoreCase(Commands.modeServerBroadcasting) &&
+                    !cmd.equalsIgnoreCase(Commands.inform) && !msg.contains("unknown command")) {
                 toReturn = new PostStatus(cmd
                         + ", " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
                         + ", " + diceSet.toString()
