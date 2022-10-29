@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="A-TEST implement the test case in row 130">
+    <list default="true" id="53da99f0-d88e-416b-81d7-9eb05339f85d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/courses/comp4004/game/MessageProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part3Test.row130">
+  <component name="RunManager" selected="JUnit.Part3Test.row134">
     <configuration name="Part2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -52,22 +51,6 @@
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
       <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part2Test.row100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="COMP4004_F22_A1_101071699" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.courses.comp4004.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part2Test" />
-      <option name="METHOD_NAME" value="row100" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,6 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Part3Test.row134" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="COMP4004_F22_A1_101071699" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.courses.comp4004.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part3Test" />
+      <option name="METHOD_NAME" value="row134" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -121,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part3Test.row134" />
         <item itemvalue="JUnit.Part3Test.row130" />
         <item itemvalue="JUnit.Part3Test.row131" />
         <item itemvalue="JUnit.TestServerClasses" />
         <item itemvalue="JUnit.Part2Test" />
-        <item itemvalue="JUnit.Part2Test.row100" />
       </list>
     </recent_temporary>
   </component>
@@ -137,27 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665344235626</updated>
-    </task>
-    <task id="LOCAL-00165" summary="A-TEST implement the test case from 97">
-      <created>1666936915107</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1666936915107</updated>
-    </task>
-    <task id="LOCAL-00166" summary="A-TEST implement the test case from 98">
-      <created>1666936943363</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1666936943363</updated>
-    </task>
-    <task id="LOCAL-00167" summary="CODE - improve the ruleFullChest so it can count coins and diamonds as scored dices">
-      <created>1666937117828</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1666937117828</updated>
     </task>
     <task id="LOCAL-00168" summary="A-TEST implement the test case from 99">
       <created>1666937176103</created>
@@ -481,7 +459,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666977265305</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="A-TEST implement the test case in row 130">
+      <created>1667003093601</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1667003093602</updated>
+    </task>
+    <task id="LOCAL-00215" summary="CODE - implement some restrictions on the empty return post status">
+      <created>1667003171150</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1667003171151</updated>
+    </task>
+    <task id="LOCAL-00216" summary="A-TEST implement the test case from row 134">
+      <created>1667003281027</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1667003281027</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="A-TEST implement the test case from row 110" />
-    <MESSAGE value="CODE fix thing so row 110 test can pass" />
     <MESSAGE value="U-TEST test the new rule to see if you are in a sea battle" />
     <MESSAGE value="U-test implement the rule that tells that you need to go to sea battle" />
     <MESSAGE value="U-test implement the rule that tells you that you lose in the sea battle and looses points" />
@@ -521,7 +518,9 @@
     <MESSAGE value="A-TEST implement the test case from row 100" />
     <MESSAGE value="CODE - update the message processor to run test case in row 100" />
     <MESSAGE value="A-TEST implement the test case in row 130" />
-    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case in row 130" />
+    <MESSAGE value="CODE - implement some restrictions on the empty return post status" />
+    <MESSAGE value="A-TEST implement the test case from row 134" />
+    <option name="LAST_COMMIT_MESSAGE" value="A-TEST implement the test case from row 134" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -595,6 +594,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java</url>
           <line>105</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/courses/comp4004/game/Part3Test.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
