@@ -240,4 +240,85 @@ public class Part3Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    // Row142Test	      player 1 scores 0 then
+    @Test
+    @DisplayName("row142")
+    void row142() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+
+        String line;
+        PostStatus postStatus;
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+        FCard fCard = new FCard("Captain", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Captain");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, monkey, monkey, monkey, monkey, monkey";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Captain, [skull, skull, skull, monkey, monkey, monkey, monkey, monkey], 0, 0, 0, Player died.");
+        log.println(line);
+        log.println(postStatus.outMsg);
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(1));
+        fCard.setFigure("Captain");
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Captain");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice sword, sword, sword, sword, sword, sword, sword, skull";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Captain, [sword, sword, sword, sword, sword, sword, sword, skull], 0, 4000, 0, the player got a score of 4000 points from this dice set");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "done";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"the player end his turn");
+        log.println(line);
+        log.println(postStatus.outMsg);
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(2));
+        fCard.setFigure("2skulls");
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card 2skulls");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, sword, sword, sword, sword, sword, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome 2skulls, [skull, sword, sword, sword, sword, sword, sword, sword], 0, 4000, 0, Player died.");
+        log.println(line);
+        log.println(postStatus.outMsg);
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+        fCard.setFigure("Captain");
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Captain");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice sword, sword, sword, sword, sword, sword, sword, sword";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Captain, [sword, sword, sword, sword, sword, sword, sword, sword], 9000, 4000, 0, the player got a score of 9000 points from this dice set");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }
