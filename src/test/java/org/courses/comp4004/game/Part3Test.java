@@ -321,4 +321,69 @@ public class Part3Test {
         log.println(line);
         log.println(postStatus.outMsg);
     }
+
+    // Row147Test	      roll 2 skulls, reroll one of them due to sorceress, then go to next round of turn
+    @Test
+    @DisplayName("row147")
+    void row147() {
+        DiceSet diceSet = new DiceSet();
+        FCardDeck fCardDeck = new FCardDeck();
+        ScoreEvaluator scoreEvaluator = new ScoreEvaluator();
+        LineParser lineParser = new LineParser();
+
+        PrintWriter out =  new PrintWriter(System.out);
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+        List<PlayerDescriptor> playerDescriptorList = new ArrayList<>();
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+        playerDescriptorList.add(new PlayerDescriptor(new PlayerStreams(out, in), new ScorePad()));
+
+        MessageProcessor messageProcessor = new MessageProcessor(fCardDeck, diceSet, scoreEvaluator, lineParser, playerDescriptorList);
+        messageProcessor.turnOnRIGID();
+
+        String line;
+        PostStatus postStatus;
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(0));
+        FCard fCard = new FCard("Coin", 0);
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Coin");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice sword, sword, sword, sword, sword, sword, skull, skull";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Coin, [sword, sword, sword, sword, sword, sword, skull, skull], 1100, 0, 0, the player got a score of 1100 points from this dice set");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "done";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"the player end his turn");
+        log.println(line);
+        log.println(postStatus.outMsg);
+
+        messageProcessor.setInteractingPlayerDescriptor(playerDescriptorList.get(1));
+        fCard.setFigure("Sorceress");
+        line = "take.card " + fCard.getFigure();
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg, "take.card Sorceress");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, skull, skull, skull, skull, coin";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Sorceress, [skull, skull, skull, skull, skull, skull, skull, coin], 400, 0, -700, player got 4 skulls in first roll and need to go to skull Island");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "use.sorceress parrot";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"use.sorceress, Sorceress, [parrot, skull, skull, skull, skull, skull, skull, coin], 500, 0, -600, player use the sorceress card to roll one skull");
+        log.println(line);
+        log.println(postStatus.outMsg);
+        line = "set.dice skull, skull, skull, skull, skull, skull, skull, skull";
+        postStatus = messageProcessor.ProcessMessage(line);
+        Assertions.assertEquals(postStatus.outMsg,"outcome Sorceress, [skull, skull, skull, skull, skull, skull, skull, skull], 300, 0, -800, player got more skull so subtracts other players");
+        log.println(line);
+        log.println(postStatus.outMsg);
+    }
 }

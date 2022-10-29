@@ -39,7 +39,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Part3Test.row142">
+  <component name="RunManager" selected="JUnit.Part3Test.row147">
     <configuration name="Part3Test.row130" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
@@ -104,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestServerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Part3Test.row147" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="COMP4004_F22_A1_101071699" />
       <extension name="coverage">
         <pattern>
@@ -113,19 +113,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.courses.comp4004.game" />
-      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.TestServerClasses" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.courses.comp4004.game.Part3Test" />
+      <option name="METHOD_NAME" value="row147" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Part3Test.row147" />
         <item itemvalue="JUnit.Part3Test.row142" />
         <item itemvalue="JUnit.Part3Test.row134" />
         <item itemvalue="JUnit.Part3Test.row130" />
         <item itemvalue="JUnit.Part3Test.row131" />
-        <item itemvalue="JUnit.TestServerClasses" />
       </list>
     </recent_temporary>
   </component>
