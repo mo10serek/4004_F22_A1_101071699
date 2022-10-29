@@ -458,7 +458,7 @@ public class Part2Test {
         log.println(postStatus.outMsg);
         line = "set.dice skull, sword, sword, sword, sword, sword, sword, sword";
         postStatus = messageProcessor.ProcessMessage(line);
-        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, sword, sword, sword, sword, sword, sword, sword], 0, Player {0, number, integer} died.");
+        Assertions.assertEquals(postStatus.outMsg, "outcome 2skulls, [skull, sword, sword, sword, sword, sword, sword, sword], 0, Player died.");
         log.println(line);
         log.println(postStatus.outMsg);
     }

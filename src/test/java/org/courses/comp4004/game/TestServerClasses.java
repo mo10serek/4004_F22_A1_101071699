@@ -958,7 +958,7 @@ public class TestServerClasses {
         PostStatus postStatus = messageProcessor.scoreSkullIsland();
 
         Assertions.assertTrue(postStatus.success);
-        Assertions.assertEquals(postStatus.outMsg, "roll Coin, [skull, skull, skull, skull, coin, diamond, coin, " +
+        Assertions.assertEquals(postStatus.outMsg, "outcome Coin, [skull, skull, skull, skull, coin, diamond, coin, " +
                 "sword], 1000, 600, 600, player got more skull so subtracts other players");
 
         postStatus = messageProcessor.scoreSkullIsland();

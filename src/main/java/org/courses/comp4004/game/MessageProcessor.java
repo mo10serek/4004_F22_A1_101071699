@@ -157,10 +157,14 @@ public class MessageProcessor {
                         useTheSorceressCard();
                     }
                 }
-                interactingPlayerDescriptor.getScorePad().addScore(
-                        scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet));
+                if (currentMode == MODES.NORMAL) {
+                    interactingPlayerDescriptor.getScorePad().addScore(
+                            scoreEvaluator.getScore(interactingPlayerDescriptor.getDrawnFCard(), diceSet));
+                } else if (currentMode == MODES.SKULLISLAND) {
+                    playerDescriptorList = subtractOtherPlayersScore(playerDescriptorList,
+                            interactingPlayerDescriptor, diceSet);
+                }
                 msg = useSorceress.getMessage();
-
             }else if (cmd.equalsIgnoreCase(Commands.holdChest)) {
                     RuleResult holdDiceRule = scoreEvaluator.ruleCanHoldDices(diceSet,
                             interactingPlayerDescriptor.getDrawnFCard());
@@ -210,6 +214,11 @@ public class MessageProcessor {
                             + "so he loose points",
                             false);
                 }
+            } else {
+                if (!RIGID) {
+                    msg = "unknown command";
+                    toReturn = new PostStatus(msg, true);
+                }
             }
             if (!cmd.equalsIgnoreCase(Commands.help) && !cmd.equalsIgnoreCase(Commands.done) &&
                     !cmd.equalsIgnoreCase(Commands.setDice) && !cmd.equalsIgnoreCase(Commands.takeCard) &&
@@ -219,8 +228,8 @@ public class MessageProcessor {
                 toReturn = new PostStatus(cmd
                         + ", " + interactingPlayerDescriptor.getDrawnFCard().getFigure()
                         + ", " + diceSet.toString()
-                        + ", " + interactingPlayerDescriptor.getScorePad().getTotalScore()
-                        + ", " + msg,
+                        + ", " + getPlayersScoresString()
+                        + msg,
                         success);
             }
         } else {
